@@ -1,0 +1,703 @@
+\section{Relation to geometry}
+\label{sec:geometry}
+Now, we turn to relating this approach to the study of coherent
+sheaves on resolved Coulomb branches.   Throughout this section, we'll
+take the convention that $\widehat{\mathscr{A}}_*$
+and $\EuScript{A}_*$ with $*\in \{h,0,1\}$ denote the category $\glslink{scrAhatup}{\mathscr{A}_\phi}$ or algebra
+$\glslink{efA}{\EuScript{A}_\phi}$ with $\phi$ left implicit, and $h$ left as a formal variable, or specialized to
+be $0$ or $1$ (depending on the subscript).  
+
+\subsection{Frobenius constant quantization}
+
+Recall that a quantization $R_h$ of a $\K$-algebra $R_0$ is called {\bf Frobenius
+  constant} if there is a multiplicative map $\sigma\colon
+R_0\to R_h$ congruent to the Frobenius map
+modulo $h^{p-1}$.  
+
+In the case of the quantum Coulomb branch, the Frobenius constancy of the quantization was recently proven by Lonergan.
+\begin{theorem}[\mbox{\cite[Thm. 1.1]{Lon}}]
+  There is a ring homomorphism $\sigma\colon \glslink{Asph}{\EuScript{A}_0^{\operatorname{sph}}}\to  \glslink{Asph}{\EuScript{A}_h^{\operatorname{sph}}}$
+  making $\EuScript{A}_h^{\operatorname{sph}}$ into a FCQ for $\EuScript{A}_0^{\operatorname{sph}}$.
+\end{theorem}
+Since Lonergan's construction is quite technical, it's worth reviewing the actual map that results.    If $\gls{G}$ is abelian, then we can write this morphism very explicitly:  in this case, we consider $\EuScript{A}_h^{\operatorname{sph}}$ as $\End_{\mathscr{B}}(\gls{second})$, and this space is spanned over $S_h$ by the elements $r_\nu=y_{\nu}r(-\nu,0)$ and \cite[\S 3.15(3)]{Lon} shows that
+  it is induced by 
+\begin{align}
+    \vp &\mapsto \AS(\vp)=\vp^p-h^{p-1}\vp\\
+     r_\nu&\mapsto r_{p\nu}
+\end{align} 
+We can rewrite the action of the polynomial
+$\Phi(\acham+p\gamma,\acham)$ for $\gamma\in \ft_{\Z}$ using this map:
+this is a product of consecutive factors $\vp_i^+-kh$ for $k\in \Fp$,
+and must range over a number of these factors divisible by $p$.
+Furthermore, the number of such factors is $\vp_i(\gamma)p$ if
+$\vp_i(\gamma)\geq 0$ and $0$ otherwise.  That
+is,
+\[\Phi(\acham+p\gamma,\acham)=\prod_{i=1}^d
+\AS(\vp^+_i)^{\operatorname{max}(\vp_i(\gamma),0)}\]
+Having noted this, it is a
+straightforward calculation that this is a ring homomorphism.
+
+If $\gls{G}$ is non-abelian, then this homomorphism is induced by the
+inclusion of $\EuScript{A}_0^{\operatorname{sph}}$ and $\EuScript{A}_h^{\operatorname{sph}}$ into the
+localization of the Coulomb branch algebras for the maximal torus $\gls{T}$ by inverting $\al$ for all affine
+roots $\al$, since Steenrod operations commute with pushforward from the $T$-fixed locus, as discussed in \cite[\S 3.15(4)]{Lon}.
+
+%\subsection{Frobenius splitting}
+%\label{sec:frobenius-splitting}
+
+
+A natural property to consider for varieties in characteristic $p$ is whether they are Frobenius split.  For the abelian case, it's easy to construct a splitting.  Let $\kappa_0\colon S_0\to S_0$ be any homogeneous Frobenius splitting.
+\begin{proposition}\label{prop:abelian-splitting}
+  The map
+  \[\kappa(f\cdot r_\la)=
+    \begin{cases}
+      \kappa_0(f) r_{\la/p} & \la/p\in \ft_\Z\\
+      0 & \la/p\notin \ft_\Z
+    \end{cases}\]
+  is a Frobenius splitting for the ring $\K[\fM]$ when $G$ is abelian.
+\end{proposition}
+\begin{proof}
+  This map is obviously a homomorphism of abelian groups sending 1 to 1, so we need only show that $\kappa(a^pb)=a\kappa(b)$ in the case where $a$ and $b$ are both of the form $a=f\cdot r_\la$ and $b=g\cdot r_\mu$.  This is easy to see, since $r_\la^p=r_{p\la}$ and 
+  \[\kappa(f^p r_{p\la}\cdot g r_\mu )=\kappa(f^pg \Phi(-p\la-\mu,-\mu,0)\cdot r_{p\la+\mu})\]
+  If $\mu$ is not $p$-divisible, then this expression is 0, as is $fr_\la\kappa(gr_\mu)=0$, so the result holds.  On the other hand, if $\mu/p\in \ft_\Z$, then
+  \[\kappa(f^pg \Phi(-p\la-\mu,-\mu,0)\cdot r_{p\la+\mu})=f\kappa_0(g) \Phi(-\la-\frac{\mu}{p},\frac{\mu}{p},0)r_{\la+\frac{\mu}{p}}=fr_{\la}\kappa(g r_\mu )\] as desired.  
+\end{proof}
+
+Now, assume that $G$ is non-abelian and that the map $\kappa_0$ is equivariant for the group $\gls{W}$; as usual this is possible because the average of the $W$-conjugates of a Frobenius splitting is again a splitting.  Recall from \cite[Def. 3.11]{WebSD} that we have an element $\mathbbm{r}_\pi$ for any path $\pi$; let us write $\mathbbm{r}(\acham,\acham')$ for the straight line path from $\acham'$ to $\acham$.
+
+By \cite[Prop. 3.14]{WebSD}, the algebra  $\glslink{Asph}{\EuScript{A}_0^{\operatorname{sph}}}$ has a basis given by the dressed monopole operators: the elements \[\mathbbm{m}_{\la}(f)=y_{\la}\tilde{\mathbbm{r}}(-\la, -\la\epsilon) f \tilde{\mathbbm{r}}(-\la \epsilon,0)\] for $\epsilon>0$ a very small real number, $\la$ running over dominant coweights of $G$ and $f$ over a basis of $S_0^{W_\la}$;
+we only need dominant coweights because \[\mathbbm{m}_{\la}(f) =y_{w\la}\tilde{\mathbbm{r}}(-w\la,-w\la \epsilon) f^w \tilde{\mathbbm{r}}(-w\la \epsilon,0)\] for any $w\in \gls{W}$.
+
+\begin{proposition}\label{prop:nonabelian-splitting}
+  There is a Frobenius splitting $\kappa\colon \K[\fM]\to \K[\fM]$ such that
+  \begin{equation}
+    \kappa(\mathbbm{m}_{\la}(f))=
+    \begin{cases}
+      \mathbbm{m}_{\la/p}(\kappa_0(f)) & \la/p\in \ft_\Z\\
+      0 & \la/p\notin \ft_\Z
+    \end{cases}\label{eq:nonabelian-splitting}
+  \end{equation}
+\end{proposition}
+\begin{proof}
+  Consider the usual inclusion $\K[\fM]\to \K[\fM_{\operatorname{ab}}^0]^W$ where $\fM_{\operatorname{ab}}^0$ is the open subset of $\fM_{\operatorname{ab}}$ where the root functions are non-vanishing.    The former is Frobenius split by Proposition \ref{prop:abelian-splitting}, and the restriction of the splitting map to $\K[\fM]$ acts by \eqref{eq:nonabelian-splitting}.  In particular, it preserves the subring $\K[\fM]$ and thus gives a Frobenius splitting.
+
+  In order to do this calculation, it is useful to note that $(\mathbbm{m}_{\la}(1))^p=\mathbbm{m}_{p\la}(1)$, so this shows the result when $f=1$.  There are elements $h_w\in  \K[\fM_{\operatorname{ab}}^0]^W$ such that
+  \[\mathbbm{m}_{\la}(f)=\sum_w h_w (w\cdot f)\qquad \mathbbm{m}_{p\la}(f)=\sum_w h_w^p(w\cdot f) .\]  Thus, we have that \[\kappa(\mathbbm{m}_{p\la}(f))=\sum_w h_w \kappa_0(w\cdot f)=\mathbbm{m}_{\la/p}(\kappa_0(f)).\qedhere \]
+\end{proof}
+If $G$ has non-trivial $\pi_1$, then this splitting is obviously equivariant for the induced action of the Pontryagin dual of $\pi_1$, and thus descends to the GIT quotient.  Since any (partial) BFN resolution is a GIT quotient of this form, we thus also have that:
+\begin{corollary}\label{cor:BFN-split}
+  Any partial BFN resolution is Frobenius split.  
+\end{corollary}
+%\subsection{Localization}
+%\label{sec:localization}
+
+
+
+There are two natural ways to view $\EuScript{A}_h^{\operatorname{sph}}$ as a sheaf of algebras on $\fM=\Spec \EuScript{A}_0^{\operatorname{sph}}$:
+\begin{enumerate}
+\item The first is the usual microlocalization $\salg$ of
+  $\EuScript{A}_h^{\operatorname{sph}}$. The sections $\salg(U_f)$ on the
+  open set $U_f$ where $f$ is non-vanishing are given by
+  $\EuScript{A}_h^{\operatorname{sph}}$ with every element congruent
+  to $f$ mod $h$ inverted.  This construction is discussed, for example, in \cite[\S 4.1]{BLPWquant}.  This is a quantization in the usual sense
+  of \cite{BKpos}, and thus {\it not} a coherent sheaf.
+
+\item On the other hand, we can use $\sigma$ to view  $\EuScript{A}_h^{\operatorname{sph}}$ as a finite $\EuScript{A}_0^{\operatorname{sph}}[h]$-algebra, by the finiteness of the Frobenius map.  We'll typically consider the specialization at
+$h=1$, which realizes $\EuScript{A}_1^{\operatorname{sph}}$ as a finitely generated $\EuScript{A}_0^{\operatorname{sph}}$-module.  Let $\gls{psalg}$ be the corresponding coherent sheaf on $\gls{Coulomb}=\Spec \EuScript{A}_0^{\operatorname{sph}}$.  This is essentially the 
+pushforward of the usual microlocalization by the
+Frobenius map, specialized at $h=1$.
+\end{enumerate}
+
+
+The sheaf of algebras $\psalg$ is an Azumaya
+algebra on the smooth locus of $\fM$  of degree $p^{\operatorname{rank}(G)}$ by \cite[Lemma 3.2]{BKpos}.  We can also localize the algebra $\EuScript{A}_1$ using the map $\sigma$, and obtain an algebra $\gls{Isalg}$ which on the smooth locus is Azumaya of degree $p^{\operatorname{rank}(G)}\cdot \#W$; the spherical idempotent in $\EuScript{A}_1$ induces a Morita equivalence between the Azumaya algebras $\psalg$ and $\Isalg$.
+
+Note that up to this point we have only obtained coherent sheaves on the affine variety $\fM$, but we will be more interested in considering the resolution $\gls{tM}$.  By assumption, this resolution is the Hamiltonian reduction of the  Coulomb branch $\gls{MQ}$ of $\gls{To}$ by $\gls{K}=T_F^\vee$.  This Hamiltonian action of $\gK$ is quantized by a non-commutative moment map $U(\gk)\to \EuScript{A}_{1,\To}^{\operatorname{sph}}$.  Let \[\gls{Qh}=\EuScript{A}_{h,\To}^{\operatorname{sph}}/\gk \cdot (\EuScript{A}_{h,\To}^{\operatorname{sph}});\] by \cite[3(vii)(d)]{BFN} and \cite[Lem. 3.15]{WebSD}, we then have that
+\begin{equation}
+\EuScript{A}_{h}^{\operatorname{sph}}=\End_{\EuScript{A}_{h,\To}^{\operatorname{sph}} }(\EuScript{Q}_h)^K\cong \EuScript{Q}_h^K.\label{eq:qham}
+\end{equation}
+Thus, we can follow the usual yoga for constructing quantizations of Hamiltonian reductions (see \cite[4.3]{Stadnik} for a discussion of doing this reduction for a torus in characteristic $p$, and \cite[\S 2.5]{KR07} for a more general discussion in characteristic $0$)  to obtain a Frobenius constant quantization of the
+resolved Coulomb branch $\gls{tM}$.  We'll give an alternate construction of this quantization below using $\Z$-algebras.
+
+Pushing forward by the
+Frobenius map and specializing $h=1$ as above, we obtain a coherent
+sheaf of algebras, also denoted by $\psalg$ which is Azumaya on the smooth locus of
+$\tilde{\fM}$.  We can perform the analogous operation with $\EuScript{A}_h ^{\operatorname{sph}}$ replaced by  $\EuScript{A}_h$.  As before, we denote this by $\Isalg$.
+In particular: \begin{lemma}
+  If $\gls{tM}$ is smooth, then $\gls{psalg}$ is an Azumaya algebra of degree $p^{\operatorname{rank}(G)}$ and $\gls{Isalg}$ is Azumaya of degree $p^{\operatorname{rank}(G)}\cdot \#W$.  
+\end{lemma}
+
+
+
+\subsection{Homogeneous coordinate rings}  
+While this discussion is quite abstract, we can make it much more concrete by thinking about $\gls{tM}$ in terms of its homogeneous coordinate ring.
+
+The variety $\tilde{\fM}$ is a GIT quotient of the moment map level $\mu^{-1}(0)$ with respect to some character $\chi\colon \gls{K}\to \mathbb{G}_m$. Note that in our notation, we have that 
+  \begin{align*}
+    \Fp[\gls{MQ}]&=\EuScript{A}_{0,\To}^{\operatorname{sph}}\\
+    \Fp[\mu^{-1}(0)]&=\glslink{Qh}{\EuScript{Q}_0}=\EuScript{A}_{0,\To}^{\operatorname{sph}}/\Big(\mu^*(\gk)\cdot(\EuScript{A}_{0,\To}^{\operatorname{sph}})\Big)\\
+    \Fp[\fM]&=\EuScript{Q}_0^K= (\EuScript{A}_{0,\To}^{\operatorname{sph}})^K/\Big(\mu^*(\gk)\cdot(\EuScript{A}_{0,\To}^{\operatorname{sph}})^K\Big)
+  \end{align*}
+  where $\gk$ is thought of as the space of linear functions on $\gk^*$, and $\mu^*$ is pullback by the moment map.    
+  By definition, we have that the section space of powers of the canonical ample bundle on the GIT quotient is given by the semi-invariants for $\chi^n$:
+  \begin{equation*}
+    \Gamma(\tilde{\fM};\cO(n))\cong \EuScript{Q}_0^{\chi^n} =\{q\in \glslink{Qh}{\EuScript{Q}_0}\mid a^*( q)=\chi^n(k)q \} 
+  \end{equation*}
+  for $a\colon K\times \mu^{-1}(0)\to \mu^{-1}(0) $ the action map. Since we are working in characteristic $p$, we need to phrase semi-invariance in terms of pullback of functions; it is necessary but not sufficient to check that $k\cdot q=\chi^n(k)q$ for points of the group $K$.  Of course, we have, by definition, that
+  \begin{equation}
+T\cong \bigoplus_{m\geq 0}\Gamma(\tilde{\fM};\cO(m))\cong \bigoplus_{m\geq 0}\EuScript{Q}_0^{\chi^m}\qquad \tilde{\fM}=\operatorname{Proj}(T).\label{eq:proj-coord}
+\end{equation}
+
+  Let us describe the quantum version of this structure.  It is tempting to simply change $h=0$ in \eqref{eq:proj-coord} to $h=1$; unfortunately, this doesn't result in an algebra
+  or a module over the projective coordinate ring.  Instead, $\EuScript{Q}_1^{\chi^m}=\glslink{Twist}{{}_{\phi+m\nu}T^{\:\operatorname{sph}}_\phi}$ is the twisting bimodule associated to the derivative $\nu=d\chi\in \mathfrak{k}_\Z^*\cong \ft_\Z$.   With a bit more care, we could modify this structure to a $\Z$-algebra as discussed in \cite[\S 5.5]{BLPWquant}.
+
+However, being in characteristic $p$ and having a Frobenius map gives us a second option.  The quantum Frobenius map $\sigma$ sends $\chi$-semi-invariants to $\chi^p$-semi-invariants, and thus induces a graded $T$-module structure on the graded algebra \[\EuScript{T}^{\operatorname{sph}}:=\bigoplus_{m\geq 0}\EuScript{Q}_1^{\chi^{pm}}=\bigoplus_{m\geq 0}\glslink{Twist}{{}_{\phi+pm\nu}T^{\:\operatorname{sph}}_\phi}.\]
+It's easy to see that the associated graded of this non-commutative algebra is \[\bigoplus_{m\geq 0}\Gamma(\tilde{\fM};\cO(pm)),\] with $T$ acting by the Frobenius. In particular, $\EuScript{T}^{\operatorname{sph}}$ is finitely generated over $T$ by the finiteness of the Frobenius map.
+This allows us to give our more ``hands-on'' definition of $\gls{psalg}$.
+\begin{definition}
+ Let $\gls{psalg}$ be the coherent sheaf of algebras on $\gls{tM}$ induced by $\EuScript{T}^{\operatorname{sph}}$.  That is, $\psalg=\glslink{Qh}{\EuScript{Q}_1^{\chi^{pN}}}\otimes_{\EuScript{A}_0^{\operatorname{sph}}}\mathcal{O}(-N)$ for $N\gg 0$.  
+\end{definition}
+This sheaf stabilizes for $N$ sufficiently large because of the finite generation of $\EuScript{T}^{\operatorname{sph}}$; thus multiplication is induced by the graded multiplication on $\EuScript{T}^{\operatorname{sph}}$ and on $T$.   It follows immediately from standard results on projective coordinate rings that:
+\begin{corollary}
+  The functor $\mathcal{F}\mapsto \bigoplus_{m\geq 0}\Gamma(\tilde{\fM},\mathcal{F}(m))$ induces an equivalence between the category of coherent $\psalg$-modules and the category of graded finitely generated $\EuScript{T}^{\operatorname{sph}}$-modules modulo those of bounded degree.
+\end{corollary}
+As with the other structures we have considered, we can remove the superscripts of $\operatorname{sph}$.  This can be done from first principles, reconstructing all the objects defined above, but we ultimately know that the result will be Morita equivalent to the spherical version, so we can more define it quickly.  Consider the tensor product $\EuScript{T}^{\operatorname{sph}}\otimes_{\EuScript{A}_1^{\operatorname{sph}}}e_{\operatorname{sph}}\EuScript{A}_1$, which is just a free module of rank $\#\gls{W}$, and let $\EuScript{T}$ be the endomorphism algebra of this module.  We let $\gls{Isalg}$ be the corresponding algebra of coherent sheaves.  
+
+
+
+\subsection{Infinitesimal splittings}
+
+Assume now that $\gls{tM}$ is smooth and a resolution of $\fM$. Recall that we have a map $\tilde{\fM}\to \ft/\gls{W}$ induced by the inclusion of $S_0^W$ into
+$\EuScript{A}_0^{\operatorname{sph}}$.
+\begin{definition}
+  We let $\gls{hatM}$ be the formal neighborhood of the fiber over the origin in $\ft/W$.
+  % , and $\doublehat{\fM}$ be formal neighborhood of the vanishing locus of all functions of positive $\bS$-degree (the latter is a projective subvariety).
+
+  Let $\glslink{hatpsalg}{\hat{\psalg}_\phi}$ % and $\doublehat{\psalg}_\phi$
+  be the corresponding pullback of $ \glslink{psalg}{\psalg_\phi}$, let $\glslink{hatIsalg}{\hat{\Isalg}_\phi}$
+  % and $\doublehat{\Isalg}_\phi$
+  be the corresponding pullback of $ \glslink{Isalg}{\Isalg_\phi}$ and similarly, $\hat{\EuScript{A}}_\phi$ %and $\doublehat{\EuScript{A}}_\phi$ '
+  the corresponding completion of $ \EuScript{A}_{\phi}$.
+\end{definition}
+
+
+
+
+The algebra $\hat{\Isalg}_\phi$ can be written as the inverse limit
+\[\glslink{hatIsalg}{\hat{\Isalg}_\phi}=\varprojlim {\Isalg}_\phi/{\Isalg}_\phi\mathfrak{m}^N\] for
+$\mathfrak{m}\subset S_0^W$ the maximal ideal corresponding to the
+origin.  Of course, $\hat{\Isalg}_\phi$ contains the larger commutative
+subalgebra $\hat{S}_1=\varprojlim {S}_1/{S}_1\mathfrak{m}^N$ so we can consider how this profinite-dimensional algebra acts on
+${\Isalg}_\phi/{\Isalg}_\phi\mathfrak{m}^N$.
+
+As is well-known, an element $a\in \K$ satisfies $a^p-a=0$ if and only if $a\in \mathbb{F}_p$.
+This extends to show that in 
+$S_1$, the ideal $\mathfrak{m}S_1$ has radical given by the intersection of the maximal ideals $\mathfrak{m}_{\mu}$ defined by the points in $\mu \in \gls{ft1}_{1,\Fp}$.  Thus, $\hat{S}_1$ breaks up as the sum of the completions at these individual maximal ideals.  For a given $\mu\in \ft_{1,\Fp}$ let $e_{\mu}$ be the idempotent that acts by 1 in the formal neighborhood of $\mu$ and vanishes everywhere else.  Thus, $e_{\mu}\hat{\Isalg}_\phi =\varprojlim \Isalg_\phi/  \Isalg_\phi \mathfrak{m}_{\mu}^N$.  Standard calculations show:
+\begin{equation}\label{eq:summand-hom}
+  \Hom_{\hat{\Isalg}_\phi}(e_{\mu}\hat{\Isalg}_\phi, e_{\mu'}\hat{\Isalg}_\phi)\cong \Gamma(\tilde{\fM}, e_{\mu'}\hat{\Isalg}_\phi e_{\mu}).  
+\end{equation}
+
+Of course, the reader should recognize this analysis as almost precisely the analysis of the functors of taking weight spaces discussed in Section \ref{sec:reps} and in particular that of the category $\widehat{\mathscr{A}}$ defined in that section.  We wish to consider the subcategory $\widehat{\mathscr{A}}_{\mathbb{F}_p}$ of objects of the form $(\zero, \mu)$ with $\mu \in \ft_{1,\Fp}$; for simplicity, we'll just denote this object by $\mu$.  In the notation introduced in that section, this subcategory would be $\widehat{\mathscr{A}}_0$, but we think that too likely to generate confusion with our convention of using this denote objects with $h=0$.
+\begin{lemma}\label{lem:A-H}
+There is a fully faithful functor from  $\widehat{\mathscr{A}}_{\mathbb{F}_p}$ to the category of right $ \glslink{hatIsalg}{\hat{\Isalg}_\phi}$ modules sending  $\mu\mapsto e_{\mu}\hat{\Isalg}_\phi $.  
+\end{lemma}
+\begin{proof}
+  Note that the isomorphism $\EuScript{A}_1\cong \Gamma(\tilde{\fM},{\Isalg}_\phi)$ induces a map
+  \[ \EuScript{A}_1/(\mathfrak{m}_{\mu}^N
+ \EuScript{A}_1+\EuScript{A}_1\mathfrak{m}_{\mu'}^N) \to \Gamma(\tilde{\fM}, {\Isalg}_\phi/(\mathfrak{m}_{\mu}^N
+ {\Isalg}_\phi+{\Isalg}_\phi\mathfrak{m}_{\mu'}^N)  )\]
+It's not clear if this map is an isomorphism since sections are not right exact as a functor, but the theorem on formal functions \cite[\href{https://stacks.math.columbia.edu/tag/02OC}{Theorem 02OC}]{stacks-project} shows that after completion, we obtain an isomorphism
+  \[ \varprojlim
+ \EuScript{A}_1/(\mathfrak{m}_{\mu}^N
+ \EuScript{A}_1+\EuScript{A}_1\mathfrak{m}_{\mu'}^N)\to \Gamma(\tilde{\fM}, e_{\mu'}\hat{\Isalg}_\phi e_{\mu})\]
+  By \eqref{eq:summand-hom}, this shows that we have the desired fully-faithful functor.
+\end{proof}
+
+In particular, this means that in the case of $\mu=\gls{second}$, this weight space has an additional action of the nilHecke algebra of $W$, so $e_{\second}$ is the sum of $\#W$ isomorphic idempotents which are primitive in this subalgebra. We let $e_{0,\second}$ be such an idempotent; since we assume  $p$ does not divide the order of $\# W$, we can assume that this is the symmetrizing idempotent for the $W$-action on the weight space.   
+
+
+\begin{lemma}
+  For each $\mu$, the algebra $e_\mu\glslink{hatIsalg}{\hat{\Isalg}_\phi} e_\mu$ is Azumaya of degree $\#\gls{W}$ over $\fM$, and split by the natural action on the vector bundle $\glslink{hcQ}{\mathcal{\hat Q}_\mu}:=e_\mu\hat{\Isalg}_\phi e_{0,\second}$.
+\end{lemma}
+Note that \cite[Prop. 1.24]{BKpos} implies that these algebras must be split, but it is at least more satisfying to have a concrete splitting bundle. 
+\begin{proof}
+ Note first that for any idempotent $e$ in an Azumaya algebra $A$, the centralizer $eAe$ is again Azumaya.  Thus, these algebras must all be Azumaya.
+
+ If $\tilde{\fM}$ is smooth, then  $\mathcal{\hat Q}_\mu$ is a vector bundle since it is a summand of an Azumaya algebra.  By Lemma \ref{lem:Q-rank}, it is thus of rank $\#W$.
+  
+  Since these algebras are Azumaya, this shows that their degree is no more than $\# W$, and if this bound is achieved, then they split. Since $e_\mu$ give $p^{\operatorname{rank}(G)}$ idempotents summing to the identity, and the total degree is $\# W\cdot p^{\operatorname{rank}(G)}$, this is only possible if the degree of each algebra is $\#W$. This shows the desired splitting.
+\end{proof}
+
+\begin{corollary}\label{cor:Q-splitting}
+  The vector bundle $\hat{\mathcal{Q}}\cong \bigoplus\glslink{hcQ}{ \hat{\mathcal{Q}}_\mu}$ is a splitting bundle for the Azumaya algebra $\glslink{hatIsalg}{\hat{\Isalg}_\phi}$.
+
+There is a fully faithful functor from  $\widehat{\mathscr{A}}_{\mathbb{F}_p}$ to the category of $\Coh^{\ell \!f}(\hat{\fM})$ of locally free coherent sheaves on $\hat{\fM}$ sending  $\mu\mapsto \hat{\mathcal{Q}}_\mu$.  
+\end{corollary}
+
+Note that the bundle $e_{\operatorname{sph}}\hat{\mathcal{Q}}$ consequently is a splitting bundle for $\hat{\psalg} _\phi$; this summand can also be realized 
+as the invariants of a $W$-action on $\hat{\mathcal{Q}}$.   If $W$ acts freely on the orbit of $\mu$, then $\hat{\mathcal{Q}}_\mu$ is a summand of this bundle, but otherwise, we only obtain the invariants of the stabilizer of $\mu$ in $W$ acting on this bundle.  However, since $e_{\operatorname{sph}}$ induces a Morita equivalence, these bundles satisfy $\hat{\mathcal{Q}}\cong (e_{\operatorname{sph}}\hat{\mathcal{Q}})^{\oplus \# W}$.  
+
+
+\subsection{Lifting to characteristic 0}
+
+
+Recall from Theorem \ref{thm:pStein-equiv} that we have an equivalence $\widehat{\mathscr{A}}_{\Fp}\cong \widehat{\gls{sfB}}(\Fp)$. Given $\mu\in \gls{ft1}_{1,\Fp}$, let $\tilde{\mu}\in \ft_{1,\Z}$ be a lift. Combining this with Corollary \ref{cor:Q-splitting}, we that that:
+\begin{lemma}\label{lem:Gamma-iso}
+There is a fully-faithful functor $\mathsf{Q}\colon \gls{sfB}\to  \Coh^{\ell \!f}(\hat{\fM})$ sending $- \tilde{\mu}_{1/p}+\zero\mapsto \glslink{hcQ}{\mathcal{\hat Q}_\mu}$.  \end{lemma}
+Note that since $\zero$ is isomorphic to the direct sum of $\# \gls{W}$ copies of the object $\gls{second}$ in $\mathsf{B}$, we thus have that this functor sends $\second=\second_{1/p}\mapsto \mathcal{O}_{\hat{\fM}}=e_{0,\second}\glslink{hatIsalg}{\hat{\Isalg}_\phi} e_{0,\second}$. This means that:
+\begin{lemma}\label{lem:Frob-or-B}
+  The functor $\mathsf{Q}$ when combined with quantum Frobenius $\sigma$ or the functor $\gamma\colon \gls{sfBhat}\to \gls{scrBhat}$ induce two different isomorphisms \[\End_{\widehat{\mathscr{B}}}((\second, \second),(\second, \second))\cong \EuScript{A}^{\operatorname{sph}}_0.\]
+
+The resulting module structures on $\Hom_{\widehat{\mathscr{B}}}( (\second,\second),(\acham,\mu))$ are isomorphic.  
+\end{lemma}
+\begin{proof}
+  Using the action of $\widehat{W}$, we can assume that $\mu=\second$.
+  The module $\Hom_{\widehat{\mathscr{B}}}( (\second,\second),(\acham,\second))$ is spanned as a module over the dots by a basis consisting of the elements $y_w\mathbbm{r}_{\pi}$for $w\in \widehat{W}$ such that $w\cdot \second=\second$ and  a minimal length path $\second$ to $w\cdot \acham$.  The same is true of $\Hom_{\widehat{\mathsf{B}}}(\second,\acham_{1/p})$.
+
+  We define an isomorphism \[\ell\colon \Hom_{\widehat{\mathsf{B}}}(\second,\acham_{1/p})\to \Hom_{\widehat{\mathscr{B}}}( (\second,\second),(\acham,\second)) \]
+by the formulas
+\[ \ell(\la)=\la^p-\la \qquad \ell(w)=w_p\qquad\ell(u_{\al})=\frac{u_{\al^{(p)}}}{(\al^{(p)})^{p-1}-1}\]
+\[\ell(r(\eta,\eta')) =r(\eta_{p},\eta'_{p}).\]
+This defines an isomorphism since the polynomials $\hat \Phi_0(\acham,\acham',\second)$ and $\al^{p-1}-1$ are invertible.  It's important to note that this does not define an equivalence of categories, but only of $\EuScript{A}^{\operatorname{sph}}_0$-modules.
+\end{proof}
+
+We wish to extend this result to the coherent sheaves $\glslink{hcQ}{\mathcal{\hat Q}_\mu}$.  In order to do this, it's useful to  consider the completed category $\glslink{scrBTo}{\widehat{\mathscr{B}}^{\To}}$ attached to the gauge group $\gls{To}$.  We have a functor from this category to $\Coh^K(\hat{\fM}_{\To})$, the category of $\gls{K}$-equivariant coherent sheaves on the corresponding completion of the Coulomb branch $\fM _{\To}$.  This functor is given by considering $\Hom_{\widehat{\mathscr{B}}^{\To}}( (\second,\second),(\acham,\mu))$ as a module over $\EuScript{A}^{\To}_0=\End_{\widehat{\mathscr{B}}^{\To}}((\second, \second),(\second, \second))$, where the isomorphism is via the quantum Frobenius.
+
+This inherits a $K$-action from the category $\glslink{scrBTo}{\widehat{\mathscr{B}}^{\To}}$ itself.  If we change $\acham\mapsto \acham+p\nu$ for $\nu \in \ft_{\To,\Z}$, this has the effect of twisting the equivariant structure by the corresponding character of $K$ induced by exponentiating $\gamma$. In particular, as an equivariant sheaf, this only depends on the image of $\nu$ in $\ft_{F,\Z}$, so if $\gamma\in \ft_{\Z}$, the resulting sheaf is $K$-equivariantly isomorphic.
+
+By definition, the module $\mathcal{\hat Q}_\mu$ is the reduction of the coherent sheaf \[\mathcal{\hat R}_\mu=\Hom_{\widehat{\mathscr{B}}^{\To}}( (\second,\second),(\zero,\mu)),\] thought of as a $\EuScript{A}^{\To;\operatorname{sph}}_0$-module via the quantum Frobenius $\sigma$.  
+
+Of course, we can apply the functor of Proposition \ref{prop:B-equiv} with the gauge group $\To$;  this gives us an identification of $\mathcal{\hat R}_\mu$ with $\mathsf{\hat R}_\mu=\Hom_{\widehat{\mathsf{B}}^{\To}}( \second,-\tilde{\mu}_{1/p}+\zero)$.  This is a module over $\EuScript{A}^{\To;\operatorname{sph}}_0\cong \Hom_{\widehat{\mathsf{B}}^{\To}}( \second,\second)$, and the two possible module structures are isomorphic  by Lemma \ref{lem:Gamma-iso}.
+
+Note that using this presentation has enormous advantages: we can consider the induced module $\mathsf{ R}_\mu=\Hom_{{\mathsf{B}}^{\To}}( \second,\mu_{1/p})$ in the uncompleted category ${\mathsf{B}}^{\To}$; localizing, this gives a $K\times \mathbb{G}_m$-equivariant module on $\gls{MQ}$. Furthermore, whereas all of the geometry discussed earlier in this category required us to consider $\fM$ over a base field of  characteristic $p$, the category $ {\mathsf{B}}^{\To}(\K)$ is well-defined over $\Z$ and thus over any commutative base ring $\K$ .  
+\begin{definition}
+Let $\glslink{cQ}{\mathcal{Q}_\mu^{\K}}$ be the $\mathbb{G}_m$-equivariant coherent sheaf on $\tilde{\fM}$ given by Hamiltonian reduction of $ \mathsf{ R}_\mu(\K)=\Hom_{{\mathscr{B}}^{\To}(\K)}( \second,-\tilde{\mu}_{1/p}+\zero)$.
+\end{definition}
+%Note, this definition makes it easy to describe the action of wall-crossing functors on the sheaves $\mathcal{Q}_\mu^{\K}$.  
+
+
+
+
+
+\subsection{Derived localization}
+
+%\subsection{Derived localization}
+%We can extend this to a derived equivalence to $\EuScript{A}_{\phi}$
+%for ``most'' $\phi$.  
+%We'll show later in Corollary
+%\ref{cor:cohomology-vanishing} that the higher cohomology of $\cO$,
+%and thus of $\salg_\phi$ vanishes by \cite{MR1156382}.  
+For now, let us specialize back to the case where $\K=\mathbb{F}_p$.  By  Grauert and Riemenschneider for Frobenius split varieties (\cite{MR1156382}) and the splitting of Proposition \ref{prop:nonabelian-splitting}, we have that:
+\begin{corollary}\label{cor:cohomology-vanishing}
+For any prime $p$, we have the higher cohomology vanishing $H^i(\gls{tM};\cO)=0$ for all $i>0$.
+\end{corollary}
+As discussed in \cite{KalDEQ}, this means that the
+derived functor of localization $\LLoc$ is right inverse to the
+functor  $\Rsecs$ of derived sections for modules over $\glslink{psalg}{\psalg_\phi}$.  
+Recall that we have chosen $\chi$ such that  $\tilde{\fM}$ is smooth. We can conclude from \cite[Thm. 4.2]{KalDEQ} that:
+
+\begin{lemma}\label{lem:upper-bound}
+  There is an integer $N$, such that for any $p$, and any line parallel to $\chi$ in $\gls{ft1}_{1,\Fp}$, there are at most $N$ values of $\phi$ for which $\LLoc$ and $\Rsecs$ are {\em not} inverse equivalences.  
+\end{lemma}
+\begin{remark}
+It seems likely that this result also holds when $\tilde{\fM}$ is not smooth, at least for the quantizations we have constructed, but let us leave this point unresolved for the time being.
+\end{remark}
+%Kaledin approaches this result by studying the $\bS$-equivariant sheaf $\mathcal{K}$ that represents the cone of the natural transformation $\LLoc\Rsecs\to \id$.  This sheaf is thus trivial if and only if derived localization holds. 
+
+\begin{lemma}\label{lem:tiling-localization}
+The vector bundle $\mathcal{Q}^{\Fp}=\bigoplus_{\mu}\glslink{cQ}{\mathcal{Q}_\mu^{\Fp}}$ is a tilting generator for $\Coh(\fM)$ if and only if derived localization holds for $\glslink{hatpsalg}{\hat{\psalg}_\phi}$.  
+\end{lemma}
+\begin{proof}
+First note that  by semi-continuity, it's enough to show this for $\mathcal{\hat Q}^{\Fp}$ on $\hat{\fM}$.  We know that on $\hat{\fM}$, we have an isomorphism $\hat{\psalg}\cong \sHom_{\cO_{\hat{\fM}}}(\mathcal{\hat Q}^{\Fp},\mathcal{\hat Q}^{\Fp})$.  Since the higher cohomology of $\hat{\psalg}$ vanishes, this shows that $\mathcal{\hat Q}^{\Fp}$ is a tilting bundle.  
+
+The $\hat{\psalg}$-modules are precisely the sheaves of the form $\sHom_{\cO_{\hat{\fM}}}(\mathcal{\hat Q}^{\Fp},\mathcal{F})$ for a coherent sheaf $\mathcal{F}$. Since $\mathcal{\hat Q}^{\Fp}$ is a vector bundle, we have that \[H^i(\fM;\sHom_{\cO_{\hat{\fM}}}(\mathcal{\hat Q}^{\Fp},\mathcal{F}))\cong \Ext^i_{\cO_{\hat{\fM}}}(\mathcal{\hat Q}^{\Fp},\mathcal{F}).\] Thus, $\mathcal{Q}^{\Fp}$ is a generator if and only if no module over $\hat{\psalg}$ has all cohomology groups trivial.   
+\end{proof}
+
+\begin{corollary} 
+If derived localization holds at $\phi$, then the fully faithful functor  $\mathsf{Q}\colon \gls{sfB}(\Fp)\to \Coh(\tilde{\fM})$  induces an equivalence of derived categories $D^b(\mathsf{B}(\Fp)\mmod)\cong D^b(\Coh(\tilde{\fM}))$.
+\end{corollary}
+\begin{proof}
+  If derived localization holds at $\phi$, then the induced derived functor is essentially surjective, since $\mathcal{Q}$ is a generator of the derived category.  Thus, this derived functor is an equivalence. 
+\end{proof}
+
+Let $\gls{Lambda},\gls{barLambda}$ be as defined in Definition \ref{def:Lambda}.  As noted before, the set $\bar{\Lambda}$ is finite.
+\begin{definition}
+ We call a choice of $\psi=\phi_{1/p}$ {\bf generic} if the number of elements of $ \gls{barLambda}$ is maximal amongst all choices of $\psi\in \ft_{1,F,\R}$.  
+\end{definition}
+Note that for a given $p$, there may be no generic choices of $\psi$ in $\ft_{1,F,\frac{1}{p}\Z}$, but since real numbers can be arbitrarily well approximated by fractions with prime denominators, there are generic $\psi$ with $\phi\in \ft_{1,F,\Z}$ for all sufficiently large $p$.   In fact, we can divide $\ft_{1,F,\R}$ up into regions $R_{\bar{\Lambda}'}$ according to  what the set $\bar \Lambda'$ attached to $\psi$ is.  Having a maximal number of such non-empty chambers is a open dense property (it is the complement of the integral translates of finitely many hyperplanes).  Simple geometry shows that:
+\begin{lemma}\label{lem:segment}
+For a fixed $\gls{barLambda}$ with $R_{\bar{\Lambda}}$ open and non-empty and a fixed integer $N$, there is a constant $M$ such that if $p>M$ then there is a choice $\phi\in \ft_{1,\Z}$ such that $\phi,\phi+\chi,\phi+2\chi,\dots, \phi+N\chi$ are generic and \[R_{\bar{\Lambda}}\supset \left\{(\phi+k\chi)_{1/p}\,\big| \,k\in \R, 0\leq k\leq N\right\}.\]
+\end{lemma}
+Recall that as we mentioned earlier that there is a constant $N$ such that for a fixed $\phi$, localization can only fail at $N$ values of the form $\phi+k\chi$ for $k\in \Z/p\Z$.  Fix $\bar{\Lambda}$ with $R_{\bar{\Lambda}}$ open and non-empty and let $M$ be the associated constant in Lemma \ref{lem:segment}.
+\begin{theorem}\label{thm:asymptotic-derived}
+  If $\phi$ is a generic parameter with $\gls{barLambda}$ as fixed above, and $p>M$, then derived localization holds for $\phi$, and so the associated $\glslink{cQ}{\mathcal{Q}^{\Fp}}$ is a tilting generator.  
+\end{theorem}
+\begin{proof}
+  First note that it is enough to replace $\phi$ by any other generic parameter with the same set $\bar{\Lambda}$. In this case,  tensor product with the bimodule ${}_{\phi}T_{\phi'}$  sends any object in $\AC_{\Ba}$ in the preimage of $\phi$ to one in $\AC_{\Ba}$ in the preimage of $\phi'$ (see \eqref{eq:aff-cham} for the definition of $\AC_{\Ba}$).  Thus the categories $\gls{sfA}(\Fp)$ are naturally equivalent via tensor product with bimodule ${}_{\phi}T_{\phi'}$ connecting them. 
+  
+  Thus, we can assume that $\phi$ is as in Lemma \ref{lem:segment}.  If derived localization fails at $\phi$, then it also fails at $\phi+\chi,\phi+2\chi,\dots, \phi+N\chi$.  This is impossible by our upper bound on the number of points where it fails from Lemma \ref{lem:upper-bound}.
+\end{proof}
+
+This is certainly too crude to give a sharp characterization of when derived localization holds.  We expect that we will instead find that:
+\begin{conjecture}
+If $\phi$ is a generic parameter, then derived localization holds for $\phi$.  Equivalently, if $\phi$ and $\phi'$ are generic, then derived tensor product with ${}_{\phi}T_{\phi'}$ is an equivalence between $D^b(\EuScript{A}_\phi\mmod)$ and $D^b(\EuScript{A}_{\phi'}\mmod)$.
+\end{conjecture}
+
+These results have consequences for the case where $\K$ is an arbitrary commutative ring.
+Note that by construction $\mathsf{B}$, and thus $\mathcal{Q}^{\K}$, depends on a choice of
+$\phi$ and ultimately a prime $p$, but for fixed $\K$, this dependence is very
+weak.
+\begin{lemma}\label{lem:doesnt-depend2}
+  The vector bundle
+   $\glslink{cQ}{\mathcal{Q}_\mu^{\K}}$ only
+  depends on which element of $\gls{barLambda}$ corresponds to the
+  chamber $\gls{rACp}_{\Ba}$ containing $\mu$. Consequently, the vector bundles that appear this way for a fixed $\gls{flav}$ only depends on the set $\gls{barLambda}$.
+\end{lemma}
+\begin{proof} If
+  $\mu_1$ and $\mu_2$ both lie in $\rACp_{\Ba}$ then we obtain an
+  isomorphism $\mathcal{Q}_{\mu_1}^{\K}\cong \mathcal{Q}_{\mu_2}^{\K}$.
+\end{proof}
+As we change $\gls{flav}$ and $p$ while keeping $\bar \Lambda$ fixed, the
+number of integral points in each chamber $\rACp_{\Ba}$  will increase and decrease, so the vector
+bundle $\mathcal{Q}^{\K}$ will change, but only by changing the
+number of times different summands appear; that is, the vector bundles $\mathcal{Q}^{\K}$ for different $\phi$ are {\bf equiconstituted}.  Which summands appear at
+least once will only change when we change $\bar \Lambda$.  
+%Note, this shows that:
+%\begin{proposition} The sheaf $\mathcal{Q}_\mu^{\K}$ .
+%\end{proposition}
+%\begin{proof}
+%  It is enough to prove this for $\K=\Z$, since all other cases will follow by base extension.  By Lemma \ref{lem:Q-rank}, the coherent sheaf $\mathcal{Q}_\mu^{\Z}$ has rank $\# W$ at the generic point of $\tfM_\Z$. On the other hand, it's reduction mod $p$ for all $p$ is a vector bundle of rank $\#W$.  Semi-continuity shows it is a vector bundle, and 
+%\end{proof}
+
+
+We obtain the cleanest statement if we pass to $\Q$, which as we mentioned before is essentially the case of $p$ is infinitely large.  In this case, it is convenient to fix a parameter $\psi\in \ft_{1,\gls{F},\R}$, defining a real flavor, and consider the set $\gls{LambdaR}$ of vectors with $\rACp_{\Ba}$ non-empty and $\bar{\Lambda}^{\R}$ its quotient by $\gls{What}$; as before, we call $\psi$ generic if the set $\bar{\Lambda}^{\R}$ has maximal size.  We let $\glslink{cQQ}{\cQ^{\Q}_\phi}$ be the sum of the vector bundles under $\glslink{cQ}{\cQ^\Q_\mu}$ for representatives $\mu$ of chamber in $\bar{\Lambda}^{\R}$.  This analogous to the construction of the category $\glslink{BLam}{\mathsf{B}^{\bar{\Lambda}^{\R}}(\Q)}$ discussed in Definition \ref{def:BLam}. 
+\begin{theorem}\label{th:Q-equiv}
+  If $\psi$ is a generic parameter, the vector bundle $\glslink{cQQ}{\mathcal{Q}^{\mathbb{Q}}_\phi}$ on $\glslink{tM}{\tilde{\fM}_{\mathbb{Q}}}$ is a tilting generator and induces an equivalence $D^b(\glslink{BLam}{\mathsf{B}^{\bar{\Lambda}^{\R}}(\Q)})\cong D^b(\Coh(\tilde{\fM}_{\mathbb{Q}})).$
+\end{theorem}
+\begin{proof}
+   Being a vector bundle and a tilting generator after base change to a point of $\Spec\,
+   \Z$ is an open property, so if the set of primes where this holds
+   is non-empty, it must be so over $\Q$ as well.  Thus, we need only
+   show that $\mathcal{Q}^{\Fp}$ is a tilting generator for some
+   prime $p$.  By Lemma \ref{lem:doesnt-depend2}, this fact only
+   depends on the corresponding $\bar \Lambda$.  By Theorem
+   \ref{thm:asymptotic-derived}, for $p\gg 0$, there is a $\phi$ which
+   gives $\bar \Lambda$ as the set of chambers with integral points
+   such that derived localization holds at $\phi$.  Thus, by Lemma
+   \ref{lem:tiling-localization}, the associated sheaf
+   $\mathcal{Q}^{\mathbb{F}_p}_\phi$ is a tilting generator, which
+   establishes the result.
+ \end{proof}
+
+\subsection{Non-commutative crepant resolutions}
+\label{sec:non-comm-crep}
+
+
+Recall the notion of a {\bf non-commutative crepant resolution} of the affine variety $\gls{Coulomb}$, originally defined in \cite{vdB04}: this is an algebra $A=\End(M),$ for some reflexive coherent sheaf $M$ on $\fM$, such that $A$ is a Cohen-Macaulay as a coherent sheaf and the global dimension of $A$ is equal to $\dim \fM.$  A {\bf D-equivalence} between a commutative resolution $\gls{tM}$ and a non-commutative resolution $A$ is an equivalence of dg-categories $D^b(\Coh(\tilde{\fM}))\cong D^b(A\mmod)$.  
+
+The following is a corollary of \cite[Lem. 3.2.9 \& Prop. 3.2.10]{van2004three}:
+\begin{lemma}\label{lem:tilt-nccr}
+Suppose $\mathcal{T}$ is a tilting generator on a resolution $\gls{tM}$ such that the structure sheaf $\mathcal{O}_{\tfM}$ is a summand of $\mathcal{T}$, and let $M=\Gamma(\tfM;\mathcal{T}).$ Then $A=\End_{\Coh(\tfM)}(\mathcal{T})\cong \End_R(M)$ is a non-commutative crepant resolution of singularities, canonically D-equivalent to $Y$.  
+\end{lemma}
+
+Assume that the flavor $\gls{flav}$ is chosen so that $\mathbf{0}\in \gls{LambdaR}$; this means that the structure sheaf $\mathscr{O}_{\tilde{\fM}}$ is a summand of $\glslink{cQQ}{\mathcal{Q}^{\mathbb{Q}}_\phi}$.  By the equivalence of Theorem \ref{th:Q-equiv} and the definition \eqref{eq:A-def}, we have an isomorphism \[\gls{A}=\End_{\Coh(\tfM)}( \mathcal{Q}^{\mathbb{Q}}_\phi),\] and we have an idempotent $e_0\in A$ projecting to the structure sheaf.     Then, applying Lemma \ref{lem:tilt-nccr}, we can see that:
+\begin{corollary}\label{cor:A-nccr}
+  The ring $\gls{A}$ is a non-commutative crepant resolution of the Coulomb branch $\fM$.  
+\end{corollary}
+As mentioned earlier, we can give very explicit computations of the algebras in question when $\fM$ is a quiver gauge theory, which we will discuss in much greater detail in \cite{WebcohII}.  This is also true in the hypertoric case, as discussed in \cite[Prop. 3.35]{McBW} and \cite[\S 4.1]{GMW}.
+
+
+\subsection{Presentations}
+\label{sec:presentations}
+
+For the sanity of the reader, let us try to give a more explicit description of the resulting algebra $A$ which gives our non-commutative resolution of singularities.  For our gauge group $G$, consider the fundamental alcove $\nabla$ in the Cartan of $\fg$ mod the action of the group $\widehat{W}_0$ of length 0 elements in the extended affine Weyl group (which are by definition, the elements sending the fundamental alcove to itself). That is, $\nabla$ is the subset of positive Weyl chamber in $\ft$ which is not separated from the origin by the zeros of any affine root.   For fixed flavor $\gls{flav}$, every point in this space gives an object in the extended category $\gls{sfB}$, but there are only finitely many isomorphism types, given by the set $\gls{barLambda}$.  
+
+First of all, we divide this fundamental alcove by considering the hyperplanes defined by $\varphi_i(\acham)\equiv -\phi_i/p\pmod \Z$ for $\phi_i$ the weight of the flavor $\phi$ on the weight space $V_i$; these are the unrolled matter hyperplanes.  Unrolled root hyperplanes only appear on the boundaries of the alcove and only ones corresponding to simple roots of the affinization of $G$ are relevant.  Also, note that the objects corresponding to the walls of the fundamental alcove are summands of the nearby generic objects, so up to isomorphism or inclusion of summands, we can take the algebra $A$ to be the endomorphisms of a sum of representatives of the chambers cut out by the unrolled hyperplanes.  By \cite[Cor. 3.13]{WebSD}, we have a basis of these endomorphisms which can visualize as straight (or small perturbation of straight) paths in $\ft$, folded using reflections to fit in the fundamental alcove.  Of course, having chosen representatives of each chamber, we can factor this path to pass through the representative of each chamber it passes through, and thus factor it into shorter segments that either:
+\begin{enumerate}
+	\item join chambers which are adjacent across an unrolled matter hyperplane
+	\item ``bounce'' off a root hyperplane within a chamber bounding it.  
+\end{enumerate}  
+We can thus, we have that
+\begin{proposition}\label{prop:presentation}
+The algebra $\gls{A}$ is a quotient of the path algebra of the quiver where:
+\begin{enumerate}
+	\item  nodes are given by $\gls{barLambda}$, the chambers in this arrangement,
+	\item  we add as endomorphisms to each node the semi-direct product of $S_h$ with the stabilizer of the corresponding chamber in $\widehat{W}_0$
+	\item we add an opposing pair of edges for every pair of chambers adjacent across a matter hyperplane 
+	\item we add a self-loop for each adjacency of a chamber to a root hyperplane.
+\end{enumerate}
+\end{proposition}
+The relations that we need arise from (\ref{eq:dot-commute}--\ref{eq:triple}).   One simply takes the pictures \cite[(2.5a--c)]{WebSD}, replaces chambers with nodes in the quiver and hyperplanes with arrows, and interprets in the path as one in the quiver. These are a bit tedious to write out in full generality, so we leave this as an exercise to the reader.   
+\begin{example}
+	One valuable example to consider is when $\C^*$ acts on $\C^n$ with weight $1$.  In this case, the fundamental alcove is all of $\ft_\R$ and the extended affine Weyl group the coweight lattice, so the quotient is the maximal compact of the torus $T\subset G$.  The flavor $\phi$ has $n$ components $(\phi_1,\dots, \phi_n)$, and the unrolled matter hyperplane arrangement is given by removing the points $x=-\phi_i/p$ from the circle.  Thus, we have $n$ chambers arranged in a circle.  For simplicity, we draw each pair of arrows from a matter hyperplane as a double-headed arrow, so the structure we see is:
+	\[\tikz[very thick,xscale=2]{\node[draw,circle ,outer sep=2pt] (A) at (0,-.5) {$\,$}; \node [draw,circle ,outer sep=2pt] (B) at (1,0) {$\,$}; \node [draw,circle,outer sep=2pt] (C) at (2, -.5) {$\,$}; \node[outer sep=2pt,inner sep=0pt] (D) at (-.7,-1.8) {$\iddots$}; \node[outer sep=2pt,inner sep=0pt] (E) at (2.7, -1.8) {$\ddots $};  \draw[<->] (A) to[out=45,in=180](B); \draw[<->] (B) to[out=0,in=135](C);  \draw [->]  (D) to[in=-135,out=60] (A); \draw [->](E) to[out=120,in=-45] (C);}\] 
+	In fact, $A$ is the preprojective algebra of this quiver, which is well-known to give the desired non-commutative resolution. 
+\end{example}
+\begin{example}
+In our usual running example, with $G=GL(2)$, the fundamental alcove is the region $\{(x,y)\in \mathbb{R}^2 \mid 0\leq x-y \leq 1$, and the length 0 elements of the affine Weyl group act by the integer powers of the glide reflection $(y+1, x)$.  The quotient is thus a M\"obius band, which we can identify with the configuration space of pairs of points on a circle.  
+
+We take matter representation $V=\C^2\oplus \C^2$ and thus obtain a chamber structure in Figure \ref{fig:pthroot}.  That is, we have a geometry like
+\[\tikz[very thick,scale=3]{\draw[dir] (0,0) -- (0,1); \draw[dir] (0,1) -- (1,1);  \draw (0,.4) -- (.4,.4); \draw (.4,.4) -- (.4,1); \draw[dashed] (0,0) -- (1,1);\node at (.12,.3){$A$}; \node at (.2,.7){$B$}; \node at (.6,.8){$C$};}\]	where the solid lines are matter hyperplanes, dashed lines are root hyperplanes, and the lines with arrows indicate gluing to obtain a M\"obius strip with dashed boundary.  Thus, we have between $A$ and $B$ two adjacencies and thus two {\it pairs} of arrows, and similarly with $B$ and $C$, with $A$ and $C$ both having self-loops corresponding to the adjacent root hyperplane. 
+\[\tikz[very thick,xscale=2]{\node[draw,circle ,outer sep=2pt] (A) at (0,0) {$A$}; \node [draw,circle ,outer sep=2pt] (B) at (1,0) {$B$}; \node [draw,circle,outer sep=2pt] (C) at (2,0) {$C$}; \draw[->] (A.160) to[out=125,in=90] (-.5,0) to[out=-90,in=-125] (A.-160); \draw[->] (C.20) to[out=55,in=90] (2.5,0) to[out=-90,in=-55] (C.-20); \draw[<->] (A) to[out=45,in=135](B); \draw[<->] (A) to[out=-45,in=-135](B); \draw[<->] (B) to[out=45,in=135](C); \draw[<->] (B) to[out=-45,in=-135](C);}\] 
+\end{example}
+
+\section{Schobers and wall-crossing}
+\label{sec:schob-wall-cross}
+
+Our final section will concern the theory of {\bf twisting functors} (also called {\bf wall-crossing functors}), and in particular, their connection to the theory of Schobers.  These functors are discussed for general symplectic singularities in \cite[\S 2.5.1]{losev2017modular}.  Schobers constructed from categories of coherent sheaves and variation of GIT have already appeared in work of Donovan \cite{donovan2017perverse} and Halpern-Leistner and Shipman \cite{HLS}.  These works have mostly focused on a single wall-crossing, rather than a more complicated hyperplane arrangement, but the simplicity of Coulomb branches compared to other symplectic singularities gives us a tighter control over the structures appearing.  
+
+We will first give some preliminary results on Morita contexts.  These are, of course, standard objects of study in non-commutative geometry and algebra, but their connections to spherical functors and thus to Schobers seem to have mostly escaped notice.  Then, we turn to the construction of a Schober and thus a $\pi_1$-action from the algebraic and geometric objects considered earlier in the paper.  We'll note here that essentially identical arguments will construct Schobers in many similar contexts where actions of fundamental groups have been constructed, in particular for the twisting and shuffling functors in characteristic 0 considered in \cite{BLPWquant,BLPWgco}.
+
+We'll also note that it seems quite likely that this argument proceeds essentially identically for all symplectic resolutions of singularities.  However, both for reasons of notational convenience, and avoiding certain technical difficulties (in particular, proving the analogue of Lemma \ref{lem:just-hyperplanes}), we will restrict ourselves to the case of Coulomb branches. 
+
+ \subsection{Morita contexts and spherical functors}
+\label{sec:morita-cont-spher}
+
+Recall that a {\bf Morita} context (called ``pre-equivalence data'' in \cite{BassK}) is a category with 2 objects $\{+,-\}$.  The endomorphism algebras of the two objects give two rings $R_+$ and $R_-$, and the Hom spaces give  $R_\pm$-$R_\mp$ bimodules ${}_{\pm}R_\mp$.  Let $I_\pm={}_\pm R_\mp\cdot {}_\mp R_\pm$ be the two-sided ideal of morphisms factoring through $\mp$, and $Q_\pm=R_{\pm}/I_{\pm}$.  For simplicity, we assume that $R_+$ and $R_-$ have finite global dimension. Modules over this category are the equivalent to modules over the ``matrix'' ring \[R=
+\begin{bmatrix}
+  R_+ & {}_+R_-\\
+   {}_-R_+ & R_-
+ \end{bmatrix}\]
+Let $e_+,e_-$ be the identities on the 2-objects. For any context, we have quotient functors $q_{\pm}\colon R\mmod \to R_{\pm}\mmod$ with $q_{\pm}(M)=e_{\pm}M=e_{\pm}R\otimes_RM=\Hom_{R}(Re_{\pm},M)$.  This functor has left and right adjoints \[{}^*q_{\pm}(N)=Re_{\pm}\otimes_{R_{\pm}}N\qquad q_{\pm}^*(N)=\Hom_{R_{\pm}}(e_{\pm}R,N).\]  Of course, both of these functors are fully faithful.  The images of their derived functors thus give two copies of $\mathcal{E}_{\pm}:=D^b(R_{\pm}\mmod)$ in $\mathcal{E}_0 =D^b(R\mmod)$ which are the left and right perpendiculars of $\mathcal{F}_{\pm}$, the subcategory of the derived category of $D^b(R\mmod)$ which become acyclic after applying $e_{\pm}$.  This can be identified with modules over the dg-algebra $F_{\pm}=\Ext_R^\bullet(Q_{\mp},Q_{\mp})$.  The inclusion $\xi_{\pm}$ of this subcategory can then be identified with $Q_{\mp}\Lotimes_{F_{\pm}}-$.  Thus, left and right adjoints of this functor are given by \[{}^*\xi_{\pm}(M)=Q_{\mp}\Lotimes_{R}-\qquad \xi_{\pm}^*(M)=\RHom_{R}(Q_{\mp}, M).\]
+
+The inclusions $j_{\pm}=q_{\pm}^*$ and $\xi_{\pm}$ thus fit in the setup of \cite[\S 3.C]{KSschobers}.  Consider the composition $S=q_{\pm}\circ \xi_{\mp}$.  This has left and right adjoints \[L={}^*\xi_{\mp}\circ {}^*q_{\pm} =Q_{\pm}\Lotimes_{R_{\pm}}- \qquad R=\xi_{\mp} ^*\circ q_{\pm}^*= \RHom_{R_{\pm}}(Q_{\pm}, -).  \]
+
+
+Consider the functors \[{}^*j_{\pm}\circ j_{\mp}=q_{\pm}\circ q_{\mp}^*={}_{\pm}R_{\mp}\Lotimes_{R_{\mp}}-\colon  \mathcal{E}_{\mp}\to \mathcal{E}_{\pm} \]
+\begin{lemma}\label{lem:equiv-sphere}
+  If ${}^*j_{\pm}\circ j_{\mp}$ and ${}^*j_{\mp}\circ j_{\pm}$ are equivalences of derived categories, then the data above define a spherical pair in the sense of Kapranov and Schechtman \cite[\S 3.C]{KSschobers}, and the functor $S$ is spherical.
+\end{lemma}
+\begin{proof}
+  In addition to our hypotheses, we need to prove that $\xi_{\mp}^*\circ \xi_{\pm}$ are equivalences of derived categories.  If ${}_{\mp}R_{\pm}\Lotimes_{R_{\pm}}-$ is an equivalence, then its inverse is its adjoint $\Hom_{R_{\mp}}({}_{\mp}R_{\pm},-)$.   Thus, $N'={}^{**}j_{\mp}( {}_{\mp}R_{\pm}\Lotimes_{R_{\pm}}N)$ is an $R$-module such that ${}^*j_{\pm}(N')\cong N$.  This shows we have a natural map $j_{\pm}(N)\to N'$, which is a quasi-isomorphism after applying $e_{\pm}$ (by the observation we just made) and a quasi-isomorphism after applying $e_{\mp}$, by the isomorphism of ${}^*j_{\mp}{}^{**}j_{\mp}$ to the identity.
+
+  Thus, $j_{\pm}$ and ${}^{**}j_{\mp}$ have the same image.  Obviously, $\mathcal{F}_{\pm}$ is the left orthogonal to this image, and $\mathcal{F}_{\mp}$ its right orthogonal.  Thus, $\xi_{\mp}^*\circ \xi_{\pm}$ is the mutation with respect to these dual semi-orthogonal decompositions.  Note that this is a special case of \cite[Thm. 3.11]{HLS}, with the ambient dg-category being the derived category of $R$-modules, the category $\mathcal{A}$ being the image of $j_{\pm}$ and  ${}^{**}j_{\mp}$, and $\mathcal{A}'$ the image of $j_{\mp}$ and  ${}^{**}j_{\pm}$.
+\end{proof}
+
+
+\subsection{Wall-crossing functors}
+\label{sec:wall-cross-funct}
+
+
+For different choices of flavor $\gls{flav}$, we obtain different quantizations of
+the structure sheaf of $\fM$.  Quantized line bundles give canonical
+equivalences of categories between the categories of modules over
+these sheaves, as in \cite{BLPWquant}.  Note that the isomorphism type
+of the underlying sheaf only depends on $\phi$ considered modulo $p$,
+but for different elements of the same coset, there is still a
+non-trivial autoequivalence, induced by tensoring with the
+quantizations of $p$th power line bundles.  Similarly, for each
+element of the Weyl group $W_F$, there's an isomorphism between the
+section algebras of $\EuScript{A}_{\phi}$ and $ \EuScript{A}_{w\cdot
+  \phi}$; together, these give us such a morphism for every $w\in
+\widehat{W}_F$, affine Weyl group of $F$.  We thus can consider the twisting bimodule
+$\glslink{Twist}{{}_{w\phi'}T_{\phi}}$ discussed earlier, turned into a
+$\EuScript{A}_{\phi'}\operatorname{-}\EuScript{A}_{\phi}$-bimodule
+using the isomorphism above to twist the left action.
+
+\begin{definition}
+Given flavors $\gls{flav}$ and $\phi'$, and $w\in \widehat{W}_F$, we define the {\bf twisting} or {\bf wall-crossing functor} $\glslink{Wall}{\Phi_w^{\phi',\phi}}\colon D^b(\EuScript{A}_{\phi}\mmod) \to D^b(\EuScript{A}_{\phi'}\mmod)$ to be the derived tensor product with $\glslink{Twist}{{}_{w\phi'}T_{\phi}}$.
+\end{definition}
+One can think of this functor as measuring the different sets $\gls{Lambda},\Lambda'$ attached to the parameters $\phi',\phi$.  In particular:
+\begin{lemma}\label{lem:Lam-same}
+  If $\phi, \phi'$ are generic and $\gls{Lambda}=\Lambda'$, then ${}_{\phi'}T_{\phi}$ induces a Morita equivalence and $\Phi_1^{\phi',\phi}$ is an exact functor.
+\end{lemma}
+\begin{proof}
+  Of course, we have natural maps ${}_{\phi'}T_{\phi}\otimes {}_{\phi}T_{\phi'}\to \EuScript{A}_{\phi'}$ and similarly with $\phi,\phi'$ reversed.  This gives a Morita context, as discussed above, and by \cite[II.3.4]{BassK}, we will obtain the desired Morita equivalence if we prove both of these maps are surjective.
+
+  If this map is not surjective, then its image is a proper 2-sided ideal (sometimes called the trace of the Morita context).  Since $  \EuScript{A}_{\phi'}$ is finitely generated over its center, the quotient by this ideal has the same property, so it has at least one finite dimensional simple module $L$, which thus satisfies $ {}_{\phi}T_{\phi'}\otimes_{\EuScript{A}_{\phi'}}L=0$.  Thus, any chamber that appears in the support of $L$ must lie in $\Lambda'$ but not $\Lambda$, which is impossible since these sets coincide.  In fact, it's clear from Theorem \ref{thm:pStein-equiv} that $ {}_{\phi}T_{\phi'}\otimes_{\EuScript{A}_{\phi'}}-$ induces an equivalence on the category of finite dimensional representations.  Thus, we must have that ${}_{\phi'}T_{\phi}\otimes {}_{\phi}T_{\phi'}\to \EuScript{A}_{\phi'}$ is surjective, and similarly with $\phi, \phi'$ reversed.
+\end{proof}
+
+Recall that $\gls{tM}$ depends on a choice of $\chi\in \ft_{F,\Z}$.  This dependence is rather crude, though.  By the usual theory of variation of variation of GIT \cite{DHGIT}, the space $\ft_{F,\R}$ is cut into a finite number of convex cones, such that $\tilde{\fM}$ is smooth when $\chi$ lies in the interior of one of these cones, called ``chambers'' in \cite{DHGIT}. An element $\chi'$ will give an ample line bundle on $\tilde{\fM}$ if it is in the chamber as $\chi$ (since their stable loci coincide), or a semi-ample bundle if it lies in the boundary of the cone (since the semi-stable locus becomes strictly larger by the Hilbert-Mumford criterion).   Since by Corollary \ref{cor:BFN-split}, the variety $\fM$ is Frobenius split, \cite[Thm. 1.4.8]{BrionKumar} shows that the corresponding line bundle induced by $\chi'$ has vanishing cohomology for all $\chi'$ in the closure of the chamber containing $\chi$.
+\begin{lemma}\label{lem:localize-twist}
+If $\chi'=w\cdot \phi'-\phi$ lies in the closure of the chamber containing $\chi$, then we have a natural isomorphism \[\Phi_w^{\phi',\phi}(M)\cong\Rsecs({}_{w\phi'}\mathcal{L}_{\phi}\otimes \LLoc(M))\] where the action on the RHS is twisted by the isomorphism $\EuScript{A}_{\phi'}\cong \EuScript{A}_{w\cdot \phi'}$.  
+\end{lemma}
+\begin{proof}
+It's enough to check this on the algebra $\EuScript{A}_{\phi}$ itself. Thus, we need to show that $H^i(\fM;{}_{w\phi'}\mathcal{L}_{\phi})=0$ for $i>0$.  This is clear since this is a quantization of the line bundle induced by $\chi'$, which has trivial cohomology as discussed above.
+\end{proof}
+
+\begin{corollary}
+If derived localization holds at $\phi'$ and $\phi$, then the functor $\glslink{Wall}{\Phi_w^{\phi',\phi}}$ is an equivalence of categories. 
+\end{corollary}
+
+Corresponding to a flavor $\phi$, we have a set $\gls{LambdaR}$ as defined as the vectors in $\Z^d$ such that $\gls{rACp}_{\Ba}\neq 0$; this agrees with $\gls{Lambda}$ for $p$ sufficiently large.  The set $\Lambda^{\mathbb{R}}$ is locally constant, and only changes when $\psi=\phi_{1/p}$ lies on a hyperplanes in $\ft_{1,F,\R}$ defined by a circuit in the unrolled matter hyperplanes.  We can thus cut the set $\gls{ft1}_{1,F,\Z}$ into chambers according to what the set $\Lambda^\R$ is; these are chambers induced by the hyperplane arrangement defined by the circuits of the unrolled matter hyperplanes.  We will use repeatedly that by choosing $p$ sufficiently large, we make sure that any non-empty chamber in $\ft_{1,F,\R}$ contains a point of the form $\phi_{1/p}$ and in fact, any point in $\ft_{1,F,\R}$ can be approximated arbitrarily well by points satisfying this property.  
+Combining Lemmata \ref{lem:Lam-same} and \ref{lem:localize-twist}, we see an important compatibility for the twisting functors:
+\begin{lemma}\label{lem:just-hyperplanes}
+  For $p$ sufficiently large, if no hyperplane $H_\al$ separates both $\phi$ and $\phi''$ from $\phi'$, then ${}_{\phi''}T_{\phi'}\Lotimes_{\EuScript{A}_{\phi'}} {}_{\phi'}T_{\phi}\cong {}_{\phi''}T_{\phi}$.
+\end{lemma}
+\begin{proof}
+We induct on the number $m$ of hyperplanes separating $\phi$ and $\phi''$.  If $m=1$, then this is trivial by Lemma  \ref{lem:Lam-same}, since $\phi'$ must be in the same chamber as one the endpoints.  Let $\phi_1$ be a point in the first chamber that the line segment joining $\phi $ to $\phi'$ passes through.  Given that $p$ is sufficiently large, we can assume that there is a point in this chamber such that $\phi'-\phi_1$ and $\phi_1-\phi$ lie in the same GIT chamber, so we have ${}_{\phi'}T_{\phi_1}\Lotimes_{\EuScript{A}_{\phi_1}} {}_{\phi_1}T_{\phi}\cong {}_{\phi'}T_{\phi}$.  By induction, ${}_{\phi}T_{\phi'}\Lotimes_{\EuScript{A}_{\phi'}} {}_{\phi'}T_{\phi_1}\cong {}_{\phi}T_{\phi_1}$.  Thus, it suffices to prove that ${}_{\phi''}T_{\phi_1}\Lotimes_{\EuScript{A}_{\phi_1}} {}_{\phi_1}T_{\phi}\cong {}_{\phi''}T_{\phi}$.  By replacing $\phi$ by another point in its chamber (again, we use that $p$ is sufficiently large), we can assume that the straight line from $\phi$ to $\phi''$ passes through the chamber of $\phi_{1}$. This completes the proof.
+\end{proof}
+
+
+
+As usual, we'll want to think of this action in a way such that $p$ becomes large and then can be forgotten.  Thus, we will want to take as our basic parameter $\psi=\phi_{1/p}\in \ft_{1,F,\R}$ which we can continuously vary.  Note that the bad locus in $\ft_{1,F,\R}$ where the set $\Lambda^{\mathbb{R}}$ changes is closed under the action of the affine Weyl group $\widehat{W}_F$.  We let $\mathring{\ft}_{1,F}$ denote the complement of the complexifications of these hyperplanes in $\ft_{1,F}=\ft_{1,F,\C}$, and $\mathring{T}_{1,F}$ the image of this locus under the isomorphism $T_{1,F}\cong \ft_{1,F}/\ft_{F,\Z}$.
+
+
+Consider the fundamental group $\pi=\pi_1(\mathring{T}_{1,F}/W_F,\psi)=\pi_1(\mathring{\ft}_{1,F}/\widehat{W}_F,\psi)$. %  As in \cite[\S 6]{BLPWgco}, we can use the van-Kampen theorem to write this as the endomorphisms of an object in the Weyl-Deligne groupoid. The {\bf Deligne groupoid} is the groupoid whose objects are the (infinite) set of chambers in the real locus $\mathring{\ft}_{1,F,\R}$, with an oriented pair of arrows for each adjacency across a hyperplane, and the relation that two minimal length oriented paths between any two vertices are equal.  The automorphisms of any object in this groupoid are
+% the fundamental group $\pi_1(\mathring{\ft}_{1,F},x)$ for a point $x$ in the corresponding chamber.
+% The {\bf Weyl-Deligne groupoid} for the action of $\widehat{W}_F$ on this hyperplane arrangement is the semi-direct product for the induced action of $\widehat{W}_F$ on the quiver discussed above.  Note that this does {\it not} mean that the automorphism groupoids are themselves semi-direct products; this is not necessarily the case.  For example, if we apply this with a Coxeter arrangements, the automorphisms in the Deligne groupoid are the pure braid group, and in the Weyl-Deligne groupoid for the usual Weyl group action, the automorphisms are the full braid group.  
+For each fixed $p$, we can consider the subgroupoid $\pi^{(p)}$ of the fundamental group with objects $\psi=\phi_{1/p}$ given by generic $\phi\in \ft_{1,F,\Z}$ (that is, the values of $\phi$ where derived equivalence holds).  
+
+It is a fact that seems to well-known to experts, though the author has not found any particularly satisfactory reference (this is stated as a conjecture in \cite[\S 3.2.8]{OkGRT}), that:
+\begin{proposition}\label{prop:pi-action}
+For $p$ sufficiently large,  the functors $\Phi_w^{\phi',\phi''}$  define an action of the groupoid $\pi^{(p)}$ that induces an action of $\pi$ on $D^b(\EuScript{A}_{\phi}\mmod)$.
+\end{proposition}
+This should not be a special fact about Coulomb branches, but is expected to be a general fact about symplectic resolutions.  A version of it is proven in \cite{BezRiche} for the case of the Springer resolution and in the case of a Higgs branch by Halpern-Leistener and Sam in \cite{HLSdeq}.
+
+\subsection{Schobers}
+\label{sec:schobers}
+
+
+We'll give a proof of Proposition \ref{prop:pi-action} below, and in fact, show that this action is part of a more complicated structure: a {\it perverse Schober}, a notion proposed by Kapranov and Schechtman \cite{KSschobers}.  Perverse schobers are not, in fact, a structure which has been defined in full generality, but for the complement of a subtorus arrangement, they can be defined using the presentation of the perverse sheaves on a complex vector space stratified by a complexified hyperplane arrangement given by the same authors in \cite{KShyperplane}.
+\begin{definition}
+  Let $Z$ be a finite-dimensional $\R$-affine space, and let $\{H_\gamma\}$ for $\gamma$ running over a (possible infinite) index set be a locally finite hyperplane arrangement.  Let $\nabla$ be the poset of faces of this arrangement.  A {\bf perverse Schober} on the space $Z\otimes_{\R}\C$ stratified by the intersections of the hyperplanes $\{H_\gamma\} $ is an assignment of a dg-category $\mathcal{E}_C$ for each $C\in \nabla$, and   to every pair of faces where $C'\leq C$, an assignment of 
+  {\bf generalization functors} $\gamma_{CC'}:\mathcal{E}_{C'}\to \mathcal{E}_{C}$ and their left adjoints, the  {\bf specialization functors} $\delta_{C'C}\colon \mathcal{E}_{C}\to \mathcal{E}_{C'}$.  These combine to give {\bf transition functors} $\phi_{CC''}=\gamma_{CC'}\delta_{C'C''}$ whenever $\bar{C}\cap \bar{C''}\neq \emptyset$, and $C'$ is the unique open face in this intersection.
+  \begin{enumerate}
+  \item We have isomorphisms of functors $\gamma_{CC'}\gamma_{C'C''}\cong \gamma_{CC''}$  for a triple $C''\leq C'\leq C$ with the usual associativity for a quadruple.  
+  \item If $C'\leq C$, the unit of the adjoint pair $(\delta_{CC'},\gamma_{C'C})$ is an isomorphism of  $\gamma_{C'C}\delta_{CC'}$ to the identity.  This gives a canonical isomorphism between $\phi_{CC''}$ and $\gamma_{CC'}\delta_{C'C''}$ for $C'$ any face in the intersection $\bar{C}\cap \bar{C}''$.  
+  \item If $(C, C', C'')$ is colinear, then we have isomorphisms  $\phi_{CC'}\phi_{C'C''}\cong\phi_{CC''}$ again with associativity for a colinear quadruple $(C_1,C_2,C_3,C_4)$.  This means we can define the functor $\phi_{CC''}$ for any pair of faces $(C,C')$ by taking a generic line segment between these faces, and composing the functors $\phi_{CC_1}\phi_{C_1C_2}\cdots \phi_{C_nC'}$ for $C_1,\dots, C_n$ the full list of faces this line passes through.  
+  \item If $C$ and $C'$ have the same dimension, span the same subspace, and are adjacent across a face with codimension 1 in $C$ and $C'$, then $\phi_{CC'}$ is an equivalence. 
+  \end{enumerate}
+\end{definition}
+\begin{remark}
+  For reasons of convenience here, we have departed a little from the framework of Kapranov and Schechtman.  It would be more consistent with their definition of a Schober on a disk \cite{KSschobers}, to assume that the equivalence $\phi_{CC'}$ will be the twist equivalence of a spherical functor, while it is more convenient for us to present it as the cotwist, as Lemma \ref{lem:equiv-sphere} shows, and the definition of a spherical functor is not totally symmetric. This seems to be a general feature of equivalences arising from Morita contexts.  
+\end{remark}
+
+A Schober on a complex torus $T$ that is smooth on the faces of a subtorus arrangement is just a Schober on the preimage in the universal cover $\ft$, together with an action of $\pi_1(T)$
+%(which you can also think of as locally satisfying the rules above, but for the corresponding subtorus arrangement)
+compatible with all the data above.  
+
+The case we'll be interested in the case where $Z=\gls{ft1}_{1,F,\R}$ and $H_\al$ the hyperplanes defined by the circuits in unrolled matter hyperplanes. Thus, the faces are the sets on which $\Lambda$ is constant.  
+This collection of hyperplanes is invariant under the action of $\widehat{W}_F$.  Thus, we can define a Schober on the quotient $\mathring{T}_{1,F}/W_F\cong \mathring{\ft}_{1,F}/\widehat{W}_F$ by defining a $\widehat{W}_F$-equivariant Schober on $\mathring{\ft}_{1,F}$, which we will do below.  
+
+
+This might concern some readers, since there are infinitely many hyperplanes in this arrangement, and thus infinitely many Schober relations to check.  However, under the action of the affine Weyl group $\widehat{W}_F$, there are only finitely many orbits of faces, hyperplanes, etc., and thus finitely many Schober relations to check, once we have proven the obvious commutations with elements of the affine Weyl group.  In particular, in the section below, we will give a proof where checking each Schober relation might require enlarging the prime $p$.  Since we will only need to this once for each orbit of $\widehat{W}_F$, we can safely enlarge $p$ as much as necessary at each step of the proof, and still have a finite $p$ at the end.  
+
+\subsection{The Schober of quantized modules}
+\label{sec:schob-quant-modul}
+
+There are two natural ways to define a Schober based on a Coulomb branch.  Let us first describe the quantum route, based on the representation theory of the algebras $\gls{efA}$ and the wall-crossing functors of Section \ref{sec:wall-cross-funct}. Accordingly, this Schober is only defined over a positive base field.  Now, choose a disjoint collection of open subsets $U_C\subset Z$ for each face $C$, contained in the star of this face, and having non-trivial intersection with each face in this star.  Let $\mathsf{u}_C$ be the set of points $\phi\in \ft_{1,F;\Z}$ such that derived localization holds at $\phi$ and we have that  $\phi_{1/p}\in U_C$.   If $\mathsf{u}_{C}=\{\phi_1,\dots, \phi_k\}$ then we let  $\EuScript{A}_{C}$ be the matrix algebra where the $(i,j)$ entry is an element of ${}_{\phi_i}T_{\phi_j}$, that is  \[
+  \EuScript{A}_{C}=\begin{bmatrix}
+    \EuScript{A}_{\phi_1} & {}_{\phi_1}T_{\phi_2}& \cdots & {}_{\phi_1}T_{\phi_k}\\    
+     {}_{\phi_2}T_{\phi_1}&\EuScript{A}_{\phi_2} & \cdots & {}_{\phi_2}T_{\phi_k}\\
+     \vdots & \vdots &\ddots & \vdots\\
+      {}_{\phi_k}T_{\phi_1} & {}_{\phi_k}T_{\phi_2} & \cdots &\EuScript{A}_{\phi_k}
+   \end{bmatrix}
+ \]
+ with the obvious multiplication.  Any pair $C$ and $C'$ has a similarly defined bimodule where $\mathsf{u}_{C'}=\{\psi_1,\dots, \psi_h\}$ given by
+  \[
+  T_{C,C'}=\begin{bmatrix}
+    {}_{\phi_1}T_{\psi_k} & {}_{\phi_1}T_{\psi_2}& \cdots & {}_{\phi_1}T_{\psi_k}\\    
+     {}_{\phi_2}T_{\psi_1}& {}_{\phi_2}T_{\psi_2} & \cdots & {}_{\phi_2}T_{\psi_k}\\
+     \vdots & \vdots &\ddots & \vdots\\
+      {}_{\phi_h}T_{\psi_1} & {}_{\phi_h}T_{\psi_2} & \cdots & {}_{\phi_h}T_{\psi_k}
+   \end{bmatrix}
+ \]
+ Of course, we can define this bimodule $T_{\mathsf{u},\mathsf{v}}$ for any pair $\mathsf{u},\mathsf{v}\subset \ft_{1,F,\Z}$; if $\mathsf{u}$ or $\mathsf{v}$ is a singleton, then we omit brackets and just write the single element.   It's easy to check using Lemma \ref{lem:Lam-same} that:
+ \begin{lemma}
+   If we replace $U_C, U_{C'}$ by open sets $U'_C, U_{C'}'$ satisfying the same conditions, then the resulting algebras $\EuScript{A}_{C}$ and $\EuScript{A}_{C}'$ are Morita equivalent via the bimodules $ T_{\mathsf{u}_C,\mathsf{u}'_C}$ and $ T_{\mathsf{u}'_C,\mathsf{u}_C}$, with this Morita equivalence preserving the bimodules $ T_{C,{C'}}'\cong  T_{\mathsf{u}'_{C'},\mathsf{u}_{C'}}\Lotimes_{\EuScript{A}_{{C'}}}  T_{C,{C'}}\Lotimes_{\EuScript{A}_{C}}T_{\mathsf{u}_A,\mathsf{u}'_C}$
+ \end{lemma}
+ Thus the category $\mathcal{E}_C^{(p)}\cong D^-(\EuScript{A}_{C}\mmod)$ is independent of the choice of $U_C$, and only depends on $C$.
+
+ \begin{theorem}\label{thm:p-Schober}
+   The assignment $\mathcal{E}_C^{(p)}\cong D^-(\EuScript{A}_{C}\mmod)$ for all $C\in \nabla$ and $\phi_{CC'}=T_{C,{C'}}\Lotimes_{\EuScript{A}_{C'}}-$ defines a Schober on $\ft_{1,F,\R}$ which is equivariant for the action $\widehat{W}_F$.  
+ \end{theorem}
+ \begin{proof}   
+   First, we note that if $C'\leq C$, then the star of $C$ lies in the star of $C'$, so for any element of $\mathsf{u}_C$, there is an element of $\mathsf{u}_{C'}$ Morita equivalent by the twisting bimodule.  Thus, $\EuScript{A}_{C'}$ is Morita equivalent to the algebra obtained by taking the union of the sets $\mathsf{u}_C\cup \mathsf{u}_{C'}$.  Now, let us check the conditions of a Schober each in turn:
+   \begin{enumerate}[wide]
+   \item As discussed, if $C'' \leq C'\leq C$, then $\EuScript{A}_{C''}$ is Morita equivalent to the set obtained from the union $
+     \mathsf{u}_C\cup \mathsf{u}_{C'}\cup \mathsf{u}_{C''}$.  Thus, we need only prove the corresponding transitivity for any decomposition of $1$ in a ring as the sum of 3 orthogonal idempotents $e+e'+e''$, in which case it is clear.
+ \item Using the union $\mathsf{u}_C\cup \mathsf{u}_{C'}$ again, this is just the fact that for any idempotent, we have $e(Ae\otimes_{eA}M)=M$, giving the required  isomorphism of  $\gamma_{C'C}\delta_{CC'}$ to the identity.
+\item By assumption, if $(C,C',C'')$ are colinear, then we can assume that the line joining them is generic in  the span of these faces.   Let $\EuScript{H}_0$ be the set (possibly empty) of hyperplanes that contain all three faces, $\EuScript{H}_1$ the set of hyperplanes separating $C$ and ${C'}$, and $\EuScript{H}_2$ the set separating ${C'}$ and $C$.
+
+  Choose a point in $\phi\in\mathsf{u}_C$.  We have a functor ${}_{C}T_{\phi}\Lotimes-\colon D^b(\EuScript{A}_\phi\mmod) \to \mathcal{E}_C^{(p)}$ given by the tensor products with ${}_{\phi'}T_\phi$ for all $\phi'\in\mathsf{u}_C$.  Now consider the derived tensor product with ${}_{{C'}}T_C$; since the image of $\EuScript{A}_\phi$ is projective, the composition is the functor of tensor product ${}_{\psi'}T_\phi$ for all $\psi'\in \mathsf{u}_{C'}$, i.e. tensor product with ${}_{C'}T_{\phi}$.
+  For any point $\psi'\in\mathsf{u}_{C'}$, we can find a point in the same chamber such that the straight line to  $\phi$ passes through any hyperplanes in $\EuScript{H}_0$ that separating $\psi$ and $\phi$ before crossing any hyperplanes in $\EuScript{H}_1$.  We can choose $\psi\in \mathsf{u}_{C'}$ on the same side as $\phi$  of all hyperplanes in $\EuScript{H}_0$, so ${}_{\psi'}T_{\psi}\Lotimes_{\EuScript{A}_\psi}{}_{\psi}T_\phi\cong {}_{\psi'}T_{\phi}$ by Lemma \ref{lem:just-hyperplanes}.  That is, we have
+  \[{}_{{C'}}T_C\Lotimes_{\EuScript{A}_C}{}_{C}T_{\phi}\cong {}_{{C'}}T_\psi\Lotimes_{\EuScript{A}_\psi}{}_{\psi}T_\phi.\]  Applying this result a second time with $\chi$ an element of $\mathsf{u}_C$ on the same side of all hyperplanes in  $\EuScript{H}_0$ as $\phi$ and $\psi$, we have
+  \[{}_{C}T_{C'}\Lotimes_{\EuScript{A}_{C'}} {}_{{C'}}T_{C''}\Lotimes_{\EuScript{A}_{C''}}{}_{C''}T_{\phi}\cong {}_{C}T_\phi\cong {}_{C}T_{C''}\Lotimes_{\EuScript{A}_{C''}}{}_{C''}T_{\phi}.\]  Since the projective modules ${}_{C''}T_{\phi}$ for all $\phi$ are generators for $\EuScript{A}_{C''}\mmod$, this establishes that $\phi_{CC'}\phi_{C'C''}=\phi_{CC''}$.  Furthermore, since these isomorphisms are induced by the natural tensor product maps, they are appropriately associative.  
+\item Now, assume that $C$ and ${C'}$ are both $d$-dimensional, and differ across a face of codimension 1.  As before, let $\EuScript{H}_0$ be the hyperplanes that contain both these faces.  Note that for each $\phi\in \mathsf{u}_C$, there is a unique chamber intersecting $\mathsf{u}_C$ separated from $\phi$ by all hyperplanes in $\EuScript{H}_0$ and no others.  Let  $\phi'$ lie in this face.  Then, we have that ${}_{\phi''}T_\phi$ can also be written as $\RHom_{\EuScript{A}_{\phi'}}({}_{\phi'}T_{\phi''}, {}_{\phi'}T_\phi)$ for all $\phi''\in \mathsf{u}_C$, using Lemma \ref{lem:just-hyperplanes} to show that $ {}_{\phi'}T_\phi\cong  {}_{\phi'}T_{\phi''}\Lotimes_{\EuScript{A}_{\phi''}} {}_{\phi''}T_{\phi'}$ and the fact that the inverse of a derived equivalence is its adjoint.
+
+  Now let $\psi,\psi'\in \mathsf{u}_{C'}$ be elements not separated from $\phi,\phi'$ respectively by any hyperplane in $\EuScript{H}_0$.  Applying the argument above and Lemma \ref{lem:just-hyperplanes}  again, we see that
+  \[{}_{{C'}}T_C\Lotimes_{\EuScript{A}_C}{}_{C}T_{\phi}= \RHom_{\EuScript{A}_{\psi'}}({}_{\psi'}T_{{C'}},  {}_{\psi'}T_\phi).\]  The adjoint version of Lemma  \ref{lem:just-hyperplanes} then implies that
+  \[  \RHom_{\EuScript{A}_{C'}}({}_{{C'}}T_C , {}_{{C'}}T_C\Lotimes_{\EuScript{A}_C}{}_{C}T_{\phi})=\RHom_{\EuScript{A}_{\psi'}}({}_{\psi'}T_{C},  {}_{\psi'}T_\phi)={}_{C}T_{\phi}.\]  Again, since the projectives ${}_{C}T_{\phi}$ are generate, the functors $\phi_{{C'}C}$ are thus an equivalence of derived categories.  \qedhere
+ \end{enumerate} 
+ \end{proof}
+
+Note that Losev shows that when $C$ and $C''$ are top dimensional faces and $(C,{C'},C'')$ are colinear with ${C'}\subset \bar{C}\cap \bar{C}''$ , then $\phi_{CC''}$ is not just any equivalence of categories, but a partial Ringel duality functor in an appropriate sense (or rather, the degrading of one) and a perverse equivalence \cite[Thm. 9.10]{losev2017modular}.  It would be interesting to consider whether this is true in the case where $C$ and $C''$ are lower dimensional faces with the same span.    
+
+\subsection{The coherent Schober}
+\label{sec:coherent-schober}
+
+Of course, it is a bit inelegant to consider this Schober over in the case where $\K=\Fp$ for some large $p$; it would preferable to send $p\to \infty $ and replace the algebra $\gls{efA}$  quantizing $\Fp[\fM]$ with the non-commutative resolution $\gls{A}$.    
+
+In order to do this, we must feed every object that appeared in the quantum Schober through the woodchipper of Theorem \ref{thm:pStein-equiv}, which allowed us to construct $A$ in the first place.  
+Applying this result to the bimodule ${}_{\phi'}T_\phi$, we send the wall-crossing functor to tensor product with a bimodule $ {}_{\phi'_{1/p}}\mathsf{\hat{T}}_{\phi_{1/p}}$ over the categories $\glslink{sfBhat}{\hat{\mathsf B}_{\phi'_{1/p}}}$ and $\hat{\mathsf B}_{\phi_{1/p}}$.  Applying Theorem \ref{thm:pStein-equiv} again, but now to the gauge group $\gls{To}$, we shows that we can describe the resulting bimodule as the completion of $ {}_{\phi'_{1/p}}\mathsf{T}_{\phi_{1/p}}$, the bimodule given by the Hom spaces in the quotient $\bar{\mathsf B} =\glslink{scrBTo}{{\mathsf B}^Q} /(\glslink{ft}{\ft_F})$ of the category for $\To$ with  the Lie algebra $\glslink{ft}{\ft_F}$ set to 0 in the morphism spaces (which is well-defined since $h=0$ in the \gls{pthroot} conventions).    
+
+
+We can easily extend the presentation of Theorem \ref{thm:BFN-pres} to $\bar{\mathsf B}$; essentially the only change needed is that we expand the set of objects to include all of $\ft_{\To}$.  In particular, as in Section \ref{sec:cons-repr-theory}, we can replace the object set with just the elements of $\bar{\Lambda}_Q$ and form a category $\mathsf B^{\Lambda_Q} $ by choosing a representative $\eta_{\Ba}$ for each chamber.  Note that the set $\bar{\Lambda}_Q$ contains the sets $\bar{\Lambda}$ and $\bar{\Lambda}'$ corresponding to the flavors $\phi$ and $\phi'$, and the corresponding full subcategories are exactly $\mathsf B^{\bar \Lambda}$ and $\mathsf B^{\bar \Lambda'}$ as defined in Section \ref{sec:cons-repr-theory}.  Composing the equivalence of Theorem \ref{thm:pStein-equiv} with the equivalences
+\begin{equation}
+{\mathsf B}_{\phi_{1/p}}\cong \mathsf B^{\Lambda}\qquad  {\mathsf B}_{\phi'_{1/p}}\cong \mathsf B^{\Lambda'}\qquad \bar{\mathsf B} \cong \mathsf B^{\Lambda_Q},\label{eq:B-Lam}
+\end{equation}
+we have that:
+\begin{lemma}
+  The bimodule ${}_{\phi'}T_\phi$ matches with the completion of the bimodule ${}_{\Lambda'}\mathsf{T}_\Lambda$ that sends $\Ba\in \Lambda,\Bb\in \Lambda'$ to
+  \[(\Bb,\Ba) \mapsto \Hom_{\bar{\mathsf B}}(\eta_{\Ba},\eta_{\Bb}).\]
+\end{lemma}
+This latter bimodule is independent of $p$, and thus can be defined over any field, in particular over $\Q$.  
+ 
+This has a very simple consequence for the structure of the category of modules over the algebra $\EuScript{A}_{C}$.  Consider the set $\bar{\Lambda}_C=\cup_{\phi\in \mathsf{u}_C}\bar{\Lambda}^\R_\phi$; this set is independent of $p$, and describes all the chambers that appear in the preimage of the star of $C$ under the map $\ft_{\To}\to \ft_{F}$.  As with all objects here, we and obtain the result that:
+\begin{proposition}
+  The category $\EuScript{A}_{C}\mmod_{\upsilon'}$ for $\K$ a field of large positive characteristic $p$ is equivalent to the category of modules over the completion of $\mathsf {B}^{
+   \bar{\Lambda}_C}(\K)$, the subcategory of the completion $\bar{\mathsf B}(\K) $ with object set $\eta_{\Ba}$ for $\Ba\in \Lambda_C$.  
+\end{proposition}
+As we exploited earlier, the latter category is well-defined over any base ring, in particular over $\Q$.  By analogy with the noncommutative resolution $\gls{A}$, we let:
+\[A_C=\bigoplus_{\bar{\Ba},\bar{\Bb}\in \bar\Lambda_C}\Hom_{\glslink{BLam}{\mathsf{B}^{\bar{\Lambda}_C}(\Q)}}(\bar{\Ba},\bar{\Bb}).\]
+
+This ring has a presentation directly analogous to that of $\gls{A}$ given in section \ref{sec:presentations}.  We need only adjust Proposition \ref{prop:presentation} by changing the vertex set to be $\Lambda_{C}$.  
+\begin{definition}
+  Let $\mathcal{E}^{\Q}_C=D^-(A_C\mmod)$, and $\phi_{CC'}^{\Q}$ be derived tensor product with the bimodule ${}_{\Lambda_{C}}\mathsf{T}_{\Lambda_{C'}}$.  
+\end{definition}
+Note that if $C$ is maximal dimensional, then $A_C$ is a noncommutative crepant resolution of $\fM$ by Corollary \ref{cor:A-nccr},  so $D^-(A_C\mmod)\cong D^-(\Coh(\fM))$.  Unfortunately we know no such convenient geometric interpretation of the other categories that appear for smaller strata.  
+\begin{theorem}
+  The assignment $\mathcal{E}^{\Q}_C$ and $\phi_{CC'}^{\Q}$ above defines a $\widehat{W}_F$-equivariant Schober.
+\end{theorem}
+\begin{proof}
+  The required isomorphisms are all induced by composition of maps, so in order to show that the Schober relations hold, it is enough to check that we have the Schober relations mod infinitely many primes $p$.  This is clear from comparison with the Schober $\mathcal{E}^{(p)}$ of Theorem \ref{thm:p-Schober} via the functor of Lemma \ref{lem:Gamma-iso}.  
+\end{proof}
+Note the similarity of this action with that defined using the ``magic windows'' approach of \cite{HLSdeq}.  It would be quite interesting to understand how these approaches compare when the same symplectic singularity can be written as both a Higgs and Coulomb branch.
+
+For a fixed basepoint, we can choose a D-equivalence between the nccr $A_C$ for a maximal dimensional face, and the commutative resolution $\tfM$.  This shows that:
+\begin{corollary}
+  The functors $\phi_{CC'}$ define an action of $\pi$ on $D^b(\Coh(\gls{tM}_\Q))$.   
+\end{corollary}
+
+% The proof of \cite[Thm. 6.35]{BLPWgco} is easily modified to show that:
+
+
+
+% Using the equivalence of Proposition \ref{prop:B-equiv}, we can realize this wall-crossing action agrees that induced on the categories $\gls{sfB}(\K)$ using the bimodules ${}_{\phi'_{1/p}}\ft_{\phi''_{1/p}}$. These both are defined over any base ring.  
+
+% Since this  depends on the parameter $\phi'$ only in terms of the set $\bar{\Lambda}'$ associated to it, we can denote this bimodule ${}_{\bar{\Lambda}'}\ft_{\bar{\Lambda}''}$. As before, for each $w\in \widehat{W}_F$, we have an equivalence between $\mathsf{B}^{\bar{\Lambda}'}$ and $\mathsf{B}^{w\bar{\Lambda}'}$, so we can view ${}_{w\bar{\Lambda}'}\ft_{\bar{\Lambda}''}$ as a $\mathsf{B}^{\bar{\Lambda}'}\operatorname{-}\mathsf{B}^{\bar{\Lambda}''}$-bimodule by twisting the left action.
+
+% Since two bimodules over $\mathsf{B}(\Z)$ are isomorphic after base change to $\Q$ if and only if they are isomorphic over $\Fp$ for all sufficiently large $p$, we have:
+% \begin{corollary}\label{cor:coh-act}
+% The functors $\mathsf{\Phi}_w^{\bar{\Lambda}',\bar{\Lambda}''}={}_{w\bar{\Lambda}'}\ft_{\bar{\Lambda}''}\Lotimes -$  induce an action of $\pi$ on $D^b(\mathsf{B}(\Q)\mmod)$ 
+% and using the equivalence of Theorem \ref{th:Q-equiv}, we have an action of $\pi$ on the category $\Coh(\fM_\Q)$. 
+% \end{corollary} 
+
+% This is a slightly dissatisfying statement, since it involves a choice of $\phi$ to fix the action on the category $\Coh(\fM_\Q)$. However, we can check that if $\phi',\phi''$ are in the fundamental alcove for $\widehat{W}_F$, then $(0,\dots, 0)$ lies in both $\Lambda'$ and $\Lambda''$, which immediately implies that  $\mathsf{\Phi}_1^{\bar{\Lambda}',\bar{\Lambda}''} (\mathcal{Q}')=\mathcal{Q}''$, and this shows that the action of Corollary \ref{cor:coh-act} is canonical.  
+
+A long-standing conjecture of Bezrukavnikov and Okounkov connects these actions to enumerative geometry, as discussed in \cite[\S 3.2]{OkGRT}:
+\begin{conjecture}\label{conj:BO}
+The action of $\pi$ on $\Coh(\gls{tM} _\Q)$ categorifies the monodromy of the quantum connection.
+\end{conjecture}
+A positive resolution to this conjecture has been announced by Bezrukavnikov and Okounkov, but as of the current moment, the proof has not appeared.  Of course, it would be quite interesting to understand whether the Schober discussed above contains deeper information about the quantum D-module.  
+
+
+
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "coherent-coulomb"
+%%% End:

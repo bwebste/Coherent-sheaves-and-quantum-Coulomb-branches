@@ -1,0 +1,298 @@
+;; RefTeX parse info file
+;; File: /Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/coherent-coulomb.tex
+;; User: benwebster (Ben Webster)
+
+(set reftex-docstruct-symbol '(
+
+
+(xr ((nil . "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/coherent-coulombII.tex")) "\\\\\\\\\\\\")
+
+(index-tags)
+
+(is-multi t)
+
+(bibview-cache ("DGGH" . "Tudor Dimofte etal. {Cat. Line Oper. 3d $\\mathc"))
+
+(master-dir . "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/")
+
+(label-numbers)
+
+(bof "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/coherent-coulomb.tex")
+
+(bof "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/SD-glos.tex")
+
+(eof "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/SD-glos.tex")
+
+(bof "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex")
+
+(toc "toc" "    1 Introduction" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil 2 "1" "\\section{Introduction}" 3)
+
+("sec:introduction" "s" "Let $\\gls{V}$ be a complex vector space, and let $\\gls{G}$ be a connected reductive algebraic group " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("th:main" "s" "Any BFN Coulomb branch with a BFN resolution has an explicit combinatorially presented non-commutati" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:quiver-gauge" "e" "\\gls{G}=\\prod GL(\\C^{v_i})\\qquad \\gls{V}=\\Big(\\bigoplus_{i\\to j} \\Hom(\\C^{v_i},\\C^{v_j})\\Big)\\bigopl" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+(toc "toc" "      1.1 Motivation from line defects" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil 3 "1.1" "\\subsection{Motivation from line defects}" 5467)
+
+("sec:motivation-from-line" "s" "Before getting bogged down in details, let us try to give a general sketch of our approach. In this " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+(toc "toc" "      1.2 Summary of approach" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil 3 "1.2" "\\subsection{Summary of approach}" 11111)
+
+("sec:summary" "s" "Proving these results depends on comparison with the characteristic $p$ approach of Bezrukavnikov an" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+(toc "toc" "    2 Quantum Coulomb branches" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil 2 "2" "\\section{Quantum Coulomb branches}" 13643)
+
+(toc "toc" "      2.1 Background" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil 3 "2.1" "\\subsection{Background}" 13679)
+
+("sec:background" "s" "Let us recall the construction of quantum Coulomb branches from \\cite{WebSD}. As before, let $\\gls{G" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+(toc "toc" "      2.2 The extended category" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil 3 "2.2" "\\subsection{The extended category}" 19028)
+
+("sec:extended" "s" "The quantization of the Coulomb branch attached to $(G,V)$ appears as an endomorphism algebra in a l" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:aff-cham" "e" "\\acham\\in \\gls{AC}_{\\Ba}=\\{\\xi \\in \\ft_{1, \\To,\\R}\\mid a_i<\\gls{varphimid}_i^{\\operatorname{mid}}(\\x" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:aXa" "e" "{}_{\\acham}\\gls{dVB}_{\\acham'}=\\left\\{(g,v(t))\\in G((t))\\times U_{\\acham}\\mid g\\cdot v(t)\\in U_{\\ach" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("def:extended-BFN" "s" "Let the {\\bf extended BFN category} $\\gls{scrB}^Q$ be the category whose objects are unexceptional c" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:A-B" "e" "\\gls{Asph}=\\Hom_{\\mathscr{B}}(\\second,\\second)\\qquad \\EuScript{A}=\\Hom_{{\\mathscr{B}}}(\\zero,\\zero) " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("pmp" "s" "\\varphi_i^{\\operatorname{mid}}(\\acham'')>n \\qquad \\varphi_i^{\\operatorname{mid}}(\\acham')<n \\qquad \\" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("mpm" "s" "\\varphi_i^{\\operatorname{mid}}(\\acham'')<n \\qquad \\varphi_i^{\\operatorname{mid}}(\\acham')>n\\qquad \\v" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("thm:BFN-pres" "s" "The morphisms in the extended BFN category are generated by \\begin{enumerate} " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:y-def" "i" "$\\gls{yw}_w$ for $w\\in \\gls{What}$, the graph of a lift of $w$: \\begin{equation*} \\gls{yw}_w=[\\big\\{" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:r-def" "i" "$\\glslink{r}{r(\\acham,\\acham')}$ for $\\acham,\\acham'\\in \\ft_{1,\\To,\\R}$ generic \\begin{equation*} r(" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:psi-def" "i" "$\\glslink{Bpsi}{u_{\\al'}}(\\acham)=\\glslink{Bpsi}{u_{\\al-n\\delta}}(\\acham)$ for $\\acham_\\pm$ affine c" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:ract" "s" "\\glslink{r}{r(\\acham,\\acham')} \\cdot f [\\VB_{\\acham'}]&=\\Phi(\\acham,\\acham') f\\cdot [\\VB_{\\acham}]" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:psiact" "s" "\\gls{Bpsi}\\cdot f[\\VB_{\\acham_{\\pm}}]&=\\partial_{\\al}(f)\\cdot [\\VB_{\\acham_{\\mp}}]" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:wact" "s" "\\gls{yw}_w\\cdot f[\\VB_{\\acham}]&=(w\\cdot f)[\\VB_{w\\cdot \\acham}]" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:muact" "s" "\\mu \\cdot f [\\VB_{\\acham}]&=\\mu f\\cdot [\\VB_{\\acham}] " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:dot-commute" "s" "\\mu \\cdot r(\\acham,\\acham') &= r(\\acham,\\acham')\\cdot \\mu " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:weyl1" "s" "y_{\\zeta}\\cdot\\mu\\cdot y_{-\\zeta}&=\\mu+h \\langle \\zeta,\\mu\\rangle " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:wall-cross1" "s" "r(\\acham,\\acham') r(\\acham'',\\acham''')&= \\delta_{\\acham',\\acham''}\\Phi(\\acham,\\acham',\\acham''') r(" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:coweight2" "s" "y_w\\cdot y_{w'}&=y_{ww'}" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:conjugate2" "s" "y_w r(\\acham',\\acham) y_w^{-1}&=r(w\\cdot \\acham',w\\cdot\\acham) " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:weyl2" "s" "y_w \\mu y_w^{-1}&=w\\cdot \\mu" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:psi2" "s" "\\Bpsi_{\\al}^2&=0" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:psi" "s" "\\underbrace{\\Bpsi_{\\al}\\Bpsi_{s_\\al \\beta}\\Bpsi_{s_\\al s_{\\beta}\\al}\\cdots}_{m_{\\al\\be}} &=\\underbra" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:psiconjugate" "s" "y_w\\Bpsi_{\\al}y_{w^{-1}}&=\\Bpsi_{w\\cdot \\al}" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:psipoly" "s" "\\Bpsi_{\\al} \\mu-(s_{\\al}\\cdot\\mu)\\Bpsi_{\\al} &=r(\\eta_{\\mp},\\eta_{\\pm})\\partial_{\\al}(\\mu) " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:triple" "s" "r(\\acham''',\\acham'_-)\\Bpsi_{\\al} r(\\acham'_+,\\acham) -r(\\acham''',\\acham''_-)\\Bpsi_{\\al} r(\\acham''" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("lem:frac-rep" "s" "There is a faithful action of $\\gls{scrB}$ on $K_X:= \\oplus_{\\la\\in X_*(T)}K\\cdot [t^\\la]$ given by " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:ract-frac" "s" "\\gls{r} (\\acham,\\acham') \\cdot f [t^\\la]&=\\Phi(\\acham,\\acham') f\\cdot [t^\\la]" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:psiact-frac" "s" "\\gls{Bpsi}\\cdot f [t^\\la]&=\\frac{s_{\\al}f}{\\al}[t^{s_{\\al}\\la}]-\\frac{f}{\\al}[t^{\\la}]" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:wact-frac" "s" "\\gls{yw}_w\\cdot f[t^\\la]&=(w\\cdot f)[t^{w\\la}]" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:muact-frac" "s" "\\mu \\cdot f [t^\\la]&=\\mu f\\cdot [t^\\la]. " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("lem:Q-rank" "s" "The module $Q_{\\eta}$, considered as a coherent sheaf on $\\K[\\fM]$, is generically free of rank $\\# " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("lem:center-iso" "s" "We have an isomorphism $\\K[\\fM]\\to Z(\\pStein_\\K)$ for $\\K=\\Z$, and thus for any ring $\\K$. " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:aXnua" "e" "\\glslink{scrT}{ {}_{\\phi+\\nu}\\mathscr{T}{}_{\\phi}}(\\acham,\\acham')= H_*^{BM, \\tilde T}\\left({}_{\\ach" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+(toc "toc" "      2.3 Representations" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil 3 "2.3" "\\subsection{Representations}" 32499)
+
+("sec:reps" "s" "Using this presentation, we can analyze the structure of this category of representations in charact" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:W-def" "e" "\\Wei_{\\upsilon,\\acham}(M)=\\{m\\in M(\\acham)\\mid \\mathfrak{m}_{\\upsilon}^Nm=0 \\text{ for } N\\gg 0\\}, " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+(toc "toc" "      2.4 The homogeneous presentation" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil 3 "2.4" "\\subsection{The homogeneous presentation}" 37476)
+
+("sec:homo" "s" "We wish to give a homogeneous presentation of the categories $\\gls{scrAhatup}_{\\upsilon'}$ and $\\gls" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("def:pth-root" "s" "The {\\bf ``\\gls{pthroot}''} conventions for the extended category are taking: \\begin{itemize} " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:p-mid" "e" "\\gls{varphimid}^{\\operatorname{mid}}_i(\\eta_p)=p\\mathsf{\\varphi}^{\\operatorname{mid}}_i(\\eta) " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("fig:pthroot" "f" "NO MATCH FOR CONTEXT REGEXP" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:r-aff-cham" "s" "\\] \\[\\ACs=\\{\\Ba\\in \\Z^{d}\\mid \\rACp_{\\Ba}\\neq 0\\}.\\] The reader should note that we use the \\gls{pth" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("prop:hat-rep" "s" "The category $\\glslink{scrBhatup}{\\mathscr{\\widehat{B}}_{\\upsilon'}}$ has a representation $\\mathscr" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("(\\roman*)" "i" "NO MATCH FOR CONTEXT REGEXP" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:Stein-grading1" "s" "\\deg \\glslink{r}{r(\\acham,\\acham')}=\\deg \\Phi(\\eta,\\eta')+\\deg \\Phi(\\eta',\\eta) " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:Stein-grading2" "s" ". " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("gamma1" "s" " " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("gamma2" "s" " " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("gamma3" "s" " " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("gamma4" "s" " " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("prop:B-equiv" "s" "The functor $\\gamma_{\\mathsf{B}}\\colon \\gls{sfB}\\to \\glslink{scrBhatup}{\\mathscr{\\widehat{B}}_{\\upsi" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:hyperplanes1" "e" "\\glslink{varphimid}{\\varphi_i^{\\operatorname{mid}}}(\\acham_p+\\upsilon')>n\\qquad \\varphi_i^{\\operator" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:hyperplanes2" "e" "\\glslink{varphimid}{\\varphi_i^{\\operatorname{mid}}}(\\acham)>n_{1/p}\\qquad \\varphi_i^{\\operatorname{m" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("rem:coefficients" "s" "We should emphasize that the functor $\\gamma_{\\mathsf{B}}$ is only well-defined over a field of char" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("def:sfA" "s" "We let $\\gls{sfA}(\\K)$ be the category whose objects are the elements of $\\upsilon'+\\gls{ft1}_{1,\\Z}" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("thm:pStein-equiv" "s" "The categories $\\gls{scrAhatup}_{\\upsilon'}$ and $\\widehat{\\mathsf{A}}_p$ are equivalent via the fun" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+(toc "toc" "      2.5 Consequences for representation theory" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil 3 "2.5" "\\subsection{Consequences for representation theory}" 61570)
+
+("sec:cons-repr-theory" "s" "Theorem \\ref{thm:pStein-equiv} on its own has a quite interesting consequence for the behavior of th" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("def:Lambda" "s" "Let $\\gls{Lambda}\\subset \\Z^{d}$ be the vectors such that $\\rACp_{\\Ba}$ contains $(\\zero-\\xi)_{1/p}$" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("def:BLam" "s" "For a fixed $\\gls{barLambda}$, we let $\\glslink{BLam}{\\mathsf{B}^{\\bar \\Lambda}(\\K)}$ for any commut" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+("eq:A-def" "e" "\\gls{A}(\\K)=\\bigoplus_{\\bar{\\Ba},\\bar{\\Bb}\\in \\bar\\Lambda^{\\R}}\\Hom_{\\glslink{BLam}{\\mathsf{B}^{\\bar" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex" nil)
+
+(eof "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/preliminaries.tex")
+
+(bof "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex")
+
+(toc "toc" "    3 Relation to geometry" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil 2 "3" "\\section{Relation to geometry}" 1)
+
+("sec:geometry" "s" "Now, we turn to relating this approach to the study of coherent sheaves on resolved Coulomb branches" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+(toc "toc" "      3.1 Frobenius constant quantization" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil 3 "3.1" "\\subsection{Frobenius constant quantization}" 515)
+
+("sec:frobenius-splitting" "s" "A natural property to consider for varieties in characteristic $p$ is whether they are Frobenius spl" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" 2715)
+
+("prop:abelian-splitting" "s" "The map \\[\\kappa(f\\cdot r_\\la)= \\begin{cases} \\kappa_0(f) r_{\\la/p} & \\la/p\\in \\ft_\\Z" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("prop:nonabelian-splitting" "s" "There is a Frobenius splitting $\\kappa\\colon \\K[\\fM]\\to \\K[\\fM]$ such that \\begin{equation} \\kappa(\\" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("eq:nonabelian-splitting" "e" "\\kappa(\\mathbbm{m}_{\\la}(f))= \\begin{cases} \\mathbbm{m}_{\\la/p}(\\kappa_0(f)) & \\la/p\\in \\ft_\\Z" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("cor:BFN-split" "s" "Any partial BFN resolution is Frobenius split. " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("sec:localization" "s" "There are two natural ways to view $\\EuScript{A}_h^{\\operatorname{sph}}$ as a sheaf of algebras on $" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" 6707)
+
+("eq:qham" "e" "\\EuScript{A}_{h}^{\\operatorname{sph}}=\\End_{\\EuScript{A}_{h,\\To}^{\\operatorname{sph}} }(\\EuScript{Q}" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+(toc "toc" "      3.2 Homogeneous coordinate rings" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil 3 "3.2" "\\subsection{Homogeneous coordinate rings}" 10273)
+
+("eq:proj-coord" "e" "T\\cong \\bigoplus_{m\\geq 0}\\Gamma(\\tilde{\\fM};\\cO(m))\\cong \\bigoplus_{m\\geq 0}\\EuScript{Q}_0^{\\chi^m}" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+(toc "toc" "      3.3 Infinitesimal splittings" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil 3 "3.3" "\\subsection{Infinitesimal splittings}" 14928)
+
+("eq:summand-hom" "e" "\\Hom_{\\hat{\\Isalg}_\\phi}(e_{\\mu}\\hat{\\Isalg}_\\phi, e_{\\mu'}\\hat{\\Isalg}_\\phi)\\cong \\Gamma(\\tilde{\\fM" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("lem:A-H" "s" "There is a fully faithful functor from $\\widehat{\\mathscr{A}}_{\\mathbb{F}_p}$ to the category of rig" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("cor:Q-splitting" "s" "The vector bundle $\\hat{\\mathcal{Q}}\\cong \\bigoplus\\glslink{hcQ}{ \\hat{\\mathcal{Q}}_\\mu}$ is a split" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+(toc "toc" "      3.4 Lifting to characteristic 0" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil 3 "3.4" "\\subsection{Lifting to characteristic 0}" 21665)
+
+("lem:Gamma-iso" "s" "There is a fully-faithful functor $\\mathsf{Q}\\colon \\gls{sfB}\\to \\Coh^{\\ell \\!f}(\\hat{\\fM})$ sending" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("lem:Frob-or-B" "s" "The functor $\\mathsf{Q}$ when combined with quantum Frobenius $\\sigma$ or the functor $\\gamma\\colon " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+(toc "toc" "      3.5 Derived localization" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil 3 "3.5" "\\subsection{Derived localization}" 26909)
+
+("cor:cohomology-vanishing" "s" "For any prime $p$, we have the higher cohomology vanishing $H^i(\\gls{tM};\\cO)=0$ for all $i>0$. " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("lem:upper-bound" "s" "There is an integer $N$, such that for any $p$, and any line parallel to $\\chi$ in $\\gls{ft1}_{1,\\Fp" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("lem:tiling-localization" "s" "The vector bundle $\\mathcal{Q}^{\\Fp}=\\bigoplus_{\\mu}\\glslink{cQ}{\\mathcal{Q}_\\mu^{\\Fp}}$ is a tiltin" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("lem:segment" "s" "For a fixed $\\gls{barLambda}$ with $R_{\\bar{\\Lambda}}$ open and non-empty and a fixed integer $N$, t" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("thm:asymptotic-derived" "s" "If $\\phi$ is a generic parameter with $\\gls{barLambda}$ as fixed above, and $p>M$, then derived loca" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("lem:doesnt-depend2" "s" "The vector bundle $\\glslink{cQ}{\\mathcal{Q}_\\mu^{\\K}}$ only depends on which element of $\\gls{barLam" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("th:Q-equiv" "s" "If $\\psi$ is a generic parameter, the vector bundle $\\glslink{cQQ}{\\mathcal{Q}^{\\mathbb{Q}}_\\phi}$ o" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+(toc "toc" "      3.6 Non-commutative crepant resolutions" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil 3 "3.6" "\\subsection{Non-commutative crepant resolutions}" 37167)
+
+("sec:non-comm-crep" "s" "Recall the notion of a {\\bf non-commutative crepant resolution} of the affine variety $\\gls{Coulomb}" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("lem:tilt-nccr" "s" "Suppose $\\mathcal{T}$ is a tilting generator on a resolution $\\gls{tM}$ such that the structure shea" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("cor:A-nccr" "s" "The ring $\\gls{A}$ is a non-commutative crepant resolution of the Coulomb branch $\\fM$. " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+(toc "toc" "      3.7 Presentations" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil 3 "3.7" "\\subsection{Presentations}" 39190)
+
+("sec:presentations" "s" "For the sanity of the reader, let us try to give a more explicit description of the resulting algebr" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("prop:presentation" "s" "The algebra $\\gls{A}$ is a quotient of the path algebra of the quiver where: \\begin{enumerate} " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+(toc "toc" "    4 Schobers and wall-crossing" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil 2 "4" "\\section{Schobers and wall-crossing}" 45226)
+
+("sec:schob-wall-cross" "s" "Our final section will concern the theory of {\\bf twisting functors} (also called {\\bf wall-crossing" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+(toc "toc" "      4.1 Morita contexts and spherical functors" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil 3 "4.1" "\\subsection{Morita contexts and spherical functors}" 47084)
+
+("sec:morita-cont-spher" "s" "Recall that a {\\bf Morita} context (called ``pre-equivalence data'' in \\cite{BassK}) is a category w" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("lem:equiv-sphere" "s" "If ${}^*j_{\\pm}\\circ j_{\\mp}$ and ${}^*j_{\\mp}\\circ j_{\\pm}$ are equivalences of derived categories," "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+(toc "toc" "      4.2 Wall-crossing functors" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil 3 "4.2" "\\subsection{Wall-crossing functors}" 50889)
+
+("sec:wall-cross-funct" "s" "For different choices of flavor $\\gls{flav}$, we obtain different quantizations of the structure she" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("lem:Lam-same" "s" "If $\\phi, \\phi'$ are generic and $\\gls{Lambda}=\\Lambda'$, then ${}_{\\phi'}T_{\\phi}$ induces a Morita" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("lem:localize-twist" "s" "If $\\chi'=w\\cdot \\phi'-\\phi$ lies in the closure of the chamber containing $\\chi$, then we have a na" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("lem:just-hyperplanes" "s" "For $p$ sufficiently large, if no hyperplane $H_\\al$ separates both $\\phi$ and $\\phi''$ from $\\phi'$" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("prop:pi-action" "s" "For $p$ sufficiently large, the functors $\\Phi_w^{\\phi',\\phi''}$ define an action of the groupoid $\\" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+(toc "toc" "      4.3 Schobers" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil 3 "4.3" "\\subsection{Schobers}" 60925)
+
+("sec:schobers" "s" "We'll give a proof of Proposition \\ref{prop:pi-action} below, and in fact, show that this action is " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+(toc "toc" "      4.4 The Schober of quantized modules" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil 3 "4.4" "\\subsection{The Schober of quantized modules}" 65802)
+
+("sec:schob-quant-modul" "s" "There are two natural ways to define a Schober based on a Coulomb branch. Let us first desribe the q" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("thm:p-Schober" "s" "The assignment $\\mathcal{E}_C^{(p)}\\cong D^-(\\EuScript{A}_{C}\\mmod)$ for all $C\\in \\nabla$ and $\\phi" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+(toc "toc" "      4.5 The coherent Schober" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil 3 "4.5" "\\subsection{The coherent Schober}" 74073)
+
+("sec:coherent-schober" "s" "Of course, it is a bit inelegant to consider this Schober over in the case where $\\K=\\Fp$ for some l" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("eq:B-Lam" "e" "{\\mathsf B}_{\\phi_{1/p}}\\cong \\mathsf B^{\\Lambda}\\qquad {\\mathsf B}_{\\phi'_{1/p}}\\cong \\mathsf B^{\\L" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+("cor:coh-act" "s" "% The functors $\\mathsf{\\Phi}_w^{\\bar{\\Lambda}',\\bar{\\Lambda}''}={}_{w\\bar{\\Lambda}'}\\ft_{\\bar{\\Lamb" "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" 80666)
+
+("conj:BO" "s" "The action of $\\pi$ on $\\Coh(\\gls{tM} _\\Q)$ categorifies the monodromy of the quantum connection. " "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex" nil)
+
+(eof "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/geometry.tex")
+
+(bib "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/gen.bib")
+
+(xr-doc nil "coherent-coulombII")
+
+(eof "/Users/benwebster/Dropbox/Apps/ShareLaTeX/Coherent sheaves and quantum Coulomb branches/coherent-coulomb.tex")
+))
+

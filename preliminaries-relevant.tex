@@ -1,0 +1,1200 @@
+
+
+\section{Introduction}
+\label{sec:introduction}
+
+Let $\gls{V}$ be a complex vector space, and let $\gls{G}$ be a connected reductive
+algebraic group with a fixed faithful linear action on $V$. 
+Attached to this data, we have a symplectic variety $\gls{Coulomb}$ called the {\bf
+  Coulomb branch}, defined by Braverman, Finkelberg and Nakajima \cite{BFN},
+based on proposals in the physics literature. Many interesting
+varieties appear this way, including quiver varieties in finite and
+affine type A, hypertoric varieties and slices between Schubert cells in affine Grassmannians.  Part of the BFN construction is
+the construction of a number of partial resolutions $\gls{tM}$ of $\fM$; we'll
+call one of these a {\bf BFN resolution} if it is a resolution of singularities.
+
+Bezrukavnikov and Kaledin have developed a general theory of quantizations
+of algebraic varieties in arbitrary characteristic
+\cite{BK04a,BKpos} and Kaledin showed that this theory can
+be applied to construct tilting generators on symplectic resolutions
+of singularities \cite{KalDEQ}.  Kaledin's theory is very powerful,
+but not very concrete from the perspective of a representation theorist.
+In particular, this work shows that the category of coherent sheaves on a conic
+symplectic resolution is derived equivalent to the category of modules
+over an algebra $A$ (actually to many different algebras, one for each 
+choice of a quantization parameter), but in any particular case, this algebra is quite
+challenging to calculate.  Our goal in this paper is to develop
+Kaledin's theory as explicitly as possible in the case of Coulomb
+branches and in particular to describe this algebra $A$.  We will show:
+\begin{itheorem}\label{th:main}
+Any BFN Coulomb branch with a BFN resolution has an explicit
+combinatorially presented non-commutative resolution of singularities
+$\gls{A}$.  The category $D^b(A\mmod)$ is  equivalent to the derived category of coherent sheaves on any BFN resolution via an explicit tilting generator.
+\end{itheorem}
+For readers who prefer to live in characteristic 0 to characteristic
+$p$, we should emphasize that the construction of this non-commutative
+resolution $A$ and its tilting generator have a construction which is
+characteristic free (that is, over $\Z$);  however, we use reduction
+to characteristic $p$ and comparison to the Bezrukavnikov-Kaledin
+method to confirm Theorem \ref{th:main}.
+
+Of course, this theorem is only of interest to a reader who knows some
+examples of Coulomb branches with BFN resolutions.  Most interesting
+come from a quiver gauge theory, that is,
+the case which leads to Nakajima quiver varieties as Higgs branches.
+Following Nakajima's notation, for a quiver $\Gamma$ with vertex set $\vertex$,
+consider dimension vectors $\Bv,\Bw\colon \vertex\to \Z_{\geq 0}$, and
+the group and representation
+\begin{equation}
+\gls{G}=\prod GL(\C^{v_i})\qquad \gls{V}=\Big(\bigoplus_{i\to j}
+\Hom(\C^{v_i},\C^{v_j})\Big)\bigoplus \Big(\bigoplus_{i\in {\vertex}}
+  \Hom(\C^{w_i},\C^{v_i}) \Big),\label{eq:quiver-gauge}
+\end{equation}
+  with the obvious induced action.  In this
+case, the algebra $A$ is a version of a KLR algebra drawn on a
+cylinder, as we will show in the second part of this paper \cite{WebcohII}.  Note
+that:
+\begin{enumerate}
+\item When the underlying quiver is of type A, then the resulting
+  Coulomb branch is the Slodowy slice to one nilpotent orbit inside
+  another in a type A nilcone.  The BFN resolutions in this case are
+  exactly those which arise from taking the preimage under a
+  resolution of the larger orbit closure by $T^*(SL_n/P)$ for a
+  parabolic $P$. 
+\item When the underlying quiver is of type D or E, the Coulomb branch is isomorphic to an affine Grassmannian slice, as shown in
+  \cite[App. B]{BFNplus}.
+\item When the underlying quiver is a loop, the resulting Coulomb
+  branch is the $v$-fold symmetric product of the singular surface
+  $S=\C^2/(\Z/w\Z)$.  In particular, one of the BFN resolutions we obtain
+ is the Hilbert scheme of $v$ points on the crepant resolution $\tilde
+ S$.  
+\item When the underlying graph is an $n$-cycle, we
+  obtain a Nakajima quiver variety (or more generally a bow variety) for a cycle of size $w=w_i$ whose
+  dimension vectors are related to $\Bv,\Bw$ by a version of
+  rank-level duality \cite{NTbow}, including both the results
+  above as special cases.
+\end{enumerate}
+
+The algebra $\gls{A}$,
+which appears as endomorphisms of this tilting generator, can be
+interpreted in three very interesting ways:
+\begin{enumerate}
+\item it can be described algebraically  as a finitely generated algebra constructed directly from the combinatorics of the group $G$ and representation $V$.
+\item it can also be described as a convolution algebra in the
+  extended BFN category of \cite{WebSD}, with adjusted flavor and $h=0$ (we
+  call these ``\gls{pthroot} conventions.'').
+\item it is the endomorphism algebra of a finite sum of line
+  defects in the corresponding $\mathcal{N}=4$ supersymmetric $3d$
+  gauge theory (see \cite{DGGH} for a more thorough discussion of this
+  category).
+\end{enumerate}
+The equivalence of these descriptions is discussed in \cite{WebSD}:
+the equivalence of (1) and (2) is \cite[Th. 3.11]{WebSD} and of (2)
+and (3) is\cite[Rem. 3.6]{WebSD};  the latter is a motivational
+statement rather than a theorem since we are not working with a
+precise definition of the category of line defects.  We expect this
+will be remedied in \cite{DGGH}.
+
+\subsection{Motivation from line defects}
+\label{sec:motivation-from-line}
+
+Before getting bogged down in details, let us try to give a general
+sketch of our approach.  In this section, we play a little fast and
+loose with the existence of certain geometric categories (not to
+mention aspects of quantum field theory); we promise to the reader
+that no such chicanery will appear in the rest of the paper.
+
+Having fixed the vector space $V$ and gauge
+group $G$, we consider the quotient space of $\C((t))$-points
+$\mathcal{L}=V((t))/G((t))$.  In the world of derived algebraic geometry, we think
+of this as the loop space of the stack quotient $V/G$.  We will
+consider the category of $D$-modules on this space.
+
+  For the utility of both readers who  wish to read
+  not-entirely-rigorous physics motivation and for those who wish to avoid it,
+  the author will put such motivating paragraphs in ``Physics
+  Motivation'' environments going forward.
+ \begin{physics}
+  This category is natural to consider in this context because it
+  should give the category of line defects in a 3-dimension
+  $\mathcal{N}=4$ supersymmetric field theory defined by the $A$-twisted
+  $\sigma$-model into the $2$-shifted stacky cotangent bundle
+  $T^*[2](V/G)$, turned into a 3-dimensional field theory using the
+  AKSZ formalism.  In particular, the local operators on a point
+  should appear in this category as operators from the trivial line
+  defect to itself.
+\end{physics}
+
+Obviously, there
+are many technical issues involved in doing this, and, with apologies
+to the reader, we will make no attempt to resolve them.
+We simply
+ask the reader to accept the existence of this category as a black box
+with one basic property:
+\begin{enumerate}
+\item Given a reasonable map $p\colon \mathcal{M}\to \mathcal{L}$, we
+  have the pushforward of the function D-module
+  $\mathscr{O}_p=p_*\mathcal{O}_{\mathcal{M}}$.  If we are given a second
+  such map $p'\colon \mathcal{M}'\to \mathcal{L}$ then 
+  \[\Ext^\bullet(\mathscr{O}_p,
+   \mathscr{O}_{p'})=H^{BM}_*(\mathcal{M}\times_{\mathcal{L}}\mathcal{M'})\]
+ with composition induced by convolution.  
+\end{enumerate}
+The definition of Braverman-Finkelberg-Nakajima is that the functions
+on the Coulomb branch  of the gauge theory of $(G,V)$ arise when we
+take $\mathcal{M}=\mathcal{M}'=V[[t]]/G[[t]]$, the arc space of the
+quotient $V/G$; the natural quantization of this ring
+appears when we consider this same construction $\C^*$-equivariantly for the
+loop action (where $t$ has weight 1).
+\begin{physics}
+  As mentioned above, the arc space should give the trivial line, so
+  the BFN construction gives the local operators in the $A$-twist of
+  the $\sigma$-model discussed, with $\C^*$-equivariance giving the
+  $\Omega$-deformed version of these operators (see \cite{NaCoulomb}
+  and \cite[\S
+  1.3]{BBBDN} for more details).
+\end{physics}
+
+
+
+However, the utility of this perspective does not stop when we have
+contructed the Coulomb branch; given any $\C^*$-action $\nu\colon \C^*
+\to \Aut_G(V)$ on $V$
+commuting with $G$, we can consider the image $\nu(t^k)\cdot
+V[[t]]/G[[t]]$ and the map \[p^{(k)}\colon \nu(t^k)\cdot
+V[[t]]/G[[t]]\to V((t))/G((t)).\]  The
+BFN resolution $\gls{tM}$ constructed by
+Braverman-Finkelberg-Nakajima in \cite{BFNline} can be defined  the
+property that \[\Gamma(\tilde{\fM}; \mathcal{O}(k))\cong
+  \Ext^\bullet(\mathscr{O}_{p^{(m)}}, \mathscr{O}_{p^{(m+k)}})\] with
+multiplication in the projective coordinate ring given by Yoneda
+product.  
+ Loop equivariantly, these spaces are not isomorphic, but instead give a $\Z$-algebra
+in the sense of Gordon and Stafford \cite{GS}; as discussed in
+\cite[\S 5.2]{BLPWquant}, this is the quantum homogeneous coordinate
+ring of a quantization of $\tilde{M}$.
+
+
+
+Thus, given a map  $q\colon \mathcal{M}\to \mathcal{L}$, we can define a coherent
+sheaf $\mathcal{Q}_q$ on the BFN resolution.  This is the construction
+we require for our tilting generators and noncommutative resolution.
+\begin{itheorem}
+  There is a space  $\mathcal{M}$ and map $q\colon \mathcal{M}\to \mathcal{L}$ such
+  that $ \mathcal{Q}_q$ is the tilting generator of Theorem
+  \ref{th:main} and  \[\gls{A}=\Ext^\bullet(\mathscr{O}_{q},
+    \mathscr{O}_{q}).\]
+\end{itheorem}
+We should note that there is not just one such space, but in fact
+there are several of them, which give rise to different noncommutative
+resolutions and different tilting generators.  These different choices
+are related by wall-crossing
+functors (as defined, for example, in \cite[\S
+2.5.1]{losev2017modular}).  These functors also have a geometric
+realization:
+\begin{itheorem}
+The derived equivalence of coherent sheaves to $A$-modules
+intertwines wall-crossing functors with tensor product with the
+bimodules $\Ext^\bullet(\mathscr{O}_{q},
+    \mathscr{O}_{q'})$ for different spaces $q,q'$ both giving
+    resolutions.  These
+actions define a Schober in the sense of \cite{KSschobers}, that is,
+a perverse sheaf of categories, on a particular subtorus arrangement
+in a complex torus.  
+\end{itheorem}  
+\begin{physics}
+  All of these other D-modules can be interpreted naturally in physics
+  in terms of natural modifications of the fields of the theory near
+  the line defect.  We leave a more detailed discussion of this point
+  to future work and the interested reader.
+
+  Unfortunately, the author knows no good physics explanation of
+  which combinations of line operators give non-commutative
+  resolutions, and which do not.  Obviously, this would be an
+  interesting question from a quantum field theory perspective.   
+\end{physics}
+
+\subsection{Summary of approach}
+\label{sec:summary}
+
+Proving these results depends on comparison with the characteristic
+$p$ approach of Bezrukavnikov and Kaledin \cite{BKpos,KalDEQ}.  That
+is, we come to understand by considering quantizations in
+characteristic $p$ and applying the approach of \cite{WebSD} (based
+in turn on \cite{FOD,MVdB}) in
+positive characteristic.  The focus is on the
+action of a large polynomial subalgebra of the quantum Coulomb branch,
+and analyzing the representations of this algebra in terms of their
+weights for this subalgebra.  In the perspective of Stadnik \cite{Stadnik} to resolving this problem
+for hypertoric varieties,  this polynomial subalgebra played a key
+role in constructing the requisite \'etale cover where the Azumaya
+algebra constructed from a quantization splits.  
+
+This approach extends to the case of a general BFN Coulomb branch.
+Whenever we have a BFN resolution $\gls{tM}$, we obtain an explicit
+tilting generator for $\K$ either of large positive characteristic or
+characteristic 0, which has a natural description in terms of the BFN
+construction.  The sections of its summands (and their twists by ample
+line bundles) are given by the homology of spaces on which the
+convolution realization of the BFN algebra acts.  
+This is an extension of work of McBreen and the author \cite{McBW}, which
+shows the same result in the abelian case.
+
+As mentioned above, we'll cover the case of quiver gauge theories in
+considerably greater detail in a companion paper \cite{WebcohII}.
+Beyond this, there are several interesting possibilities for extension of this
+work.  The work of McBreen and author in the abelian case \cite{McBW} can
+be used to show one version of homological mirror symmetry for
+multiplicative hypertoric varieties, and it would be very interesting
+to relate the presentations of $A$ appearing here with the Fukaya
+category of multiplicative Coulomb branches (i.e. the algebraic
+varieties obtained by the K-theoretic BFN construction).
+
+The tilting bundles that appear also have a natural interpretation in
+terms of line operators in the corresponding 3-dimensional gauge
+theory, and one could hope that other perspectives on these line
+operators, such as the vertex algebra perspective suggested in
+Costello, Creuzig and Gaiotto \cite{CCG}, will also see the same combinatorial
+constructions appear, hopefully eventually leading to a theory of
+S-duality where coherent sheaves on Coulomb branches can be described
+as a natural object on the Higgs side as well.
+
+\section{Quantum Coulomb branches}
+
+\subsection{Background}
+\label{sec:background}
+
+
+
+Let us recall the construction of quantum Coulomb branches from
+\cite{WebSD}.  As before, let $\gls{G}$ be a connected reductive algebraic
+group over $\C$, with $G((t)), G[[t]]$ its points over
+$\C((t)), \C[[t]]$. For a fixed Borel $B\subset G$, we let $\Iwahori$
+be the associated Iwahori subgroup
+\[\Iwahori=\{g(t)\in G[[t]]\mid g(0)\in B\}\subset G[[t]].\]  The {\bf affine flag variety} $\AF=G((t))/\Iwahori$ is
+just the quotient by this Iwahori.  
+% The connected components of this
+% space are in bijection with the quotient of the coweight lattice of
+% $G$ by the coweight lattice of the simply connected cover of $[G,G]$.
+% Each component contains a unique fixed point of the Iwahori $I$, given
+% by $t^{\mu}$ where $\mu$ is the unique cominuscule coweight in the
+% corresponding coset.  
+
+
+\nc{\wtG}{\widetilde{G((t))}}
+Let $\gls{V}$ be the $G$-representation fixed in the previous section, 
+$\gls{No}=N_{GL(V)}(G)$ be the normalizer of $G$ in $GL(V)$, and let
+$\gls{F}=\No/G$ be the flavor quotient and $\gls{T}_\No,T_{F}$ be compatible maximal tori of
+these groups.  
+Of course, we use $\gls{ft}_{\No}$, etc. for the Lie algebra of this
+torus, $\ft_{\No,S}$ for the subset where integral weights have
+values in a subring $S\subset \C$, with the most important cases being
+$S=\R$ and $S=\Z$.    It's also useful to consider $\gls{To}$, the preimage of
+$T_F$ in $\No$ and $\tilde{\To}=Q\times \C^*$.  This latter groups acts on $V((t))$
+such that $vt^a$ has weight $a$ under the second factor and the
+obvious action of $\To$.
+
+Fix a flavor $\gls{flav}\colon \C^*\to T_F$, and let 
+\[\tilde{G} =\{(g,s)\in \To\times \C^* \mid \flav(s)=g\pmod G\}\qquad
+  \nu(g,s)=s,\]
+with its induced action on $V((t))$.  
+That is, $\tilde{G}$ is the pullback of the diagram $\C^*\to T_F \leftarrow
+\To$. Let $\tilde{T}$ be the induced torus of this group, and
+$\tilde{\mathfrak{t}}$ its Lie algebra. 
+
+Fix a subspace $U\subset V((t))$ invariant under $\Iwahori$.  
+Let $\VB_U:=(G((t)) \times U)/\Iwahori$.  Note that we have a
+natural $G((t))$-equivariant projection map $\VB_U\to V((t))$. 
+Let
+$\wtG$ be the subgroup of $\No((t))\times
+\mathbb{C}^*$ generated by $G((t))$ and the image of
+$\tilde{G}\hookrightarrow \tilde{G}\rtimes \C^*$ included via the
+identity times $\nu$.  
+
+\begin{definition} The BFN Steinberg algebra $\gls{efA}$ is the equivariant Borel-Moore homology group
+   \[\gls{efA}=H_*^{BM, \wtG}(\VB_{V[[t]]}\times_{V((t))}\VB_{V[[t]]};\K)\] endowed with the convolution multiplication.  
+ \end{definition}
+ As discussed in Section \ref{sec:motivation-from-line}, this algebra
+is intended to match an Ext algebra in the category of $D$-modules on
+$\mathcal{L}$.  We can avoid any technicalites about the nature of
+this category by considering this
+homology space instead, and interpreting the equivariant homology $H_*^{BM,
+  \wtG}(\VB_{V[[t]]}\times_{V((t))}\VB_{V[[t]]};\K)$ using the techniques in \cite[\S 2(ii)]{BFN}. 
+  As usual, we let $h$ be
+the equivariant parameter corresponding to the character $\nu$, and $\gls{S}_h=H^*(B\tilde{T};\K)=\K[\tilde{\ft}]$, which is naturally a subalgebra of $\EuScript{A}$ under the identification $H^{BM,\wtG}_*(\VB_{V[[t]]})\cong S_h$.  When we specialize $h=0,1$, we will write $S_0,S_1$, etc.
+
+
+The original BFN algebra \gls{Asph} is
+defined in essentially the same way, using
+$\EuScript{Y}_{V[[t]]}:=(G((t)) \times V[[t]])/G[[t]]$.  The algebras $\EuScript{A}^{\operatorname{sph}}$ and $\EuScript{A}$
+  are Morita equivalent by \cite[Lemma 3.3]{WebSD}, with
+  $e_{\operatorname{sph}}
+  \EuScript{A}^{\operatorname{sph}}e_{\operatorname{sph}}=\EuScript{A}$
+  for an idempotent $e_{\operatorname{sph}}\in \EuScript{A}$.
+  \begin{physics}
+    In the parlance of quantum field theory, \gls{Asph} is the algebra
+    of local operators on a trivial line defect, and $\gls{efA}$ the
+    algebra of local operators on the defect that comes from coupling
+    to super quantum mechanics on the flag variety $G/B$.  The
+    equivariant parameter $h$ corresponds $\Omega$-background for the circle rotating
+    around this line in $\R^3$, as discussed in \cite[\S 6]{BBBDN}.
+  \end{physics}
+
+
+  
+  
+\begin{definition}
+The {\bf Coulomb branch} $\gls{Coulomb}$ for $(V,G)$ is the spectrum of the algebra \gls{Asph} after specialization at $h=0$ (at which point it becomes commutative).  The {\bf quantum Coulomb branch} is the specialization of this algebra at $h=1$.
+\end{definition}
+
+Of course, $\gls{To}$ still acts on $V$, and thus has an associated Coulomb
+branch $\gls{MQ}$.  As discussed in \cite[\S 3]{BFN} and \cite[\S
+3.3]{WebSD}, this Coulomb branch has a Hamiltonian action of
+$T_F^\vee$, the Langlands dual of the dual of the torus of the flavor
+group $\gls{F}$ with moment map given by
+$\mathfrak{t}_F^*\to H^*_{\To}(pt)$, and $\fM$ is the categorical
+quotient of the zero-level of the moment map on $\fM_{\To}$, the
+Coulomb branch for $\To$.  For a given cocharacter of $\gls{T}_F$
+(considered as a character of $T_F^\vee$), we can instead take the
+associated GIT quotient of $\fM_{\To}$, which gives a variety
+$\gls{tM}$ which maps projectively to $\fM$.  As mentioned in the
+introduction, if $\tilde{\fM}\to \fM$ is a resolution of singularities
+(or equivalently, if $\tilde{\fM}$ is smooth) then we call it a {\bf
+  BFN resolution}.
+
+\subsection{The extended category}
+\label{sec:extended}
+The quantization of the Coulomb branch attached to $(G,V)$ appears as an endomorphism algebra in a larger category, building on the geometric definition of this algebra by Braverman, Finkelberg and Nakajima
+\cite{NaCoulomb,BFN}. This category is not unique; there are actually
+many variations on it one could choose, and it will be convenient for
+us to incorporate a parameter $\delta\in (0,1)\subset \R$ into its
+definition; in \cite{WebSD}, we assumed that $\delta=1/2$, but this
+played no important role in the results of that paper (in fact, some
+results become simpler if we choose $\delta$ generic instead).
+
+Let $\gls{ft1}_{1,\To,\R}\subset \tilde{\ft}_{\To,\R}$ be the preimage
+of 1 under projection to $\C=\Lie(\C^*)$, and let $\ft_{1,\R}=\ft_{1,
+  \To,\R}\cap\tilde{\ft}$, be the space of real
+lifts of the cocharacter $\flav$.
+
+As in \cite{WebSD}, we let
+$\{\varphi_i\}$ be the multiset of weights of $V$ (considered as
+functions on $\tilde{\ft}_{\To}$)  and we let \[\varphi_i^+=\varphi_i\qquad
+\gls{varphimid}^{\operatorname{mid}}_i= (1-\delta) \varphi_i^+-\delta\varphi_i^-=\varphi_i+\delta\nu\qquad \varphi_i^-=-\varphi_i-\nu.\]  
+
+Given any $\acham\in \ft_{1,
+  \To,\R}$, we can consider the induced action on the
+vector space $V((t))$.  
+\begin{itemize}
+\item Let $\Iwahori_\acham$ be the subgroup whose Lie algebra is the sum of positive weight
+spaces for the adjoint action of $\acham$. This only depends on the
+alcove in which $\acham$ lies, i.e. which chamber of the arrangment
+given by the hyperplanes $\{\alpha(\acham)=n\mid \al\in \Delta, n\in \Z\}$ contains
+$\acham$; the subgroup $\Iwahori_\acham$ is an Iwahori if $\acham$ does not
+lie on any of these hyperplanes. 
+\item Let  $U_\acham\subset V((t))$ be the subspace of elements of 
+weight $\geq -\delta$ under $\acham$.  This subspace is closed under the action of
+$\Iwahori_\acham$.  This only depends on the vector $\Ba$ such that
+\begin{equation}
+\acham\in \gls{AC}_{\Ba}=\{\xi \in \ft_{1,
+  \To,\R}\mid a_i<\gls{varphimid}_i^{\operatorname{mid}}(\xi)<a_i+1\text{
+  for all $i$}\}.\label{eq:aff-cham}
+\end{equation}
+\end{itemize}
+
+We call $\acham$ {\bf unexceptional} if does not lie on the unrolled matter hyperplanes
+$\{\varphi_i^{\operatorname{mid}}(\acham)=n\mid n\in
+\Z\}$ and {\bf generic} if it is unexceptional and does not lie on any
+of the unrolled root hyperplanes $\{\alpha(\acham)=n\mid
+n\in\Z\}$. We'll call the hyperplanes generic points avoid the {\bf
+  unrolled hyperplane arrangment}.  
+
+For any $\acham\in  \ft_{1,
+  \To,\R}$, we can
+consider
+$\VB_{\acham}:=\VB_{U_\acham}:=G((t))\times_{\Iwahori_{\acham}}U_{\acham}$,
+the associated vector bundle.  
+The space $ \ft_{1,
+  \To,\R}$ has a natural adjoint action of
+$\gls{What}=N_{\wtG}(\gls{T})/T$, and of course,
+$U_{w\cdot \acham}=w\cdot U_{\acham}$.  
+
+We let
+\begin{equation}
+{}_{\acham}\gls{dVB}_{\acham'}=\left\{(g,v(t))\in G((t))\times
+        U_{\acham}\mid g\cdot v(t)\in
+        U_{\acham'}\right\}/\Iwahori_{\acham}.\label{eq:aXa}
+    \end{equation}
+\begin{definition}\label{def:extended-BFN}
+  Let the {\bf extended BFN category} $\gls{scrB}^Q$ be the category whose
+  objects are unexceptional cocharacters $\acham\in  \gls{ft1}_{1,
+  \To,\R}$, with morphisms given by:
+  \begin{equation*}
+    \Hom(\acham,\acham')=H_*^{BM, \wtG}(\VB_{\acham}\times_{V((t))}\VB_{\acham'};\K)\\
+    \cong H_*^{BM, \tilde T}\left({}_{\acham}\VB_{\acham'};
+    \K\right).
+\end{equation*}
+Let $\gls{scrB}$ be the subcategory whose objects are given by $\gls{ft1}_{1,\R}$.
+\end{definition}
+As before, this homology is defined using the techniques in \cite[\S
+2(ii)]{BFN}.
+\begin{physics}
+  As discussed in Section \ref{sec:motivation-from-line}, the objects
+  in this category can be interpreted as D-modules on the loop space
+  of $V/G$ (for those inclined toward stacks) or as line defects in a
+  $\sigma$-module (for those inclined toward quantum field theory).
+  The author has no especially good explanation from either of these
+  perspectives why this is the ``right'' subcategory of line operators
+  to consider when there are many others available, but it does get the job done.
+\end{physics}
+
+
+Note that by assumption, the
+cocharacter $\gls{second}\in \ft_{1,
+  \To,\R} $ including $\C^*$ into $\To\times
+\C^*$ is unexceptional, but not generic and  $U_{\second}=V[[t]]$.
+Given any unexceptional point $\acham$, it has a neighborhood in the
+classical topology, which necessarily contains a generic point, on
+which $U_{\acham'}=U_{\acham}$. Thus we can find a generic element $\zero$ of the fundamental alcove such that $U_\zero=V[[t]]$. In this case, we
+have that $\Iwahori_\second=G[[t]]$ and $\Iwahori_\zero$ is the standard Iwahori so \begin{equation}\label{eq:A-B}
+    \gls{Asph}=\Hom_{\mathscr{B}}(\second,\second)\qquad \EuScript{A}=\Hom_{{\mathscr{B}}}(\zero,\zero)
+\end{equation}  Thus, this extended category encodes the structure of $\EuScript{A}$.
+\begin{definition}
+  Let $\Phi(\acham,\acham')$ be the product of the terms
+  $\varphi^+_i-nh$ over pairs $(i,n) \in [1,d]\times \Z$ such that we
+  have the inequalities
+  \[\varphi_i^{\operatorname{mid}}(\acham)>n \qquad \varphi_i^{\operatorname{mid}}(\acham')<n \] hold.   Let
+  $\Phi(\acham,\acham',\acham'')$ be the product of the terms
+  $\varphi^+_i-nh$ over pairs $(i,n)\in [1,d]\times \Z$ such that we
+  have the inequalities \newseq
+  \[\subeqn\label{pmp}\varphi_i^{\operatorname{mid}}(\acham'')>n \qquad
+    \varphi_i^{\operatorname{mid}}(\acham')<n \qquad \varphi_i^{\operatorname{mid}}(\acham)>n\] or the inequalities
+  \[\subeqn\label{mpm}\varphi_i^{\operatorname{mid}}(\acham'')<n \qquad
+    \varphi_i^{\operatorname{mid}}(\acham')>n\qquad \varphi_i^{\operatorname{mid}}(\acham)<n. \] These terms correspond to the hyperplanes that a path
+  $\acham\to\acham'\to \acham''$ must cross twice. 
+\end{definition}
+
+
+
+Recall from \cite[Thm. 3.7]{WebSD} that we have:
+\begin{theorem}\label{thm:BFN-pres}
+  The morphisms in the extended BFN category are generated by
+  \begin{enumerate}
+  \item $\gls{yw}_w$ for $w\in \gls{What}$, the graph of a lift of $w$:
+\begin{equation*}
+\gls{yw}_w=[\big\{(w,v(t))\mid v(t)\in
+U_\acham\big\}]/\Iwahori_\acham;\label{eq:y-def}
+\end{equation*}
+  \item $\glslink{r}{r(\acham,\acham')}$ for $\acham,\acham'\in \ft_{1,\To,\R}$
+    generic
+\begin{equation*}
+r(\acham,\acham')=\left[\{(e,v(t)) \in T((t))\times U_{\acham'}\mid v(t)\in
+U_{\acham}\}/T[[t]]\right]\in \Hom_{\ab}(\acham',\acham) ;\label{eq:r-def}
+\end{equation*}
+  \item $\glslink{Bpsi}{u_{\al'}}(\acham)=\glslink{Bpsi}{u_{\al-n\delta}}(\acham)$ for
+    $\acham_\pm$ affine chambers adjacent across $\al'(\acham)=0$ for
+    $\al'\in \hatD$ an affine root (i.e. $\al'=\al-n\delta$ for some
+    finite root $\al'$)
+\begin{equation*}
+\glslink{Bpsi}{u_{\al'}}(\acham)=[{\left\{(gv(t),g \cdot\Iwahori_{\pm} ,g\cdot \Iwahori_{\mp})\in \VB_{\acham^\pm}\times_{V((t))}\VB_{\acham^{\mp}}
+  \mid g\in
+  G((t)), v(t)\in U_\acham\right\}}];\label{eq:psi-def}
+\end{equation*}
+  \item the polynomials in $\gls{S}_h$.
+  \end{enumerate}
+  This category has a polynomial representation where each object $\acham$ is assigned to $H_*^{BM,\wtG}(\VB_{\acham})\cong \Cth\cdot [\VB_{\acham}]$, and the generators above act by:
+  \newseq \begin{align*}
+\subeqn\label{eq:ract} 
+\glslink{r}{r(\acham,\acham')} \cdot f [\VB_{\acham'}]&=\Phi(\acham,\acham') f\cdot
+                                           [\VB_{\acham}]\\
+  \subeqn\label{eq:psiact}
+\gls{Bpsi}\cdot f[\VB_{\acham_{\pm}}]&=\partial_{\al}(f)\cdot [\VB_{\acham_{\mp}}]\\
+   \subeqn\label{eq:wact} \gls{yw}_w\cdot f[\VB_{\acham}]&=(w\cdot f)[\VB_{w\cdot \acham}]\\
+     \subeqn\label{eq:muact}
+\mu \cdot f [\VB_{\acham}]&=\mu f\cdot [\VB_{\acham}]
+  \end{align*} \newseq 
+The relations between these operators are given by:
+ \begin{align*}
+\subeqn\label{eq:dot-commute}
+\mu \cdot  r(\acham,\acham') &= r(\acham,\acham')\cdot \mu   \\
+\subeqn\label{eq:weyl1}
+  y_{\zeta}\cdot\mu\cdot y_{-\zeta}&=\mu+h \langle \zeta,\mu\rangle \\
+\subeqn\label{eq:wall-cross1}
+r(\acham,\acham') r(\acham'',\acham''')&=
+\delta_{\acham',\acham''}\Phi(\acham,\acham',\acham''')
+                                         r(\acham,\acham''')\\
+\subeqn\label{eq:coweight2}
+y_w\cdot y_{w'}&=y_{ww'}\\
+\subeqn\label{eq:conjugate2}
+  y_w r(\acham',\acham) y_w^{-1}&=r(w\cdot \acham',w\cdot\acham) \\
+\subeqn\label{eq:weyl2}
+  y_w \mu y_w^{-1}&=w\cdot \mu\\
+   \subeqn\label{eq:psi2}
+\Bpsi_{\al}^2&=0\\
+   \subeqn\label{eq:psi}
+\underbrace{\Bpsi_{\al}\Bpsi_{s_\al \beta}\Bpsi_{s_\al s_{\beta}\al}\cdots}_{m_{\al\be}}
+             &=\underbrace{\Bpsi_{\beta}\Bpsi_{s_{\beta}\al}\Bpsi_{s_{\beta}s_\al\beta}\cdots}_{m_{\al\be}}\\
+   \subeqn\label{eq:psiconjugate}
+y_w\Bpsi_{\al}y_{w^{-1}}&=\Bpsi_{w\cdot \al}\\
+  \subeqn\label{eq:psipoly}
+\Bpsi_{\al} \mu-(s_{\al}\cdot\mu)\Bpsi_{\al}
+             &=r(\eta_{\mp},\eta_{\pm})\partial_{\al}(\mu) \end{align*} whenever these
+           morphisms are well-defined
+and finally, if $\acham'_\pm$ and $\acham''_\pm$ are two pairs of chambers
+opposite across $\al(\acham)=0$ on opposite sides of an intersection
+of affine root and flavor hyperplanes as shown below, and
+$\acham,\acham''$ differ by a $180^\circ$ rotation around the
+corresponding codimension 2 subspace:
+ \addtocounter{subeqn}{1}
+\begin{multline*}
+\subeqn\label{eq:triple} 
+r(\acham''',\acham'_-)\Bpsi_{\al} r(\acham'_+,\acham)
+-r(\acham''',\acham''_-)\Bpsi_{\al}
+r(\acham''_+,\acham)\\=\partial_\al\left(\Phi(\acham'_+,\acham) \cdot s_{\al}\Phi(\acham,\acham'_-)\right)
+r(\acham''',s_\al\acham) s_\al.
+\end{multline*}
+\end{theorem}
+
+One important change in the characteristic $p$ case is that the
+representation defined by (\ref{eq:ract}--\ref{eq:muact}) is no longer
+faithful, since the same is true of the corresponding representation
+of $\widehat{W}$: translations by cocharacters divisible by $p$ act
+trivially.
+
+It is possible to fix this, though it is somewhat less pleasant to
+think about. Fix $h=g\in \C$ (we will of course be primarily interested in the cases $g=0,1$).  Let $K$ be the fraction field of $\gls{S}_g$, and consider
+the induced action by convolution on $K\otimes_{S_g}
+H_*^{BM,T}(\VB_{\acham}^T)\cong \oplus_{\la\in X_*(T)}K\cdot
+[t^\la]$.  We will not explicitly check that the action we define
+below arises from convolution due to fact the complications of
+localization in equivariant cohomology for loop groups, but it is
+worth pointing to as our source of inspiration.
+  \begin{lemma}\label{lem:frac-rep}
+There is a faithful action of $\gls{scrB}$  on $K_X:=  \oplus_{\la\in X_*(T)}K\cdot [t^\la]$
+given by  the formulas \newseq\begin{align*}
+\subeqn\label{eq:ract-frac}
+\gls{r}   (\acham,\acham') \cdot f [t^\la]&=\Phi(\acham,\acham') f\cdot
+                                           [t^\la]\\
+\subeqn\label{eq:psiact-frac}
+\gls{Bpsi}\cdot f [t^\la]&=\frac{s_{\al}f}{\al}[t^{s_{\al}\la}]-\frac{f}{\al}[t^{\la}]\\
+   \subeqn\label{eq:wact-frac}
+\gls{yw}_w\cdot f[t^\la]&=(w\cdot f)[t^{w\la}]\\
+     \subeqn\label{eq:muact-frac}
+\mu \cdot f [t^\la]&=\mu f\cdot [t^\la].
+  \end{align*} 
+  \end{lemma}
+
+
+
+ 
+%\subsection{Coherent sheaves}
+Now, consider the case where $\hbar=0$.  In this case,
+$\End_{\mathscr{B}}(\second,\second)\cong \K[\fM]$ is the space of functions on the
+  Coulomb branch.  The different non-isomorphic objects of
+  $\gls{scrB}$ define interesting modules over $\K[\fM]$, considering
+  $Q_{\eta}=\Hom_{\mathscr{B}}(\zero,\eta)$ as a right module under composition.   
+\begin{lemma}\label{lem:Q-rank}
+  The module $Q_{\eta}$, considered as a coherent sheaf on $\K[\fM]$, is generically free of rank $\# \gls{W}$.
+\end{lemma} 
+\begin{proof}
+  As a module over $\End_{\mathscr{B}}(\zero,\zero)$ the module $\End_{\mathscr{B}}(\zero,\eta)$ is generically free of rank 1, since $\zero$ and $\eta$ become isomorphic after inverting all weights and roots.  Since at $h=0$, the algebra $\End_{\mathscr{B}}(\zero,\zero)$ is Azumaya over $\K[\fM]$ with degree $\#W$, this implies that $Q_{\eta}$ generically has the correct rank.  
+\end{proof}
+\excise{
+Note that this gives us an isomorphism $Z(\pStein_\K)\cong \K[\fM]$.   It will be an important observation for us later that:
+\begin{lemma}\label{lem:center-iso}
+ We have an isomorphism $\K[\fM]\to Z(\pStein_\K)$ for $\K=\Z$, and thus for any ring $\K$.
+\end{lemma}
+\begin{proof}
+  The map $\Z[\fM]\to Z(\pStein_\Z)$ is 
+  a map between free abelian groups (since both are defined to be subgroups of free abelian groups).  This map is
+  an isomorphism when $\K$ is of the form $\mathbb{F}_q$ for any prime $q$, so the map is an isomorphism. 
+\end{proof}}
+
+One other construction we'll need to connect to wall-crossing functors
+is the twisting bimodules relating two flavors $\gls{flav}$ and
+$\flav+\nu$ that differ by $\nu\in \ft_{\Z,\gls{F}}$
+  ${}_{\phi+\nu}\gls{scrT}{}_{\phi}$ 
+and
+${}_{\phi+\nu}\gls{Twist}_{\phi}={}_{\phi+\nu}\mathscr{T}{}_{\phi}(\zero,\zero)$
+defined in \cite[Def. 3.16]{WebSD}.
+These are constructed much as the Hom spaces in Definition
+\ref{def:extended-BFN}: let ${}_{\acham}\VB^{(\nu)}_{\acham'}$ be the
+component of the space ${}_{\acham}\gls{dVB}^{\To}_{\acham'}$  as defined in
+\eqref{eq:aXa} lying above $t^\nu$ in the affine Grassmannian of
+$t^\nu$, and we have:
+\begin{equation}
+  \label{eq:aXnua}
+ \glslink{scrT}{ {}_{\phi+\nu}\mathscr{T}{}_{\phi}}(\acham,\acham')=  H_*^{BM, \tilde T}\left({}_{\acham}\VB^{(\nu)}_{\acham'}; 
+    \K\right).
+\end{equation}
+
+
+\subsection{Representations}
+\label{sec:reps}
+Using this presentation, we can analyze the structure of this category of representations in
+characteristic $p$, just as we did in characteristic 0 in \cite[\S
+3.3]{WebSD}.   It is worth noting that the group $\gls{G}$, representation
+$\gls{V}$ and its associated objects are unchanged; we simply consider their
+homology over $\K$, a field of characteristic $p$.  To save ourselves
+heart-burn, we assume that $p$ is not a torsion prime for the group
+$G$.  This is not a problematic restriction, since we will typically
+assume that $p\gg 0$.    Throughout this subsection, we specialize $h=1$.
+
+
+Let $M$ be a finite dimensional representation
+of the category $\gls{scrB}$ (which we will also call $\mathscr{B}$-modules), that is, a functor from $\mathscr{B}$ to the
+category $\K\Vect$ of finite dimensional $\K$-vector spaces.  
+
+These are closely related to the theory of $\EuScript{A}$-modules since the finite dimensional vector space $N:=M(\zero)$ has an
+induced $\EuScript{A}$-module structure.  Furthermore, since $\Hom(\acham,\zero)$
+and $\Hom(\zero,\acham)$ are finitely generated as
+$\EuScript{A}$-modules, this is in fact a quotient functor, with left adjoint given by 
+\[N\mapsto
+\mathscr{B}\otimes_{\EuScript{A}}N(\acham):=\Hom(\acham,\zero)\otimes_{\EuScript{A}}N.\]
+
+Now, let us return to the theory of $\mathscr{B}$-modules Of course, if we restrict the action on $M(\eta)$ to the subalgebra
+$\gls{S}_h$, then this vector space breaks up as a sum of {\bf weight spaces}:
+\begin{equation}
+  \label{eq:W-def}
+  \Wei_{\upsilon,\acham}(M)=\{m\in M(\acham)\mid \mathfrak{m}_{\upsilon}^Nm=0 \text{ for } N\gg 0\},
+\end{equation} 
+Of course, we can think of this as an exact functor
+$\Wei_{\upsilon,\acham}\colon \mathscr{B}\operatorname{-fdmod}\to \K\Vect$.
+In \cite{WebSD}, we employed these weight functors to probe the
+category of representations of  $\mathscr{B}$.   Versions of this
+construction have appeared a number of places in the literature,
+including work of Musson and van der Bergh \cite{MVdB} and Drozd,
+Futorny and Ovsienko \cite{FOD}.
+\begin{definition}
+  Let $\gls{scrBhat}$ be the category whose objects are the
+  set $\EuScript{J}$ of pairs of generic $\acham\in \ft_\R+\tau$ and any
+  $\upsilon\in \ft_{1,\K}$, such that
+  \[\Hom_{\widehat{\mathscr{B}}}((\acham',\upsilon'),(\acham,\upsilon))=\varprojlim
+  \Hom_{{\mathscr{B}}}(\acham',\acham)/(\mathfrak{m}_{\upsilon}^N
+  \Hom_{{\mathscr{B}}}(\acham',\acham)+\Hom_{{\mathscr{B}}}(\acham',\acham)\mathfrak{m}_{\upsilon'}^N).\] 
+\end{definition}
+We can apply \cite[Theorem B]{WebGT} here to get a sense of the size
+of this algebra: the endomorphism algebra
+of any object in this category is again a Galois order in a skew group
+algebra, but the group is now the stabilizer of $\acham'$ in the
+affine Weyl group. Since we are now in characteristic $p$, this
+contains all translations that are $p$-divisible, and so this
+stabilizer is the semi-direct product of a parabolic subgroup in the
+finite Weyl group with this $p$-scaled group of translations.  
+
+
+Note that since $\K$ is of characteristic $p$, the set $\ft_{1,\K}$
+has an action of $\ft_{\Z/p\Z}$ by addition.
+We let $\glslink{scrBhatup}{\mathscr{\widehat{B}}_{\upsilon'}}$ be the subcategory where we only
+allow objects  with $\upsilon\in \upsilon'+\ft_{\Z/p\Z}$ and let
+$\gls{scrAhatup}_{\upsilon'}$ be the subcategory with the objects of the form
+$(\zero,\upsilon)$ for $\upsilon \in \upsilon'+\ft_{\Z/p\Z}$.  
+
+This category is useful in that it lets us organize how the weight spaces
+of different values of $\acham$ relate.  For any $\mathscr{B}$-module
+$M$, the functor $(\upsilon, \acham)\mapsto W_{\upsilon,\acham}(M)$
+defines a representation of $\widehat{\mathscr{B}}$.  We have an
+analogue in this situation of \cite[Lemma 3.11]{WebSD}, which is a
+special case of a more general result of Drozd-Futorny-Ovsienko
+\cite[Th. 17]{FOD}:
+\begin{lemma}
+  The functor above defines an equivalence of the category $\gls{scrB}\mmod_{\upsilon'}$ of finite dimensional $\gls{scrB}$-modules with weights in $\gls{What}\cdot \upsilon'$ to
+  the category of representations of
+  $\widehat{\mathscr{B}}_{\upsilon'}$ in $\K\Vect$.
+
+The analogous functor defines an equivalence of the category $\EuScript{A}\mmod_{\upsilon'}$ of finite dimensional
+$\EuScript{A}$-modules  with weights in
+$\widehat{W}\cdot \upsilon'$ to the category of
+representations of $\gls{scrAhatup}_{\upsilon'}$ in $\K\Vect$.
+\end{lemma} 
+Note that an important difference
+between the characteristic $p$ and characteristic $0$ cases:
+a module in $\EuScript{A}\mmod_{\upsilon'}$ with $\K$ of characteristic $p$ with finite dimensional
+weight spaces is necessarily finite dimensional (since the affine Weyl
+group orbit of any weight is finite) while it is typically not if $\K$
+has 
+characteristic $0$. This is why here we only study finite dimensional
+modules, while in \cite{WebSD}, we study the category of all weight modules.
+
+
+\subsection{The homogeneous presentation}
+\label{sec:homo}
+We wish to give a homogeneous presentation of the categories
+$\gls{scrAhatup}_{\upsilon'}$ and
+$\glslink{scrBhatup}{\mathscr{\widehat{B}}_{\upsilon'}}$, as in
+\cite[\S 4]{WebSD}.  For simiplicity, we assume that $\K=\Fp$ for
+$p$ not dividing $\# \gls{W}$ and we are still specializing $h=1$.  
+% The
+% corresponding category in characteristic $p$ is defined relatively
+% similarly to the Steinberg category in \cite[\S 2]{WebSD}, but unlike
+% that situation, it does not have an obvious geometric interpretation.
+
+
+Recall that we have fixed $\gls{\phi}\in \ft_{F,\Z}$; we can without
+loss of generality choose a lift $\tilde{\phi}$ which is fixed by the action of $W$  to $\ft_{1,\To,
+  \Z[\frac{1}{\# W}]}$ over the ring of integers with the order of the
+group $W$ inverted 
+(note that this might not be
+possible over $\Z$).   This has a unique reduction to
+$\gls{ft1}_{1,\Fp}$, which is again $W$-invariant.  Since
+$\ft_{1,\Fp}$ is a torsor for $\ft_{\Fp}$, we can assume $\upsilon'=\tilde{phi}$.
+
+The
+stabilizer $\widehat{W}_{\upsilon'}$ of $\tilde{phi}$ in the affine Weyl
+group is generated by $s_{\al_i}$ for all $i$, and 
+translations by $p \ft_{\Z}$.  Note that the map \[{(\cdot )}_p\colon \widehat{W}\to \widehat{W}_{\upsilon'} \qquad w_p(x)= p\cdot w\Big(\frac{1}{p}x\Big)\]
+is an isomorphism between these groups.  Furthermore, for reflection
+in an affine root $\al$, we have that $(s_\al)_p=s_{\al^{(p)}}$ for
+some possibly different root $\al^{(p)}$.  
+
+We can also understand this homomorphism in terms of the Frobenius map $\frob_V\colon V((t))\to V((t))$ given by $\frob_V(v(t))=v(t^p)$: the element $w_p$ is the unique one satisfying $w_p\circ \frob_V=\frob_V \circ w$.  Similarly, we will want to understand the interaction between $U_{\eta}$ and this map.  Consider the $\tilde{G}\times \C^*$ action on $V((t))$ as usual (that is, with $\C^*$ acting by loop rotation).  The map $\frob_V$ intertwines the action of 
+$G((t))$ with the action twisted by the endomorphism $\frob_G(g(t))=g(t^p)$.
+
+Note, we cannot extend this automorphism to the semi-direct product incorporating the loop scaling, since we would need to act on the loop $\C^*$ by $s\mapsto s^{1/p}$.  The corresponding automorphism on the level of Lie algebras is well-defined however, and we denote it by $\frob_{\tilde{\fg}}$.   Note that this does not preserve the subalgebra $\{(X,d\nu(X))\mid X\in \tilde{\fg}\}$, and thus does not preserve $\widetilde{\fg((t))}$. 
+
+This shows that we need to have a different flavor in order to write $\frob_V^{-1}(U_\eta)$ as the same sort of subspace.  
+\begin{definition}\label{def:pth-root}
+  The {\bf ``\gls{pthroot}''} conventions for the extended category are taking:
+  \begin{itemize}
+    \item the gauge group $G$ and representation $V$;
+      \item the (rational) flavor $\phi_{1/p}(t)=(\phi_0(t^{1/p}),t)$ in place of $\gls{flav}$;
+      \item the constant $\delta/p$ in place of $\delta$;
+      \item specialize the equivariant parameter $h=0$.
+  \end{itemize}
+  Throughout, we will use sans-serif letters to denote objects defined
+  in the \gls{pthroot} conventions. In particular, we write
+  $\mathsf{t}_{1,\R}$ for  $\gls{ft1}_{1,\R}$,  $\mathsf{U}_\eta$ for
+  $U_{\eta}$.  We let $\gls{sfB}$ for $\gls{scrB}$ when we use this
+  modified flavor and constant. 
+\end{definition}
+
+\begin{definition}
+  Given $\eta\in \mathsf{t}_{1,\To,\R} $, let $\eta_p\in\gls{ft1}_{1,\To,\R}$ be the
+  element  $\eta_p=p\cdot \frob_{\mathfrak{\tilde{g}}}(\eta)$.  Given
+  $\xi\in \ft_{1,\To,\R}$, let  $\xi_{1/p}\in \mathsf{t}_{1,\To,\R}$ be the unique solution to $\xi=(\xi_{1/p})_p$, that is, the inverse map.
+\end{definition}
+Note that for $w\in \widehat{W}$, we have $(w\eta)_p=w_p\eta_p$, and that $\gls{varphimid}^{\operatorname{mid}}_i(\eta_p)=p\mathsf{\varphi}^{\operatorname{mid}}_i(\eta)$ (where the second is calculated using $p$th root conventions).
+\begin{lemma}
+  $\frob_V^{-1}(U_{\eta_p})=\mathsf{U}_{\eta}$.
+\end{lemma}
+\begin{remark}
+  The map $\xi\mapsto \xi_{1/p}$ has the effect of shrinking the space
+  $\ft_{1,\To,\R}$ by a factor of $\frac{1}{p}$, and the unrolled matter
+  hyperplanes, which are defined by  $\gls{varphimid}_i^{\operatorname{mid}}(\xi)$ taking an
+  integral value, become the hyperplanes where this same function
+  (with the $p$th root conventions)  takes on a value in
+  $\frac{1}{p}\Z$.  Thus we only keep every $p$th one of these
+  hyperplanes as a matter hyperplane.
+
+  Each unrolled matter hyperplane separated the locus of $\eta$ such
+  that a given weight vector in $V((t))$ lies in $U_\eta$ from the
+  locus where is does not; the hyperplanes we keep in the $p$th root
+  conventions are those that correspond to vectors in $V((t^p))$.
+\end{remark}
+
+\begin{example}
+  Let us consider the running example from \cite{WebSD}: the gauge
+  group $\gls{G}=GL(2)$ acting on $\gls{V}=\C^2\oplus \C^2$.  The flavor group $\gls{F}$
+  is isomorphic to $PGL(2)$, so choosing a flavor is choosing a
+  cocharacter into this group, fixing the difference between the
+  weights of this cocharacter on the two copies of $\C^2$.  Let's
+  consider $p=5$, and choose the flavor so that the difference is
+  $\varphi_1^{\operatorname{mid}}-\varphi_3^{\operatorname{mid}}=3$.
+  In Figure \ref{fig:pthroot}, we draw the images under $\acham\mapsto
+  \acham_{1/p}$ of all unrolled matter hyperplanes, but draw those
+  which do not remain as matter hyperplanes for the $p$th root data in
+  gray and with thinner weight.
+  \begin{figure}\label{fig:pthroot}
+    \centering
+    \[\tikz[very thick,scale=1.4]{ \draw[old]
+    (1.16,2.5)-- (1.16,-3.5) node[scale=.5, at
+    end,below]{$\varphi_3^{\operatorname{mid}}=-1/5$}  node[scale=.5, at
+    start,above]{$\varphi_1^{\operatorname{mid}}=2/5$}; % \draw (-1.16,2.5)-- (-1.16,-3.5)
+    % node[scale=.5, at
+    % end,below]{$\varphi_3=-2/3$}; 
+    \draw[old] (2.5,1.16)-- (-3.5,1.16)
+    node[scale=.5, at
+    end,left]{$\varphi_4^{\operatorname{mid}}=-1/5$}
+    node[scale=.5, at
+    start,right]{$\varphi_2^{\operatorname{mid}}=2/5$};
+    %\draw (2.5,-1.16)-- (-3.5,-1.16) node[scale=.5, at
+    %end,left]{$\varphi_4=-2/3$};
+    \draw (2.16,2.5)-- (2.16,-3.5)
+    node[scale=.5, at
+    end,below]{$\varphi_3^{\operatorname{mid}}=0$}
+    node[scale=.5, at
+    start,above]{$\varphi_1^{\operatorname{mid}}=3/5$}; % \draw (-.16,2.5)-- (-.16,-3.5)
+    % node[scale=.5, at
+    % end,below]{$\varphi_3=1/3$}; 
+    \draw (2.5,2.16)-- (-3.5,2.16)
+    node[scale=.5, at
+    end,left]{$\varphi_4^{\operatorname{mid}}=0$}
+    node[scale=.5, at
+    start,right]{$\varphi_2^{\operatorname{mid}}=3/5$};
+    %\draw (2.5,-.16)-- (-3.5,-.16)
+    %node[scale=.5, at
+    %end,left]{$\varphi_4=1/3$};
+    \draw[old] (0.16,2.5)-- (0.16,-3.5)
+    node[scale=.5, at
+    end,below]{$\varphi_3^{\operatorname{mid}}=-2/5$} 
+    node[scale=.5, at
+    start,above]{$\varphi_1^{\operatorname{mid}}=1/5$}; % \draw (.84,2.5)-- (.84,-3.5)
+    % node[scale=.5, at
+    % end,below]{$\varphi_3=4/3$}; 
+    \draw[old] (2.5,.16)-- (-3.5,.16) 
+    node[scale=.5, at
+    end,left]{$\varphi_4^{\operatorname{mid}}=-2/5$}
+    node[scale=.5, at
+    start,right]{$\varphi_2^{\operatorname{mid}}=1/5$}; % \draw (2.5,.84)-- (-3.5,.84)
+    % node[scale=.5, at
+    % end,left]{$\varphi_4=4/3$}; 
+    \draw (-.84,2.5)-- (-.84,-3.5)
+    node[gray,scale=.5, at
+    end,below]{$\varphi_3^{\operatorname{mid}}=-3/5$}
+    node[scale=.5, at
+    start,above]{$\varphi_1^{\operatorname{mid}}=0$}; % \draw (1.84,2.5)-- (1.84,-3.5)
+    % node[scale=.5, at
+    % end,below]{$\varphi_3=7/3$};
+    \draw (2.5,-.84)-- (-3.5,-.84) 
+    node[gray,scale=.5, at
+    end,left]{$\varphi_4^{\operatorname{mid}}=-3/5$}
+    node[scale=.5, at
+    start,right]{$\varphi_2^{\operatorname{mid}}=0$}; % \draw (2.5,1.84)-- (-3.5,1.84)
+    % node[scale=.5, at
+    % end,left]{$\varphi_4=7/3$}; 
+    \draw[old] (-1.84,2.5)-- (-1.84,-3.5) node[scale=.5, at
+    end,below]{$\varphi_3^{\operatorname{mid}}=-4/5$} 
+    node[scale=.5, at
+    start,above]{$\varphi_1^{\operatorname{mid}}=-1/5$}; % \draw (-2.16,2.5)-- (-2.16,-3.5)
+    % node[scale=.5, at
+    % end,below]{$\varphi_3=-5/3$}; 
+    \draw[old] (2.5,-1.84)-- (-3.5,-1.84) 
+    node[scale=.5, at
+    end,left]{$\varphi_4^{\operatorname{mid}}=-4/5$}
+    node[scale=.5, at
+    start,right]{$\varphi_2^{\operatorname{mid}}=-1/5$}; % \draw
+    % (2.5,-2.16)-- (-3.5,-2.16)
+    
+    \draw (-2.84,2.5)-- (-2.84,-3.5) node[scale=.5, at
+    end,below]{$\varphi_3^{\operatorname{mid}}=-1$} 
+    node[gray, scale=.5, at
+    start,above]{$\varphi_1^{\operatorname{mid}}=-2/5$}; % \draw (-2.16,2.5)-- (-2.16,-3.5)
+    % node[scale=.5, at
+    % end,below]{$\varphi_3=-5/3$}; 
+    \draw (2.5,-2.84)-- (-3.5,-2.84) 
+    node[scale=.5, at
+    end,left]{$\varphi_4^{\operatorname{mid}}=-1$}
+    node[gray, scale=.5, at
+    start,right]{$\varphi_2^{\operatorname{mid}}=-2/5$}; % \draw (2.5,-2.16)-- (-3.5,-2.16)
+    % node[scale=.5, at
+    % end,left]{$\varphi_4=-5/3$}; 
+    \draw[dotted] (-3.5,-3.5) -- node[scale=.5, right,at
+    end]{$\alpha=0$}(2.5,2.5); \draw[dotted,gray, thin] (-3.5,-2.5) --
+    node[scale=.5, below left,at
+    start]{$\alpha=1/5$}(1.5,2.5); \draw[dotted,gray, thin]
+    (-2.5,-3.5) -- node[scale=.5, above right,at
+    end]{$\alpha=-1/5$}(2.5,1.5); \draw[dotted,gray, thin] (-3.5,-1.5)
+    -- node[scale=.5, below left,at
+    start]{$\alpha=2/5$}(0.5,2.5); \draw[dotted,gray, thin]
+    (-1.5,-3.5) -- node[scale=.5, above right,at
+    end]{$\alpha=-2/5$}(2.5,0.5); \draw[dotted,gray, thin] (-3.5,-.5)
+    -- node[scale=.5, below left,at
+    start]{$\alpha=3/5$}(-.5,2.5); \draw[dotted,gray, thin] (-.5,-3.5)
+    -- node[scale=.5, above right,at
+    end]{$\alpha=-3/5$}(2.5,-.5); \draw[dotted,gray, thin] (-3.5,.5)
+    -- node[scale=.5, below left,at
+    start]{$\alpha=4/5$}(-1.5,2.5); \draw[dotted,gray, thin] (.5,-3.5)
+    -- node[scale=.5, above right,at
+    end]{$\alpha=-5$}(2.5,-1.5); \draw[dotted] (-3.5,1.5) --
+    node[scale=.5, below left,at
+    start]{$\alpha=1$}(-2.5,2.5); \draw[dotted] (1.5,-3.5) --
+    node[scale=.5, above right,at end]{$\alpha=-1$}(2.5,-2.5);}\]
+\caption{The effect of $p$th root conventions on matter hyperplanes}
+\end{figure}
+\end{example}
+
+
+We'll want to consider the affine chambers for $\Ba\in \Z^{d}$ as in Section \ref{eq:aff-cham}: 
+\[\gls{rACp}_{\Ba}=\{\xi \in \mathsf{t}_{1,\R}\mid a_i<\gls{varphimid}_i^{\operatorname{mid}}(\xi)<a_i+1\}\label{eq:r-aff-cham}\]  
+\[\ACs=\{\Ba\in \Z^{d}\mid \rACp_{\Ba}\neq 0\}.\] 
+  The reader should note that we use the \gls{pthroot} conventions here.
+Consider $\widehat{W}$, the extended affine Weyl group, acting on
+$\mathsf{t}_{1,\To,\R}$ via the usual level 1 action. Note that if $w\in
+\widehat{W}$ and $\rACp_{\Ba}\neq 0$ then $w\cdot
+\rACp_{\Ba}=\rACp_{w\cdot \Ba}$ for a unique $w\cdot \Ba$, so this
+defines a $\widehat{W}$ action on $\ACs$.
+
+First, we note how the polynomial changes when we complete it to match
+$\glslink{scrBhatup}{\widehat{\mathscr{B}}_{\upsilon'}}$.  
+Given $\upsilon$, we
+let $\widehat{S}^{(\upsilon)}_1=\varprojlim
+\glslink{S}{S_1}/\mathfrak{m}_\upsilon^N$.
+
+\begin{proposition}\label{prop:hat-rep}
+  The category $\glslink{scrBhatup}{\mathscr{\widehat{B}}_{\upsilon'}}$ has a 
+  representation $\mathscr{P}$ sending $(\acham, \upsilon) \mapsto
+  \widehat{S}^{(\upsilon)}_1$ defined by the formulas (\ref{eq:ract}--\ref{eq:muact}), and one $\mathscr{F}$ sending 
+  \[(\acham, \upsilon)\mapsto \bigoplus \operatorname{Frac}( \widehat{S}^{(\upsilon)}_1)\cdot [t^\la] \]
+  where $\operatorname{Frac}(-)$ denotes the fraction field of a commutative ring, with morphisms acting as in (\ref{eq:ract-frac}--\ref{eq:muact-frac}).
+\end{proposition}
+Since $\widehat{S}^{(\upsilon)}_1$ is a profinite dimensional algebra,
+we can decompose any element of it into its semi-simple and nilpotent
+parts, by doing so in each quotient $S_1/\mathfrak{m}_\upsilon^N$.
+The grading we seek on a dense subcategory of  $\widehat{\mathscr{B}}_{\upsilon'}$ is uniquely
+fixed a small list of  requirements:
+\begin{enumerate}[label=(\roman*)]
+\item For $\mu \in \ft^*$, the nilpotent part $\mu-\langle\mu,\upsilon\rangle$ of $\mu$
+  acting on $\widehat{S}^{(\upsilon)}_1$ is homogeneous of degree 2.
+\item The action of $\widehat{W}$ is homogeneous of degree 0.
+\item If $\acham\in \rACp_{\Ba}$ and $\acham'\in \rACp_{\Bb}$ then the
+  obvious isomorphism   $\mathscr{P}(\acham_p,\upsilon)\cong \widehat{S}^{(\upsilon)}_1\cong \mathscr{P}(\acham'_p,\upsilon)$
+is homogeneous of degree $\sum_{i=1}^d a_i-b_i$.
+\end{enumerate}
+The principles (i-iii) fix a grading on $\mathscr{P}(\acham,\upsilon)$
+for all $\acham\in \ft_{1,\To,\R}$ and $\upsilon\in \hat{W}\cdot
+\upsilon'$ up to a global shift. 
+
+We would like to use this to fix a notion of what it means
+for a morphism in $\widehat{\mathscr{B}}_{\upsilon'}$ to be
+homogeneous, however this is slightly complicated by the fact that
+$\mathscr{P}$ is not faithful.  However, it can still be a useful guide
+to the choice of an appropriate grading.  
+
+Let $\hat \Phi_0(\acham,\acham',\upsilon')$ be the product of the terms
+$\varphi^+_i-n$  over pairs $(i,n) \in [1,d]\times\Z$ such that we have the inequalities
+\[\glslink{varphimid}{\varphi_i^{\operatorname{mid}}}(\acham)>n\qquad \varphi_i^{\operatorname{mid}}(\acham')<n \qquad
+\langle\varphi^+_i,\upsilon'\rangle\not\equiv n\pmod p.\]  Note that these are precisely the factors in the product $\Phi(\acham,\acham')$ which remain invertible after reduction modulo $p$.  
+Consider the morphisms:
+  \begin{equation*}
+  \wall(\acham,\acham')=
+                            \frac{1}{\hat{\Phi}_0(\acham,\acham',\upsilon')}r(\acham,\acham)
+ \end{equation*}
+We'll check below that these morphisms are homogeneous, and together
+with a few other obvious homogeneous morphisms, they generate a dense
+subspace inside morphisms.
+
+
+
+
+
+
+Consider the extended BFN category $\gls{sfB}$ with \gls{pthroot} conventions.  Since $h=0$, this category is graded with   
+\begin{samepage}
+    \newseq\begin{equation*}\subeqn
+    \label{eq:Stein-grading1}
+\deg \glslink{r}{r(\acham,\acham')}=\deg \Phi(\eta,\eta')+\deg \Phi(\eta',\eta)
+\end{equation*}\begin{equation*}\subeqn
+\deg w=0\qquad \deg u_\al(\Ba)=-2 \qquad  \deg
+  \mu=2\label{eq:Stein-grading2}.
+\end{equation*}
+\end{samepage}
+Note that here $\deg \Phi(\eta,\eta')$ should be interpreted in the grading on $\glslink{S}{S_0}$ where $\ft^*$ is concentrated in degree 1.  
+We define a functor $\gamma_{\mathsf{B}}\colon \gls{sfB}\to
+\glslink{scrBhatup}{\mathscr{\widehat{B}}_{\upsilon'}}$ by sending
+$\eta\mapsto (\eta_p-\tilde{\phi},
+\upsilon')$, and acting on morphisms by 
+\newseq 
+  \begin{align*}
+    \gamma_{\mathsf{B}}(\glslink{r}{r(\acham,\acham')})&=\wall(\eta_p-\tilde{\phi},\eta_p'-\tilde{\phi})= \frac{1}{\hat{\Phi}_0(\eta_p-\tilde{\phi},\eta_p'-\tilde{\phi},\upsilon')}r(\eta_p-\tilde{\phi},\eta_p'-\tilde{\phi})\subeqn \label{gamma1}\\
+    \gamma_{\mathsf{B}} (w)&= w_p \subeqn \label{gamma2}\\
+    \gamma_{\mathsf{B}}(u_\al) &=u_{\al^{(p)}}\subeqn \label{gamma3}\\
+    \gamma_{\mathsf{B}}(\mu)&= \mu-\langle\mu,\upsilon'\rangle \subeqn \label{gamma4}
+  \end{align*}
+Note that since $w_p\acham_p=(w\acham)_p$ and $w_p\cdot \upsilon'=\upsilon'$, these morphisms go
+between the correct objects.
+
+\begin{remark}
+  Just as discussed in \cite{WebSD}, this isomorphism has a natural
+  geometric interpretation as localization to the fixed points of a
+  group action.  In the characteristic zero case, we analyze the space
+  corresponding to a weight in terms of the fixed points of the
+  corresponding character; a version of this is explained in
+  \cite{WebGT}, generalizing work of Varagnolo-Vasserot \cite[\S
+  2]{MR3013034}. In characteristic $p$, we only obtain an isomorphism
+  after completion with the fixed points of the $p$-torsion subgroup
+  of this cocharacter.  Of course, these fixed points again give
+  versions of the spaces appearing in the extended BFN category.
+  While this is a beautiful perspective, we think it will be clearer,
+  especially for the reader unused to the geometry of the affine
+  Grassmannian, to give an algebraic proof.
+\end{remark}
+
+  \begin{proposition}\label{prop:B-equiv}
+    The functor $\gamma_{\mathsf{B}}\colon \gls{sfB}\to \glslink{scrBhatup}{\mathscr{\widehat{B}}_{\upsilon'}}$ is  faithful, topologically full and essentially surjective; that is, it induces an equivalence $\gls{sfBhat}\cong \glslink{scrBhatup}{\widehat{\mathscr{B}}_{\upsilon'}}$
+  \end{proposition}
+  
+  
+  \begin{proof}
+  Consider the representation $\mathscr{F}$ of  $\widehat{\mathscr{B}}_{\upsilon'}$.  In order to confirm the result, we must show that the images above under $\gamma_{\mathsf{B}}$ satisfy the relations of $\gls{sfB}$ and define a faithful representation on $\mathscr{F}$. 
+  
+  The formula \ref{gamma4} identifies each summand of $\mathscr{F}$ with the fraction field of the completion of $\widehat{S}_0^{(0)}$ at the origin of $S_0$, and thus $\mathscr{F}(\eta_p,\upsilon')\cong \bigoplus \widehat{S}_0^{(0)}\cdot [t^\la]$.  Consider the images of the RHSs of (\ref{gamma1}--\ref{gamma4}) under transport of structure.  We wish to show that this agrees with the representation $\mathsf{K}$ of $\mathsf{B}$ defined in Lemma \ref{lem:frac-rep}.  
+  
+For the morphism $\gamma_{\mathsf{B}}(\mu)$, this is automatic.  For $\gamma_{\mathsf{B}}(w)$, this is an immediate consequence of the definition.  
+  
+Now, consider $r(\eta,\eta')$.  In its polynomial
+representation, this element acts by
+${\mathsf{\Phi}(\acham,\acham')}$, which is the product of $\varphi_i^+$ raised to number of
+integers $n$ satisfying ${\varphi}^{\operatorname{mid}}_i(\acham)< n<
+{\varphi}^{\operatorname{mid}}_i(\acham')$.  This is sent under
+$\gamma_{\mathsf{B}}$ to the shift $\varphi_i^+-\langle
+\varphi^+,\upsilon'\rangle$, leaving the overall structure of the
+product the same.  
+
+Now note that for $i\in \gls{relweights}_{\upsilon'}$, we have ${\varphi}^{\operatorname{mid}}_i(\acham)< n< {\varphi}^{\operatorname{mid}}_i(\acham')$ if and only if $\varphi^{\operatorname{mid}}_i(\acham_p)< pn< \varphi^{\operatorname{mid}}_i(\acham'_p)$.  
+Thus, we have an equality  \[{\mathsf{\Phi}(\acham,\acham')}=\frac{{\Phi}(\acham_p,\acham'_p)}{\hat{\Phi}_0(\acham_p,\acham_p,\upsilon')}.\]
+Note the difference between $\mathsf{\Phi}$ and $\Phi$ in the equation above, denoting the use of \gls{pthroot} conventions on the left hand side.  Thus, indeed, in $\bigoplus \widehat{S}_0^{(0)}$, as desired we have that $\gamma_{\mathsf{B}}(r(\eta,\eta'))=\wall(\eta_p,\eta_p')$ acts by multiplication by $\mathsf{\Phi}(\acham,\acham')$.  Finally, $\gamma_{\mathsf{B}}(u_\al)$ must have the desired image because it can be written as $\frac{1}{\al}(s_{\al}-r(s_\al\acham,\acham))$ when it is well-defined and $\al$ is invertible in $\operatorname{Frac}(\widehat{S}_0^{(0)}).$  This shows that we have recovered $\mathsf{F}$.
+
+Since $\mathsf{F}$ is a faithful representation, this shows that $\gamma_{\mathsf{B}}$ is well-defined and faithful.
+
+Any object $(\acham, w\cdot \upsilon')$ is in the essential image of
+the functor, since it was isomorphic to $(w^{-1}\cdot \acham,
+\upsilon')$, and the map $(\cdot)_p$ is a bijection. 
+
+Finally, we need to show that the image of the functor is dense.
+Note that:   \begin{align*}
+  \glslink{r}{r(\acham,\acham')}  &=\hat{\Phi}_0(\acham,\acham',\upsilon')\wall(\acham,\acham')=
+                            \hat{\Phi}_0(\acham,\acham',\upsilon')\gamma_{\mathsf{B}}(r(\acham_{1/p},\acham'_{1/p}))\\
+   w&=  \gamma_{\mathsf{B}} (w_{1/p})\\
+   u_{\al^{(p)}}&=\gamma_{\mathsf{B}}(u_\al) \\
+   \mu &=  \gamma_{\mathsf{B}}(\mu+\langle\mu,\upsilon'\rangle). 
+  \end{align*}
+We are only left the task of showing that $u_{\al}$ is
+in the closure of the image of $\gamma_{\mathsf{B}}$ for $s_{\al}\notin \widehat{W}_{\upsilon'}$.  In this case, $\al$
+thought of as an element of $S_1$ will act invertibly, so $1/\al$ lies in the closure of the image.   Thus, we can use the
+formula $\frac{1}{\al}(s_{\al}-r(s_\al\acham,\acham))$ as before. This shows the density.
+  \end{proof}
+
+
+\begin{remark}\label{rem:coefficients}
+  We should emphasize that the functor $\gamma_{\mathsf{B}}$ is only well-defined over a field of characteristic $p$, but the category $\gls{sfB}$  makes sense with coefficients in  an arbitrary commutative ring (in
+  particular, $\Z$).  We'll write $\gls{sfB}(\K)$ when we wish to emphasize the choice of base field.  
+\end{remark}
+
+
+\begin{definition}\label{def:sfA}
+  We let $\gls{sfA}(\K)$ be the category whose objects are 
+ the elements of $\upsilon'+\gls{ft1}_{1,\Z}$, with morphisms 
+ $\Hom_{ \mathsf{A}_p(\K)}(\xi,\xi')\cong
+ \Hom_{\mathsf{B}(\K)}(-\xi_{1/p}, -\xi_{1/p}')$, and
+ $\widehat{\mathsf{A}}_p (\K)$ its completion with respect to the grading. 
+\end{definition}
+ Note that we have broken a bit from our convention of using sans-serifizing (which would suggest that $\mathsf{A}$ should be the ring $\EuScript{A}_0$); the reason for this will be clearer below.
+
+Since objects in $\mathsf{A}_p(\K)$ that differ by the level $p$ action of $\gls{What}$ are
+isomorphic, we could also consider only the elements  of
+$\upsilon'+\ft_{1,\Z}$ in a fundamental region for the action of this group.  However, it's more convenient to describe the elements $\wall$ in the unrolled picture.  
+
+%Now assume that  $\K$ is an Artinian local ring with residue field of
+%characteristic $p$ ($\Z/p^N\Z$ being the most important example) and
+%that $n=p$.  Let $\fm_\upsilon$ denote the maximal ideal of $S_1$
+%corresponding $\upsilon\in \ft_{1,\Z}$, reduced to $\K$.    
+%Let $\delta\colon \Z\to \Z$ be the map sending $m\mapsto m-n\lceil
+%m/n-\nicefrac 12\rceil$; that is, $\delta(m)$ is the unique integer in
+%$[\frac{n}{2},-\frac{n}{2})$. 
+
+
+
+Note that in $\glslink{scrBhatup}{\widehat{\mathscr{B}}_{\upsilon'}}$,  the translation by
+$\upsilon'-\upsilon $ induces an isomorphism
+$(\zero ,\upsilon)\cong (\upsilon'-\upsilon+\zero, \upsilon')$.  Since
+$\varphi_i(\upsilon'+\zero)$ is arbitrarily small for $i\in \gls{relweights}_{\upsilon'}$, the element $r(\upsilon'-\upsilon+\zero,\zero)$ induces an isomorphism $(\zero ,\upsilon)\cong (-\upsilon, \upsilon')$
+
+Conjugating the functor $\gamma_{\mathsf{B}}$ by this isomorphism induces a functor $\gamma\colon
+\widehat{\mathsf{A}}_p \to\widehat{\mathscr{A}}_{\upsilon'} $ sending $\gamma(\zero,\upsilon)=\upsilon$.  Proposition \ref{prop:B-equiv} immediately implies that:
+\begin{theorem}\label{thm:pStein-equiv}
+  The categories $\gls{scrAhatup}_{\upsilon'}$ and
+  $\widehat{\mathsf{A}}_p$ are equivalent via the functors
+ \[\tikz[->,thick]{
+\matrix[row sep=12mm,column sep=25mm,ampersand replacement=\&]{
+\node (d) {$\widehat{\mathsf{A}}_p$}; \& \node (e)
+{$\gls{sfBhat}$}; \\
+\node (a) {$\widehat{\mathscr{A}}_{\upsilon'}$}; \& \node (b)
+{$\widehat{\mathscr{B}}_{\upsilon'}$}; \\
+};
+\draw (a) -- (b) ; 
+\draw (d) -- (a) node[left,midway]{$\gamma$} ; 
+\draw (e) -- (b) node[right,midway]{$\gamma_{\mathsf{B}}$}; 
+\draw (d) -- (e) node[above,midway]{$\upsilon\mapsto -\upsilon_{1/p}$}; 
+}\]
+\end{theorem}
+
+
+
+\subsection{Consequences for representation theory}
+\label{sec:cons-repr-theory}
+Theorem \ref{thm:pStein-equiv} on its own has a quite interesting
+consequence for  the behavior of the finite dimensional
+representations of $\glslink{efA}{\EuScript{A}_\phi}$ for
+different primes $p$ with  $\gls{flav}/p$  ``held constant.''  For simplicity in this section, we only consider the case where $\K=\mathbb{F}_p$, though the results could be
+generalized without must difficulty.  As we discussed in Remark \ref{rem:coefficients}, the
+category $\gls{sfB}$ has relations which are independent of $p$.
+This allows us to compare the representations of $\EuScript{A}_\phi$,
+by matching them with the representations of $\mathsf{B}.$ 
+
+
+\begin{definition}\label{def:Lambda}
+  Let $\gls{Lambda}\subset \Z^{d}$ be the vectors such that $\rACp_{\Ba}$
+  contains $\xi_{1/p}$ for $\xi\in \gls{ft1}_{1,\Z}$.  Note that this set
+  makes sense for an arbitrary $\phi \in \R^{d}$.  Let $\gls{barLambda}$ be the quotient of this set by
+  the action of $\gls{What}$ on $\Lambda$.
+\end{definition}
+The set $\bar \Lambda$ is finite; its size is bounded above by the number
+of collections of weights $\vp_i$ which form a basis of $\ft^*$.   We
+can then divide up choices of $\phi$ according to what the
+corresponding set $\bar \Lambda$ is.  Given  $\Ba\in \Z^d$, we let
+$\bar{\Ba}$ be its $\widehat{W}$-orbit.
+\begin{definition}\label{def:BLam}
+  For a fixed $\gls{barLambda}$, we let $\glslink{BLam}{\mathsf{B}^{\bar \Lambda}(\K)}$
+  for any commutative ring $\K$ be the category with object set
+  $\bar \Lambda$ such that
+  $\Hom_{\mathsf{B}^{\bar
+      \Lambda}(\K)}(\bar{\Ba},\bar{\Bb})=\Hom_{\mathsf{B}(\K)}(\eta_\Ba,\eta_\Bb)$,
+  for $\eta_\Ba$ an arbitrary element of the chamber $\rACp_{\Ba}$.
+
+  We can also encapsulate this in the ring
+  \begin{equation}
+  \gls{A}(\K)=\bigoplus_{\bar{\Ba},\bar{\Bb}\in
+    \bar\Lambda^{\R}}\Hom_{\glslink{BLam}{\mathsf{B}^{\bar{\Lambda}^{\R}}(\K)}}(\bar{\Ba},\bar{\Bb}),\label{eq:A-def}
+\end{equation}
+
+\end{definition}
+Note that this is
+equivalent to $\gls{sfA}(\K)$.  
+
+Since the center $Z(A(\K))$ is of finite
+codimension, the algebra $A(\K)$ has finitely many graded simple
+modules, all of which are finite dimensional.  Each such simple for
+$\K=\Q$ has a $\Z$-form, which remains irreducible mod $p$ for all but finitely
+many $p$.  That is:
+\begin{theorem}
+For a fixed  $\bar
+\Lambda\subset \Z^d/\gls{What}$, and  $p\gg 0$, there is a bijection
+between simples $L$ over $\mathsf{B}^{\bar \Lambda}(\Q)$  and simples $L(p)$ over $\EuScript{A}_{\phi}$ for all $\gls{flav}\in \Z^d$ with $\bar
+\Lambda(\flav)=\bar \Lambda$.   Under this bijection,  each weight space of
+$L(p)$ for a weight $\upsilon$ with $\upsilon_{1/p}\in \rACp_{\Ba}$ is the same
+dimension as the $\Q$-vector space $L(\Ba)$.  
+\end{theorem}
+\begin{proof}
+  As discussed above, for $p\gg 0$, the simple graded representations
+  of $\mathsf{B}^{\bar \Lambda}({\mathbb{F}_p})$ are given by reductions mod $p$ of an
+  arbitrary invariant lattice of the
+  simples $L$ of $\mathsf{B}^{\bar \Lambda}(\Q)$.  This clearly preserves the dimension
+  of the vector space assigned to an object $\Ba$.  Under the
+  equivalence of Theorem \ref{thm:pStein-equiv}, the $\upsilon$ weight space of
+  a $\EuScript{A}_{\phi}$-module matches the vector space assigned
+  $\Ba$ defined as before in the $\mathsf{B}^{\bar \Lambda}({\mathbb{F}_p})$-module.  
+\end{proof}
+Thus, the dimension of $L(p)$ only depends on the number of weights of
+$\EuScript{A}_{\phi}$  with $\upsilon_{1/p}\in \rACp_{\Ba}$: it is the sum of the
+dimensions of the 
+spaces $L(\Ba)$ weighted by this count of integral points in a
+polytope.  By the usual quasi-polynomiality of Erhart polynomials, we have that:
+\begin{corollary} Fix $\gls{barLambda}$ and  let $p$ and $\phi$ vary over values where $\bar{\Lambda}(\phi)=\bar{\Lambda}$.  
+  For $p\gg 0$, the dimension of $L(p)$ is a quasi-polynomial function of $\gls{flav}/p$ and
+  $p$.  
+\end{corollary}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "coherent-coulomb"
+%%% End:

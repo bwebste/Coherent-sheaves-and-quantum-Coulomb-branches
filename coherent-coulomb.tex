@@ -1,0 +1,472 @@
+\documentclass[12pt,final]{amsart}
+\usepackage[utf8]{inputenc}
+\newcommand\hmmax{0}
+\newcommand\bmmax{0}
+\usepackage{xspace,amssymb,epsfig,calligra, enumerate, enumitem,euscript,eufrak,enumerate,amsmath,nicefrac,mathdots}
+\DeclareMathAlphabet{\mathbbm}{U}{bbm}{m}{n}
+\usepackage{tikz,etex,xspace,afterpage}
+ \usepackage{epstopdf,ifpdf,todonotes}
+\usepackage{accents}
+\usepackage{stackengine}
+\def\stacktype{L}
+\stackMath
+
+\usepackage{xr,xr-hyper}
+
+\externaldocument{coherent-coulombII}
+\usepackage{showkeys}
+\usepackage[margin=3cm,footskip=25pt,headheight=20pt]{geometry}
+%\newlength{\dhatheight}
+\newcommand{\doubletilde}[1]{
+  \tilde{{\tilde{#1}}}}
+\usepackage{hyperref}
+
+\usepackage[automake,sort=use,style=super3col]{glossaries}
+
+\setlength{\glsdescwidth}{5in}\setlength{\glspagelistwidth}{1.25in}
+\makeglossaries
+\usepackage{fancyhdr,mathrsfs}
+%\usepackage[polutonikogreek,english]{babel}
+
+
+\pagestyle{fancy}
+\chead[\theshorttitle]{Ben Webster}
+\cfoot[\thepage]{\thepage}
+
+
+  \usepackage{pdfsync}
+
+\begin{document}
+\newtheoremstyle{all}%  |?name>
+  {11pt}%      |?Space above>
+  {11pt}%      |?Space below>
+  {\slshape}%         |?Body font>
+  {}%         |?Indent amount>|ntnote1
+  {\bfseries}% |?Theorem head font>
+  {}%        |?Punctuation after theorem head>
+  {.5em}%     |?Space after theorem head>|ntnote2
+  {}%         |?Theorem head spec (can be left empty, meaning `normal')>
+
+%\externaldocument[m-]{merged}[http://arxiv.org/pdf/1309.3796.pdf]
+%\externaldocument[C-]{CB}[http://arxiv.org/pdf/1209.0051.pdf]
+
+
+\theoremstyle{all}
+\newtheorem{itheorem}{Theorem}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{ques}[theorem]{Question}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{physics}[theorem]{Physics Motivation}
+
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{examplex}{Example}
+\newenvironment{example}
+  {\pushQED{\qed}\renewcommand{\qedsymbol}{$\clubsuit$}\examplex}
+  {\popQED\endexamplex }
+\renewcommand{\theexamplex}{{\arabic{section}.\roman{examplex}}}
+\newcommand{\nc}{\newcommand}
+\newcommand{\renc}{\renewcommand}
+\numberwithin{equation}{section}
+\renc{\theequation}{\arabic{section}.\arabic{equation}}
+
+\newcounter{subeqn}
+\renewcommand{\thesubeqn}{\theequation\alph{subeqn}}
+\newcommand{\subeqn}{%
+  \refstepcounter{subeqn}% Step subequation number
+  \tag{\thesubeqn}% Label equation
+}\makeatletter
+\@addtoreset{subeqn}{equation}
+\newcommand{\newseq}{%
+  \refstepcounter{equation}% Step subequation number
+%  \setcounter{subeqn}{0}% Label equation
+}
+  \nc{\kac}{\kappa^C}
+\nc{\alg}{T}
+\nc{\salg}{W}
+\nc{\zero}{o}
+\nc{\weights}{\iota}
+\nc{\psalg}{\mathscr{W}}
+
+\nc{\Isalg}{\mathscr{H}}
+\nc{\Lco}{L_{\la}}
+\nc{\qD}{q^{\nicefrac 1D}}
+\nc{\ocL}{M_{\la}}
+\nc{\excise}[1]{}
+\nc{\Dbe}{D^{\uparrow}}
+\nc{\Dfg}{D^{\mathsf{fg}}}
+\nc{\frob}{\mathsf{f}}
+
+\nc{\op}{\operatorname{op}}
+\nc{\Sym}{\operatorname{Sym}}
+\nc{\Symt}{S}
+\nc{\tr}{\operatorname{tr}}
+\newcommand{\Mirkovic}{Mirkovi\'c\xspace}
+\nc{\tla}{\mathsf{t}_\la}
+\nc{\llrr}{\langle\la,\rho\rangle}
+\nc{\lllr}{\langle\la,\la\rangle}
+\nc{\K}{\mathbbm{k}}
+\nc{\Stosic}{Sto{\v{s}}i{\'c}\xspace}
+\nc{\cd}{\mathcal{D}}
+\nc{\cT}{\mathcal{T}}
+\nc{\vd}{\mathbb{D}}
+\nc{\Fp}{{\mathbb{F}_p}}
+\nc{\lift}{\gamma}
+\nc{\cox}{h}
+\nc{\Aut}{\operatorname{Aut}}
+\nc{\R}{\mathbb{R}}
+\renc{\wr}{\operatorname{wr}}
+  \nc{\Lam}[3]{\La^{#1}_{#2,#3}}
+  \nc{\Lab}[2]{\La^{#1}_{#2}}
+  \nc{\Lamvwy}{\Lam\Bv\Bw\By}
+  \nc{\Labwv}{\Lab\Bw\Bv}
+  \nc{\nak}[3]{\mathcal{N}(#1,#2,#3)}
+  \nc{\hw}{highest weight\xspace}
+  \nc{\al}{\alpha}
+  \nc{\gK}{K}
+  \nc{\gk}{\mathfrak{k}}
+  
+\newcommand{\LLoc}{\mathbb{L}\!\operatorname{Loc}}
+\newcommand{\Rsecs}{\mathbb{R}\Gamma_\bS}
+
+\newlength{\dhatheight}
+\newcommand{\doublehat}[1]{%
+    \settoheight{\dhatheight}{\ensuremath{\hat{#1}}}%
+    \addtolength{\dhatheight}{-0.35ex}%
+    \hat{\vphantom{\rule{1pt}{\dhatheight}}%
+    \smash{\hat{#1}}}}
+
+\newcommand{\dgmod}{\operatorname{-dg-mod}}
+  \nc{\be}{\beta}
+  \nc{\bM}{\mathbf{m}}
+  \nc{\Bu}{\mathbf{u}}
+
+  \nc{\bkh}{\backslash}
+  \nc{\Bi}{\mathbf{i}}
+  \nc{\Bm}{\mathbf{m}}
+  \nc{\Bj}{\mathbf{j}}
+ \nc{\Bk}{\mathbf{k}}
+  \nc{\Bs}{\mathbf{s}}
+\newcommand{\bS}{\mathbb{S}}
+\newcommand{\bT}{\mathbb{T}}
+\newcommand{\bt}{\mathbbm{t}}
+
+\nc{\hatD}{\widehat{\Delta}}
+\nc{\bd}{\mathbf{d}}
+\nc{\D}{\mathcal{D}}
+\nc{\mmod}{\operatorname{-mod}}  
+\nc{\AS}{\operatorname{AS}}
+\newcommand{\red}{\mathfrak{r}}
+
+
+\nc{\RAA}{R^\A_A}
+  \nc{\Bv}{\mathbf{v}}
+  \nc{\Bw}{\mathbf{w}}
+\nc{\Id}{\operatorname{Id}}
+\nc{\Cth}{S_h}
+\nc{\Cft}{S_1}
+\def\MHM{{\operatorname{MHM}}}
+
+
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\LCP}{\operatorname{LCP}}
+  \nc{\By}{\mathbf{y}}
+\nc{\eE}{\EuScript{E}}
+  \nc{\Bz}{\mathbf{z}}
+  \nc{\coker}{\mathrm{coker}\,}
+  \nc{\C}{\mathbb{C}}
+\nc{\ab}{{\operatorname{ab}}}
+\nc{\wall}{\mathbbm{w}}
+  \nc{\ch}{\mathrm{ch}}
+  \nc{\de}{\delta}
+  \nc{\ep}{\epsilon}
+  \nc{\Rep}[2]{\mathsf{Rep}_{#1}^{#2}}
+  \nc{\Ev}[2]{E_{#1}^{#2}}
+  \nc{\fr}[1]{\mathfrak{#1}}
+  \nc{\fp}{\fr p}
+  \nc{\fq}{\fr q}
+  \nc{\fl}{\fr l}
+  \nc{\fgl}{\fr{gl}}
+  \nc{\Fr}{\operatorname{Fr}}
+\nc{\rad}{\operatorname{rad}}
+\nc{\ind}{\operatorname{ind}}
+  \nc{\GL}{\mathrm{GL}}
+\newcommand{\arxiv}[1]{\href{http://arxiv.org/abs/#1}{\tt arXiv:\nolinkurl{#1}}}
+  \nc{\Hom}{\mathrm{Hom}}
+  \nc{\im}{\mathrm{im}\,}
+  \nc{\La}{\Lambda}
+  \nc{\la}{\lambda}
+  \nc{\mult}{b^{\mu}_{\la_0}\!}
+  \nc{\mc}[1]{\mathcal{#1}}
+  \nc{\om}{\omega}
+\nc{\gl}{\mathfrak{gl}}
+  \nc{\cF}{\mathcal{F}}
+%\renc{\thetheorem}{\arabic{theorem}}
+ \nc{\cC}{\mathcal{C}}
+  \nc{\Mor}{\mathsf{Mor}}
+  \nc{\HOM}{\operatorname{HOM}}
+
+  \nc{\sHom}{\mathscr{H}\text{\kern -3pt {\calligra\large om}}\,}
+  \nc{\Ob}{\mathsf{Ob}}
+  \nc{\Vect}{\operatorname{-Vect}}
+\nc{\gVect}{\mathsf{gVect}}
+  \nc{\modu}{\mathsf{-mod}}
+\nc{\pmodu}{\mathsf{-pmod}}
+  \nc{\qvw}[1]{\La(#1 \Bv,\Bw)}
+  \nc{\van}[1]{\nu_{#1}}
+  \nc{\Rperp}{R^\vee(X_0)^{\perp}}
+  \nc{\si}{\sigma}
+\nc{\sgns}{{\boldsymbol{\sigma}}}
+  \nc{\croot}[1]{\al^\vee_{#1}}
+\nc{\di}{\mathbf{d}}
+  \nc{\SL}[1]{\mathrm{SL}_{#1}}
+  
+  \nc{\slhat}[1]{\mathfrak{\widehat{sl}}_{#1}}
+  \nc{\sllhat}{\slhat{\ell}}
+  \nc{\slnhat}{\slhat{n}}
+    \nc{\slehat}{\slhat{e}}
+   
+ \nc{\sle}{\mathfrak{sl}_e}
+    \nc{\Th}{\theta}
+  \nc{\vp}{\varphi}
+  \nc{\wt}{\mathrm{wt}}
+\nc{\te}{\tilde{e}}
+\nc{\tf}{\tilde{f}}
+\nc{\hwo}{\mathbb{V}}
+\nc{\soc}{\operatorname{soc}}
+\nc{\cosoc}{\operatorname{cosoc}}
+ \nc{\Q}{\mathbb{Q}}
+\nc{\LPC}{\mathsf{LPC}}
+  \nc{\Z}{\mathbb{Z}}
+  \nc{\Znn}{\Z_{\geq 0}}
+  \nc{\ver}{\EuScript{V}}
+  \nc{\Res}[2]{\operatorname{Res}^{#1}_{#2}}
+  \nc{\edge}{\EuScript{E}}
+  \nc{\Spec}{\operatorname{Spec}}
+  \nc{\tie}{\EuScript{T}}
+  \nc{\ml}[1]{\mathbb{D}^{#1}}
+  \nc{\fQ}{\mathfrak{Q}}
+        \nc{\fg}{\mathfrak{g}}
+        \nc{\ft}{\mathfrak{t}}
+        \nc{\fm}{\mathfrak{m}}
+  \nc{\Uq}{U_q(\fg)}
+        \nc{\bom}{\boldsymbol{\omega}}
+\nc{\bla}{{\underline{\boldsymbol{\la}}}}
+\nc{\bmu}{{\underline{\boldsymbol{\mu}}}}
+\nc{\bal}{{\boldsymbol{\al}}}
+\nc{\bet}{{\boldsymbol{\eta}}}
+\nc{\rola}{X}
+\nc{\wela}{Y}
+\nc{\fM}{\mathfrak{M}}
+\nc{\tfM}{\mathfrak{\tilde M}}
+\nc{\fX}{\mathfrak{X}}
+\nc{\fH}{\mathfrak{H}}
+\nc{\fE}{\mathfrak{E}}
+\nc{\fF}{\mathfrak{F}}
+\nc{\fI}{\mathfrak{I}}
+\nc{\qui}[2]{\fM_{#1}^{#2}}
+\nc{\cL}{\mathcal{L}}
+%\nc{\cO}{\mathcal{O}}
+\nc{\ca}[2]{\fQ_{#1}^{#2}}
+\nc{\cat}{\mathcal{V}}
+\nc{\cata}{\mathfrak{V}}
+\nc{\catf}{\mathscr{V}}
+\nc{\hl}{\mathcal{X}}
+\nc{\hld}{\EuScript{X}}
+\nc{\hldbK}{\EuScript{X}^{\bla}_{\bar{\mathbb{K}}}}
+\nc{\Iwahori}{\mathrm{Iwa}}
+\nc{\hE}{\mathfrak{E}^{(1)}}
+\nc{\Eh}{\mathfrak{E}^{(2)}}
+\nc{\hF}{\mathfrak{F}^{(1)}}
+\nc{\Fh}{\mathfrak{F}^{(2)}}
+%\nc{\fE}{\mathfrak{E}}
+%\nc{\fF}{\mathfrak{F}}
+
+%\nc{\hl}{\mathfrak{X}}
+\nc{\pil}{{\boldsymbol{\pi}}^L}
+\nc{\pir}{{\boldsymbol{\pi}}^R}
+\nc{\cO}{\mathcal{O}}
+\nc{\Ko}{\text{\Denarius}}
+\nc{\Ei}{\fE_i}
+\nc{\Fi}{\fF_i}
+\nc{\fil}{\mathcal{H}}
+\nc{\brr}[2]{\beta^R_{#1,#2}}
+\nc{\brl}[2]{\beta^L_{#1,#2}}
+\nc{\so}[2]{\EuScript{Q}^{#1}_{#2}}
+\nc{\EW}{\mathbf{W}}
+\nc{\rma}[2]{\mathbf{R}_{#1,#2}}
+\nc{\Dif}{\EuScript{D}}%{\operatorname{Dif}}
+\nc{\MDif}{\EuScript{E}}
+\renc{\mod}{\mathsf{mod}}
+\nc{\modg}{\mathsf{mod}^g}
+\nc{\fmod}{\mathsf{mod}^{fd}}
+\nc{\id}{\operatorname{id}}
+\nc{\compat}{\EuScript{K}}
+\nc{\DR}{\mathbf{DR}}
+\nc{\End}{\operatorname{End}}
+\nc{\Fun}{\operatorname{Fun}}
+\nc{\Ext}{\operatorname{Ext}}
+\nc{\Coh}{\operatorname{Coh}}
+\nc{\tw}{\tau}
+\nc{\second}{\tau}
+\nc{\A}{\EuScript{A}}
+\nc{\Loc}{\mathsf{Loc}}
+\nc{\eF}{\EuScript{F}}
+\nc{\LAA}{\Loc^{\A}_{A}}
+\nc{\perv}{\mathsf{Perv}}
+\nc{\gfq}[2]{B_{#1}^{#2}}
+\nc{\qgf}[1]{A_{#1}}
+\nc{\qgr}{\qgf\rho}
+\nc{\tqgf}{\tilde A}
+\nc{\Tr}{\operatorname{Tr}}
+\nc{\Tor}{\operatorname{Tor}}
+\nc{\cQ}{\mathcal{Q}}
+\nc{\st}[1]{\Delta(#1)}
+\nc{\cst}[1]{\nabla(#1)}
+\nc{\ei}{\mathbf{e}_i}
+\nc{\Be}{\mathbf{e}}
+\nc{\Hck}{\mathfrak{H}}
+%\nc{\fH}{\Hck}
+%\nc{\fM}{\mathfrak{M}}
+\renc{\P}{\mathbb{P}}
+\nc{\bbB}{\mathbb{B}}
+\nc{\ssy}{\mathsf{y}}
+\nc{\cI}{\mathcal{I}}
+\nc{\cG}{\mathcal{G}}
+\nc{\cH}{\mathcal{H}}
+\nc{\coe}{\mathfrak{K}}
+\nc{\pr}{\operatorname{pr}}
+\nc{\bra}{\mathfrak{B}}
+\nc{\rcl}{\rho^\vee(\la)}
+\nc{\tU}{\mathcal{U}}
+\nc{\dU}{{\stackon[8pt]{\tU}{\cdot}}}
+\nc{\dT}{{\stackon[8pt]{\cT}{\cdot}}}
+\nc{\BFN}{\EuScript{R}}
+
+\nc{\RHom}{\mathrm{RHom}}
+\nc{\tcO}{\tilde{\cO}}
+\nc{\Yon}{\mathscr{Y}}
+\nc{\sI}{{\mathsf{I}}}
+\nc{\sptc}{X_*(T)_1}
+\nc{\spt}{\ft_1}
+\nc{\Bpsi}{u}
+\nc{\acham}{\eta}
+\nc{\hyper}{\mathsf{H}}
+\nc{\AF}{\EuScript{Fl}}
+\nc{\VB}{\EuScript{X}}
+\nc{\OHiggs}{\cO_{\operatorname{Higgs}}}
+\nc{\OCoulomb}{\cO_{\operatorname{Coulomb}}}
+\nc{\tOHiggs}{\tilde\cO_{\operatorname{Higgs}}}
+\nc{\tOCoulomb}{\tilde\cO_{\operatorname{Coulomb}}}
+\nc{\indx}{\mathcal{I}}
+\nc{\redu}{K}
+\nc{\Ba}{\mathbf{a}}
+\nc{\Bb}{\mathbf{b}}
+\nc{\Bc}{\mathbf{c}}
+\nc{\Lotimes}{\overset{L}{\otimes}}
+\nc{\AC}{C}
+\nc{\rAC}{rC}\nc{\defr}{\operatorname{def}}
+
+
+\nc{\rACp}{\mathsf{C}}
+\nc{\ideal}{\mathscr{I}}
+\nc{\ACs}{\mathscr{C}}
+\nc{\Stein}{\mathscr{X}}
+\nc{\pStein}{p\mathscr{X}}
+\nc{\pSteinK}{\overline{\mathscr{X}}}
+\nc{\No}{H}
+\nc{\To}{Q}
+\nc{\tNo}{\tilde{H}}
+\nc{\tTo}{\tilde{Q}}
+\nc{\flav}{\phi}
+\nc{\tF}{\tilde{F}}
+\newcommand{\cOg}{\mathcal{O}_{\!\operatorname{g}}}
+\newcommand{\tcOg}{\mathcal{\tilde O}_{\!\operatorname{g}}}
+\newcommand{\dOg}{D_{\cOg}}
+\newcommand{\preO}{p\cOg}
+\newcommand{\dpreO}{D_{p\cOg}}
+\nc{\vertex}{\EuScript{V}(\Gamma)}
+\nc{\Wei}{\EuScript{W}}
+% Margin stuff from jason
+%\oddsidemargin=0pt
+%\evensidemargin=0pt
+%\topmargin=0in
+%\headheight=0pt
+%\headsep=0pt
+%\setlength{\textheight}{9in}
+%\setlength{\textwidth}{6.5in}
+\setcounter{tocdepth}{2}
+\newcommand{\thetitle}{Coherent sheaves and quantum Coulomb branches
+  I:\\tilting bundles from integrable systems}
+\newcommand{\theshorttitle}{Coherent sheaves and quantum Coulomb branches
+  I}
+%\newcommand{\thetitle2}{Coherent sheaves and quantum Coulomb branches II}
+\renc{\theitheorem}{\Alph{itheorem}}
+
+\excise{
+\newenvironment{block}
+\newenvironment{frame}
+\newenvironment{tikzpicture}
+\newenvironment{equation*}
+}
+
+\baselineskip=1.1\baselineskip
+
+ \usetikzlibrary{decorations.pathreplacing,backgrounds,decorations.markings,shapes.geometric,decorations.pathmorphing}
+\tikzset{wei/.style={draw=red,double=red!40!white,double distance=1.5pt,thin}}
+\tikzset{awei/.style={draw=blue,double=blue!40!white,double distance=1.5pt,thin}}
+\tikzset{bdot/.style={fill,circle,color=blue,inner sep=3pt,outer
+    sep=0}}
+    \tikzset{
+    weyl/.style={decorate, decoration={snake}, draw=black!50!green,
+      very thick}}
+\tikzset{fringe/.style={gray,postaction={decoration=border,decorate,draw,gray, segment length=4pt,thick}}}
+\tikzset{old/.style={gray,thin}}
+\tikzset{dir/.style={postaction={decorate,decoration={markings,
+    mark=at position .8 with {\arrow[scale=1.3]{>}}}}}}
+\tikzset{rdir/.style={postaction={decorate,decoration={markings,
+    mark=at position .8 with {\arrow[scale=1.3]{<}}}}}}
+\tikzset{edir/.style={postaction={decorate,decoration={markings,
+    mark=at position .2 with {\arrow[scale=1.3]{<}}}}}}\begin{center}
+\noindent {\large  \bf \thetitle}
+\medskip
+
+\noindent {\sc Ben Webster}\footnote{Supported by the NSF under Grant
+  DMS-1151473 and the Alfred P. Sloan Foundation.}\\  
+Department of Pure Mathematics, University of Waterloo \& \\
+ Perimeter Institute for Theoretical Physics\\
+Waterloo, ON\\
+Email: {\tt ben.webster@uwaterloo.ca}
+\end{center}
+\bigskip
+{\small
+\begin{quote}
+\noindent {\em Abstract.}
+In this paper, we consider how the approach of Bezrukavnikov and
+Kaledin to understanding the categories of coherent sheaves on
+symplectic resolutions can be applied to the Coulomb branches
+introduced by Braverman, Finkelberg and Nakajima.  In particular, we
+construct tilting generators on resolved Coulomb branches, and give
+explicit quiver presentations of categories of coherent sheaves on
+these varieties, with the wall-crossing functors described by natural
+bimodules.
+\end{quote}
+}
+\input{SD-glos}
+\input{preliminaries}
+%\input{KLR} 
+\input{geometry} 
+%\input{slodowy}
+
+\printglossaries
+
+\bibliography{gen}
+\bibliographystyle{amsalpha}
+\end{document}

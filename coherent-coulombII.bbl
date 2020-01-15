@@ -1,0 +1,113 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\def\cprime{$'$} \def\cprime{$'$} \def\cprime{$'$}
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{BMRR08}
+
+\bibitem[AN]{ANexotic}
+Rina Anno and Vinoth Nandakumar, \emph{Exotic t-structures for two-block
+  springer fibers}, \arxiv{1602.00768}.
+
+\bibitem[Ann]{Anno}
+R.~Anno, \emph{Affine tangles and irreducible exotic sheaves},
+  \arxiv{0802.1070}.
+
+\bibitem[Bez06]{BezNon}
+R.~Bezrukavnikov, \emph{Noncommutative counterparts of the {S}pringer
+  resolution}, International Congress of Mathematicians. Vol. II, Eur. Math.
+  Soc., Z\"urich, 2006, pp.~1119--1144.
+
+\bibitem[BFN]{BFNline}
+Alexander Braverman, Michael Finkelberg, and Hiraku Nakajima, \emph{Line
+  bundles over coulomb branches}, \arxiv{1805.11826}.
+
+\bibitem[BFN18]{BFN}
+Alexander Braverman, Michael Finkelberg, and Hiraku Nakajima, \emph{Towards a
+  mathematical definition of {C}oulomb branches of 3-dimensional {$\mathcal
+  N=4$} gauge theories, {II}}, Adv. Theor. Math. Phys. \textbf{22} (2018),
+  no.~5, 1071--1147. \MR{3952347}
+
+\bibitem[BK08]{BKpos}
+R.~Bezrukavnikov and D.~Kaledin, \emph{Fedosov quantization in positive
+  characteristic}, J. Amer. Math. Soc. \textbf{21} (2008), no.~2, 409--438.
+  \MR{2373355}
+
+\bibitem[BMRR08]{BMRR}
+Roman Bezrukavnikov, Ivan Mirkovi{\'c}, Dmitriy Rumynin, and Simon Riche,
+  \emph{Localization of modules for a semisimple lie algebra in prime
+  characteristic}, Annals of Mathematics (2008), 945--991.
+
+\bibitem[CK]{CKexotic}
+Sabin Cautis and Clemens Koppensteiner, \emph{Exotic t-structures and actions
+  of quantum affine algebras}, \arxiv{1611.02777}.
+
+\bibitem[Kal08]{KalDEQ}
+Dmitry Kaledin, \emph{Derived equivalences by quantization}, Geom. Funct. Anal.
+  \textbf{17} (2008), no.~6, 1968--2004.
+
+\bibitem[KL11]{KLII}
+Mikhail Khovanov and Aaron~D. Lauda, \emph{A diagrammatic approach to
+  categorification of quantum groups {II}}, Trans. Amer. Math. Soc.
+  \textbf{363} (2011), no.~5, 2685--2700. \MR{2763732 (2012a:17021)}
+
+\bibitem[KTW{\etalchar{+}}]{KTWWY2}
+Joel Kamnitzer, Peter Tingley, Ben Webster, Alex Weekes, and Oded Yacobi,
+  \emph{{On category $\mathcal{O}$ for affine {G}rassmannian slices and
+  categorified tensor products}}, \arxiv{1806.07519}.
+
+\bibitem[MV07]{MV08}
+I.~Mirkovi\'{c} and M.~Vybornov, \emph{{Q}uiver varieties and
+  {B}eilinson-{D}rinfeld {G}rassmannians of type {A}}, 2007, \arxiv{0712.4160}.
+
+\bibitem[MW18]{Webweb}
+Marco Mackaay and Ben Webster, \emph{Categorified skew {H}owe duality and
+  comparison of knot homologies}, 2018, pp.~876--945.
+
+\bibitem[NZ]{NaZh}
+Vinoth Nandakumar and Gufang Zhao, \emph{{Categorification via blocks of
+  modular representations for $\mathfrak{sl}(n)$}}, \arxiv{1612.06941}.
+
+\bibitem[Weba]{WebcohI}
+Ben Webster, \emph{{Coherent sheaves and quantum Coulomb branches I: tilting
+  bundles from integrable systems}}, \arxiv{1905.04623}.
+
+\bibitem[Webb]{WebGT}
+\bysame, \emph{{Gelfand-Tsetlin modules in the Coulomb context}},
+  \arxiv{1904.05415}.
+
+\bibitem[Webc]{WebSD}
+\bysame, \emph{{Koszul duality between Higgs and Coulomb categories
+  $\mathcal{O}$}}, \arxiv{1611.06541}.
+
+\bibitem[Web16]{WebTGK}
+\bysame, \emph{Tensor product algebras, {G}rassmannians and {K}hovanov
+  homology}, Physics and mathematics of link homology, Contemp. Math., vol.
+  680, Amer. Math. Soc., Providence, RI, 2016, pp.~23--58. \MR{3591642}
+
+\bibitem[Web17a]{Webmerged}
+\bysame, \emph{Knot invariants and higher representation theory}, Mem. Amer.
+  Math. Soc. \textbf{250} (2017), no.~1191, 141.
+
+\bibitem[Web17b]{WebRou}
+\bysame, \emph{Rouquier's conjecture and diagrammatic algebra}, Forum Math.
+  Sigma \textbf{5} (2017), e27, 71. \MR{3732238}
+
+\bibitem[Web19a]{Webalt}
+\bysame, \emph{Representation theory of the cyclotomic {C}herednik algebra via
+  the {D}unkl-{O}pdam subalgebra}, New York J. Math. \textbf{25} (2019),
+  1017--1047. \MR{4017214}
+
+\bibitem[Web19b]{WebwKLR}
+\bysame, \emph{Weighted {K}hovanov-{L}auda-{R}ouquier algebras}, Doc. Math.
+  \textbf{24} (2019), 209--250. \MR{3946709}
+
+\bibitem[WWY]{WWY}
+Ben Webster, Alex Weekes, and Oded Yacobi, \emph{{A quantum
+  Mirkovi\'c--Vybornov isomorphism}}, \arxiv{1706.03841}.
+
+\end{thebibliography}

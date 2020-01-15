@@ -1,0 +1,3240 @@
+\ifglsentryexists{V}{}%
+{%
+\gls@defglossaryentry{V}%
+{%
+name={\ensuremath {V}},%
+sort={V},%
+type={main},%
+first={\protect \ensuremath {V}},%
+firstplural={\protect \ensuremath {V}s},%
+text={\protect \ensuremath {V}},%
+plural={\protect \ensuremath {V}s},%
+description={The matter representation},%
+descriptionplural={The matter representation},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{G}{}%
+{%
+\gls@defglossaryentry{G}%
+{%
+name={\ensuremath {G}},%
+sort={G},%
+type={main},%
+first={\protect \ensuremath {G}},%
+firstplural={\protect \ensuremath {G}s},%
+text={\protect \ensuremath {G}},%
+plural={\protect \ensuremath {G}s},%
+description={The gauge group},%
+descriptionplural={The gauge group},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{pthroot}{}%
+{%
+\gls@defglossaryentry{pthroot}%
+{%
+name={$p$th root},%
+sort={$p$th root},%
+type={main},%
+first={$p$th root},%
+firstplural={$p$th roots},%
+text={$p$th root},%
+plural={$p$th roots},%
+description={The conventions for the extended category adopted in Definition \ref {def:pth-root}},%
+descriptionplural={The conventions for the extended category adopted in Definition \ref {def:pth-root}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sfB}{}%
+{%
+\gls@defglossaryentry{sfB}%
+{%
+name={\ensuremath {\mathsf {B}}},%
+sort={\ensuremath {\mathsf {B}}},%
+type={main},%
+first={\protect \ensuremath {\protect \mathsf {B}}},%
+firstplural={\protect \ensuremath {\protect \mathsf {B}}s},%
+text={\protect \ensuremath {\protect \mathsf {B}}},%
+plural={\protect \ensuremath {\protect \mathsf {B}}s},%
+description={The extended BFN category with \gls {pthroot} conventions},%
+descriptionplural={The extended BFN category with \gls {pthroot} conventions},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sfBhat}{}%
+{%
+\gls@defglossaryentry{sfBhat}%
+{%
+name={\ensuremath {\widehat {\mathsf {B}}}},%
+sort={\ensuremath {\widehat {\mathsf {B}}}},%
+type={main},%
+first={\protect \ensuremath {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle \protect \mathsf {B}$}\mathaccent "0362{\protect \mathsf {B}}}},%
+firstplural={\protect \ensuremath {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle \protect \mathsf {B}$}\mathaccent "0362{\protect \mathsf {B}}}s},%
+text={\protect \ensuremath {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle \protect \mathsf {B}$}\mathaccent "0362{\protect \mathsf {B}}}},%
+plural={\protect \ensuremath {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle \protect \mathsf {B}$}\mathaccent "0362{\protect \mathsf {B}}}s},%
+description={The completion with respect to grading of the extended BFN category \gls {sfB} with \gls {pthroot} conventions},%
+descriptionplural={The completion with respect to grading of the extended BFN category \gls {sfB} with \gls {pthroot} conventions},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sfA}{}%
+{%
+\gls@defglossaryentry{sfA}%
+{%
+name={\ensuremath {\mathsf {A}_p}},%
+sort={\ensuremath {\mathsf {A}_p}},%
+type={main},%
+first={\protect \ensuremath {\protect \mathsf {A}_p}},%
+firstplural={\protect \ensuremath {\protect \mathsf {A}_p}s},%
+text={\protect \ensuremath {\protect \mathsf {A}_p}},%
+plural={\protect \ensuremath {\protect \mathsf {A}_p}s},%
+description={The subcategory of \gls {sfB} defined in Definition \ref {def:sfA}},%
+descriptionplural={The subcategory of \gls {sfB} defined in Definition \ref {def:sfA}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sfAhat}{}%
+{%
+\gls@defglossaryentry{sfAhat}%
+{%
+name={\ensuremath {\widehat {\mathsf {A}}_p}},%
+sort={\ensuremath {\widehat {\mathsf {A}}_p}},%
+type={main},%
+first={\protect \ensuremath {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle \protect \mathsf {A}$}\mathaccent "0362{\protect \mathsf {A}}_p}},%
+firstplural={\protect \ensuremath {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle \protect \mathsf {A}$}\mathaccent "0362{\protect \mathsf {A}}_p}s},%
+text={\protect \ensuremath {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle \protect \mathsf {A}$}\mathaccent "0362{\protect \mathsf {A}}_p}},%
+plural={\protect \ensuremath {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle \protect \mathsf {A}$}\mathaccent "0362{\protect \mathsf {A}}_p}s},%
+description={The completion with respect to grading of \gls {sfA}},%
+descriptionplural={The completion with respect to grading of \gls {sfA}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{scrBhat}{}%
+{%
+\gls@defglossaryentry{scrBhat}%
+{%
+name={\ensuremath {\mathscr {\widehat {B}}}},%
+sort={\ensuremath {\mathscr {\widehat {B}}}},%
+type={main},%
+first={\protect \ensuremath {\protect \mathscr {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle B$}\mathaccent "0362{B}}}},%
+firstplural={\protect \ensuremath {\protect \mathscr {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle B$}\mathaccent "0362{B}}}s},%
+text={\protect \ensuremath {\protect \mathscr {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle B$}\mathaccent "0362{B}}}},%
+plural={\protect \ensuremath {\protect \mathscr {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle B$}\mathaccent "0362{B}}}s},%
+description={The completion of the extended BFN category with respect to the different maximal ideals of $S_1$.},%
+descriptionplural={The completion of the extended BFN category with respect to the different maximal ideals of $S_1$.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{scrBhatup}{}%
+{%
+\gls@defglossaryentry{scrBhatup}%
+{%
+name={\ensuremath {\mathscr {\widehat {B}}_{\upsilon }}},%
+sort={\ensuremath {\mathscr {\widehat {B}}_{\upsilon }}},%
+type={main},%
+first={\protect \ensuremath { \protect \mathscr {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle B$}\mathaccent "0362{B}}}},%
+firstplural={\protect \ensuremath { \protect \mathscr {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle B$}\mathaccent "0362{B}}}s},%
+text={\protect \ensuremath { \protect \mathscr {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle B$}\mathaccent "0362{B}}}},%
+plural={\protect \ensuremath { \protect \mathscr {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle B$}\mathaccent "0362{B}}}s},%
+description={The subcategory of \gls {scrBhat} where we only allow objects $(\eta ,\upsilon )$ with $\eta \in \ft _{\second }, \upsilon \in \upsilon '+\ft _\Z $.},%
+descriptionplural={The subcategory of \gls {scrBhat} where we only allow objects $(\eta ,\upsilon )$ with $\eta \in \ft _{\second }, \upsilon \in \upsilon '+\ft _\Z $.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{scrAhatup}{}%
+{%
+\gls@defglossaryentry{scrAhatup}%
+{%
+name={\ensuremath {\mathscr {\widehat {A}}_{\upsilon }}},%
+sort={\ensuremath {\mathscr {\widehat {A}}_{\upsilon }}},%
+type={main},%
+first={\protect \ensuremath { \protect \mathscr {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle A$}\mathaccent "0362{A}}}},%
+firstplural={\protect \ensuremath { \protect \mathscr {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle A$}\mathaccent "0362{A}}}s},%
+text={\protect \ensuremath { \protect \mathscr {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle A$}\mathaccent "0362{A}}}},%
+plural={\protect \ensuremath { \protect \mathscr {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle A$}\mathaccent "0362{A}}}s},%
+description={The subcategory of \gls {scrBhat} where we only allow objects of the form $(\zero ,\upsilon )$ for $\upsilon \in \upsilon '+\ft _\Z $.},%
+descriptionplural={The subcategory of \gls {scrBhat} where we only allow objects of the form $(\zero ,\upsilon )$ for $\upsilon \in \upsilon '+\ft _\Z $.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{No}{}%
+{%
+\gls@defglossaryentry{No}%
+{%
+name={\ensuremath {\No }},%
+sort={H},%
+type={main},%
+first={\protect \ensuremath {H}},%
+firstplural={\protect \ensuremath {H}s},%
+text={\protect \ensuremath {H}},%
+plural={\protect \ensuremath {H}s},%
+description={The normalizer $N_{GL(V)}^{\circ }(G)$},%
+descriptionplural={The normalizer $N_{GL(V)}^{\circ }(G)$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{To}{}%
+{%
+\gls@defglossaryentry{To}%
+{%
+name={\ensuremath {\To }},%
+sort={H},%
+type={main},%
+first={\protect \ensuremath {Q}},%
+firstplural={\protect \ensuremath {Q}s},%
+text={\protect \ensuremath {Q}},%
+plural={\protect \ensuremath {Q}s},%
+description={The preimage in the normalizer $\No $ of a fixed torus $T_F$ in the flavor group \gls {F}},%
+descriptionplural={The preimage in the normalizer $\No $ of a fixed torus $T_F$ in the flavor group \gls {F}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{tNo}{}%
+{%
+\gls@defglossaryentry{tNo}%
+{%
+name={\ensuremath {\tNo }},%
+sort={H},%
+type={main},%
+first={\protect \ensuremath {\protect \cc@accent {"707E}{H}}},%
+firstplural={\protect \ensuremath {\protect \cc@accent {"707E}{H}}s},%
+text={\protect \ensuremath {\protect \cc@accent {"707E}{H}}},%
+plural={\protect \ensuremath {\protect \cc@accent {"707E}{H}}s},%
+description={The product $\No \times \C ^*$, acting on $T^*V$ with the second factor acting by the cocharacter $\gls {second}$},%
+descriptionplural={The product $\No \times \C ^*$, acting on $T^*V$ with the second factor acting by the cocharacter $\gls {second}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{tF}{}%
+{%
+\gls@defglossaryentry{tF}%
+{%
+name={\ensuremath {\tF }},%
+sort={F},%
+type={main},%
+first={\protect \ensuremath {\protect \cc@accent {"707E}{F}}},%
+firstplural={\protect \ensuremath {\protect \cc@accent {"707E}{F}}s},%
+text={\protect \ensuremath {\protect \cc@accent {"707E}{F}}},%
+plural={\protect \ensuremath {\protect \cc@accent {"707E}{F}}s},%
+description={The quotient $\gls {tNo}/\gls {G}$},%
+descriptionplural={The quotient $\gls {tNo}/\gls {G}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{F}{}%
+{%
+\gls@defglossaryentry{F}%
+{%
+name={\ensuremath {F}},%
+sort={F},%
+type={main},%
+first={\protect \ensuremath {F}},%
+firstplural={\protect \ensuremath {F}s},%
+text={\protect \ensuremath {F}},%
+plural={\protect \ensuremath {F}s},%
+description={The flavor group $\gls {No}/\gls {G}$},%
+descriptionplural={The flavor group $\gls {No}/\gls {G}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{second}{}%
+{%
+\gls@defglossaryentry{second}%
+{%
+name={\ensuremath {\second }},%
+sort={\ensuremath {\second }},%
+type={main},%
+first={\protect \ensuremath {\tau }},%
+firstplural={\protect \ensuremath {\tau }s},%
+text={\protect \ensuremath {\tau }},%
+plural={\protect \ensuremath {\tau }s},%
+description={The cocharacter $\second \colon \C ^*\to GL(T^*V)$ that acts trivially on $V$ and weight $-1$ on $V^*$},%
+descriptionplural={The cocharacter $\second \colon \C ^*\to GL(T^*V)$ that acts trivially on $V$ and weight $-1$ on $V^*$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{scrB}{}%
+{%
+\gls@defglossaryentry{scrB}%
+{%
+name={\ensuremath {\mathscr {B}}},%
+sort={\ensuremath {\mathscr {B}}},%
+type={main},%
+first={\protect \ensuremath {\protect \mathscr {B}}},%
+firstplural={\protect \ensuremath {\protect \mathscr {B}}s},%
+text={\protect \ensuremath {\protect \mathscr {B}}},%
+plural={\protect \ensuremath {\protect \mathscr {B}}s},%
+description={The extended BFN category, defined in Definition \ref {def:extended-BFN}},%
+descriptionplural={The extended BFN category, defined in Definition \ref {def:extended-BFN}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{scrBTo}{}%
+{%
+\gls@defglossaryentry{scrBTo}%
+{%
+name={\ensuremath {\mathscr {B}^{\gls {To}}}},%
+sort={\ensuremath {\mathscr {B}^{\gls {To}}}},%
+type={main},%
+first={\protect \ensuremath {\protect \mathscr {B}^{\gls {To}}}},%
+firstplural={\protect \ensuremath {\protect \mathscr {B}^{\gls {To}}}s},%
+text={\protect \ensuremath {\protect \mathscr {B}^{\gls {To}}}},%
+plural={\protect \ensuremath {\protect \mathscr {B}^{\gls {To}}}s},%
+description={The extended BFN category attached to the pair $(\gls {To},\gls {V})$, defined in Definition \ref {def:extended-BFN}},%
+descriptionplural={The extended BFN category attached to the pair $(\gls {To},\gls {V})$, defined in Definition \ref {def:extended-BFN}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Bdefr}{}%
+{%
+\gls@defglossaryentry{Bdefr}%
+{%
+name={\ensuremath {\mathscr {B}^{\defr }}},%
+sort={\ensuremath {\mathscr {B}^{\defr }}},%
+type={main},%
+first={\protect \ensuremath {\protect \mathscr {B}^{\protect \operatorname {def}}}},%
+firstplural={\protect \ensuremath {\protect \mathscr {B}^{\protect \operatorname {def}}}s},%
+text={\protect \ensuremath {\protect \mathscr {B}^{\protect \operatorname {def}}}},%
+plural={\protect \ensuremath {\protect \mathscr {B}^{\protect \operatorname {def}}}s},%
+description={The deformed extended BFN category, defined in \cite [Def. 3.14]{WebSD}},%
+descriptionplural={The deformed extended BFN category, defined in \cite [Def. 3.14]{WebSD}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{scrT}{}%
+{%
+\gls@defglossaryentry{scrT}%
+{%
+name={\ensuremath { {}_{\phi +\nu }\mathscr {T}{}_{\phi }}},%
+sort={\ensuremath { {}_{\phi +\nu }\mathscr {T}{}_{\phi }}},%
+type={main},%
+first={\protect \ensuremath { \protect \mathscr {T}}},%
+firstplural={\protect \ensuremath { \protect \mathscr {T}}s},%
+text={\protect \ensuremath { \protect \mathscr {T}}},%
+plural={\protect \ensuremath { \protect \mathscr {T}}s},%
+description={The $\mathscr {B}_{\phi +\nu }\operatorname {-}\mathscr {B}_{\phi }$ bimodule formed by the appropriate quotient of $\mathscr {T}(\nu )$, the morphisms of weight $\nu $ in $\gls {scrB}^{\gls {To}}$ as a bimodule over $\gls {Bdefr}$},%
+descriptionplural={The $\mathscr {B}_{\phi +\nu }\operatorname {-}\mathscr {B}_{\phi }$ bimodule formed by the appropriate quotient of $\mathscr {T}(\nu )$, the morphisms of weight $\nu $ in $\gls {scrB}^{\gls {To}}$ as a bimodule over $\gls {Bdefr}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Twist}{}%
+{%
+\gls@defglossaryentry{Twist}%
+{%
+name={\ensuremath { {}_{\phi +\nu }{T}{}_{\phi }}},%
+sort={\ensuremath { {}_{\phi +\nu }{T}{}_{\phi }}},%
+type={main},%
+first={\protect \ensuremath {{T}}},%
+firstplural={\protect \ensuremath {{T}}s},%
+text={\protect \ensuremath {{T}}},%
+plural={\protect \ensuremath {{T}}s},%
+description={The twisting bimodule $ {}_{\phi +\nu }\gls {scrT}{}_{\phi }(\zero ,\zero )$},%
+descriptionplural={The twisting bimodule $ {}_{\phi +\nu }\gls {scrT}{}_{\phi }(\zero ,\zero )$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Wall}{}%
+{%
+\gls@defglossaryentry{Wall}%
+{%
+name={\ensuremath {\Phi _w^{\phi ',\phi }}},%
+sort={\ensuremath {\Phi _w^{\phi ',\phi }}},%
+type={main},%
+first={\protect \ensuremath {\Phi _w^{\phi ',\phi }}},%
+firstplural={\protect \ensuremath {\Phi _w^{\phi ',\phi }}s},%
+text={\protect \ensuremath {\Phi _w^{\phi ',\phi }}},%
+plural={\protect \ensuremath {\Phi _w^{\phi ',\phi }}s},%
+description={The functor of derived tensor product with the twisting bimodule $\glslink {Twist}{{}_{w\phi '}T_{\phi }}$.},%
+descriptionplural={The functor of derived tensor product with the twisting bimodule $\glslink {Twist}{{}_{w\phi '}T_{\phi }}$.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{delta}{}%
+{%
+\gls@defglossaryentry{delta}%
+{%
+name={\ensuremath {\delta }},%
+sort={\ensuremath {\delta }},%
+type={main},%
+first={\protect \ensuremath {\delta }},%
+firstplural={\protect \ensuremath {\delta }s},%
+text={\protect \ensuremath {\delta }},%
+plural={\protect \ensuremath {\delta }s},%
+description={A parameter between the open interval $(0,1)\subset \R $ used in the definition of $\gls {scrB}$},%
+descriptionplural={A parameter between the open interval $(0,1)\subset \R $ used in the definition of $\gls {scrB}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Delta}{}%
+{%
+\gls@defglossaryentry{Delta}%
+{%
+name={\ensuremath {\Delta }},%
+sort={\ensuremath {\Delta }},%
+type={main},%
+first={\protect \ensuremath {\Delta }},%
+firstplural={\protect \ensuremath {\Delta }s},%
+text={\protect \ensuremath {\Delta }},%
+plural={\protect \ensuremath {\Delta }s},%
+description={The roots of $\gls {G}$},%
+descriptionplural={The roots of $\gls {G}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{T}{}%
+{%
+\gls@defglossaryentry{T}%
+{%
+name={\ensuremath {T_*}},%
+sort={\ensuremath {T_*}},%
+type={main},%
+first={\protect \ensuremath {T}},%
+firstplural={\protect \ensuremath {T}s},%
+text={\protect \ensuremath {T}},%
+plural={\protect \ensuremath {T}s},%
+description={A maximal torus of the group $*$},%
+descriptionplural={A maximal torus of the group $*$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Higgs}{}%
+{%
+\gls@defglossaryentry{Higgs}%
+{%
+name={\ensuremath {\fM _{H,*}}},%
+sort={\ensuremath {\fM _{H,*}}},%
+type={main},%
+first={\protect \ensuremath {\protect \mathfrak {M}}},%
+firstplural={\protect \ensuremath {\protect \mathfrak {M}}s},%
+text={\protect \ensuremath {\protect \mathfrak {M}}},%
+plural={\protect \ensuremath {\protect \mathfrak {M}}s},%
+description={The Higgs branch---a symplectic quotient of $T^*\gls {V}$ by $\gls {G}$ with $*$ giving the stability parameter},%
+descriptionplural={The Higgs branch---a symplectic quotient of $T^*\gls {V}$ by $\gls {G}$ with $*$ giving the stability parameter},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Coulomb}{}%
+{%
+\gls@defglossaryentry{Coulomb}%
+{%
+name={\ensuremath {\fM }},%
+sort={\ensuremath {\fM }},%
+type={main},%
+first={\protect \ensuremath {\protect \mathfrak {M}}},%
+firstplural={\protect \ensuremath {\protect \mathfrak {M}}s},%
+text={\protect \ensuremath {\protect \mathfrak {M}}},%
+plural={\protect \ensuremath {\protect \mathfrak {M}}s},%
+description={The Coulomb branch---the quotient of the convolution algebra of a modified affine Grassmannian as defined in \cite {BFN}},%
+descriptionplural={The Coulomb branch---the quotient of the convolution algebra of a modified affine Grassmannian as defined in \cite {BFN}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{MQ}{}%
+{%
+\gls@defglossaryentry{MQ}%
+{%
+name={\ensuremath {\fM _{\To }}},%
+sort={\ensuremath {\fM _{\To }}},%
+type={main},%
+first={\protect \ensuremath {\protect \mathfrak {M}_{Q}}},%
+firstplural={\protect \ensuremath {\protect \mathfrak {M}_{Q}}s},%
+text={\protect \ensuremath {\protect \mathfrak {M}_{Q}}},%
+plural={\protect \ensuremath {\protect \mathfrak {M}_{Q}}s},%
+description={The Coulomb branch \gls {Coulomb} attached to the group \gls {To} acting on \gls {V} with its usual action},%
+descriptionplural={The Coulomb branch \gls {Coulomb} attached to the group \gls {To} acting on \gls {V} with its usual action},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{tM}{}%
+{%
+\gls@defglossaryentry{tM}%
+{%
+name={\ensuremath {\tilde {\fM }}},%
+sort={\ensuremath {\tilde {\fM }}},%
+type={main},%
+first={\protect \ensuremath {\protect \cc@accent {"707E}{\protect \mathfrak {M}}}},%
+firstplural={\protect \ensuremath {\protect \cc@accent {"707E}{\protect \mathfrak {M}}}s},%
+text={\protect \ensuremath {\protect \cc@accent {"707E}{\protect \mathfrak {M}}}},%
+plural={\protect \ensuremath {\protect \cc@accent {"707E}{\protect \mathfrak {M}}}s},%
+description={The resolution of the Coulomb branch \gls {Coulomb} defined by taking symplectic redution with a GIT quotient of \gls {MQ}},%
+descriptionplural={The resolution of the Coulomb branch \gls {Coulomb} defined by taking symplectic redution with a GIT quotient of \gls {MQ}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{flav}{}%
+{%
+\gls@defglossaryentry{flav}%
+{%
+name={\ensuremath {\flav }},%
+sort={\ensuremath {\flav }},%
+type={main},%
+first={\protect \ensuremath {\phi }},%
+firstplural={\protect \ensuremath {\phi }s},%
+text={\protect \ensuremath {\phi }},%
+plural={\protect \ensuremath {\phi }s},%
+description={The flavor: a fixed cocharacter $\flav \colon \C ^*\to T_{\tF }$},%
+descriptionplural={The flavor: a fixed cocharacter $\flav \colon \C ^*\to T_{\tF }$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{bT}{}%
+{%
+\gls@defglossaryentry{bT}%
+{%
+name={\ensuremath {\bT }},%
+sort={\ensuremath {\bT }},%
+type={main},%
+first={\protect \ensuremath {\protect \mathbb {T}}},%
+firstplural={\protect \ensuremath {\protect \mathbb {T}}s},%
+text={\protect \ensuremath {\protect \mathbb {T}}},%
+plural={\protect \ensuremath {\protect \mathbb {T}}s},%
+description={A copy of $\C ^*$ embedded in $\tF $ via the flavor $\gls {flav}$},%
+descriptionplural={A copy of $\C ^*$ embedded in $\tF $ via the flavor $\gls {flav}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Lambda}{}%
+{%
+\gls@defglossaryentry{Lambda}%
+{%
+name={\ensuremath {\Lambda }},%
+sort={\ensuremath {\Lambda }},%
+type={main},%
+first={\protect \ensuremath {\Lambda }},%
+firstplural={\protect \ensuremath {\Lambda }s},%
+text={\protect \ensuremath {\Lambda }},%
+plural={\protect \ensuremath {\Lambda }s},%
+description={The set of vectors such that $\rACp _{\Ba }$ contains $\xi _{1/p}$ for $\xi \in \ft _{1,\Z }$.},%
+descriptionplural={The set of vectors such that $\rACp _{\Ba }$ contains $\xi _{1/p}$ for $\xi \in \ft _{1,\Z }$.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{barLambda}{}%
+{%
+\gls@defglossaryentry{barLambda}%
+{%
+name={\ensuremath {\bar {\Lambda }}},%
+sort={\ensuremath {\bar {\Lambda }}},%
+type={main},%
+first={\protect \ensuremath {\protect \cc@accent {"7016}{\Lambda }}},%
+firstplural={\protect \ensuremath {\protect \cc@accent {"7016}{\Lambda }}s},%
+text={\protect \ensuremath {\protect \cc@accent {"7016}{\Lambda }}},%
+plural={\protect \ensuremath {\protect \cc@accent {"7016}{\Lambda }}s},%
+description={The quotient set $\gls {Lambda}/\widehat {W}$.},%
+descriptionplural={The quotient set $\gls {Lambda}/\widehat {W}$.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{LambdaR}{}%
+{%
+\gls@defglossaryentry{LambdaR}%
+{%
+name={\ensuremath {\Lambda ^{\R }}},%
+sort={\ensuremath {\Lambda ^{\R }}},%
+type={main},%
+first={\protect \ensuremath {\Lambda ^{\protect \mathbb {R}}}},%
+firstplural={\protect \ensuremath {\Lambda ^{\protect \mathbb {R}}}s},%
+text={\protect \ensuremath {\Lambda ^{\protect \mathbb {R}}}},%
+plural={\protect \ensuremath {\Lambda ^{\protect \mathbb {R}}}s},%
+description={The set of vectors such that $\rACp _{\Ba }$ is non-empty.},%
+descriptionplural={The set of vectors such that $\rACp _{\Ba }$ is non-empty.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ft}{}%
+{%
+\gls@defglossaryentry{ft}%
+{%
+name={\ensuremath {\ft _{*,\dagger }}},%
+sort={\ensuremath {\ft _{*,\dagger }}},%
+type={main},%
+first={\protect \ensuremath {\protect \mathfrak {t}}},%
+firstplural={\protect \ensuremath {\protect \mathfrak {t}}s},%
+text={\protect \ensuremath {\protect \mathfrak {t}}},%
+plural={\protect \ensuremath {\protect \mathfrak {t}}s},%
+description={The Lie algebra of the torus $\gls {T}_{*}$ over $\dagger =\Z ,\Q ,\R ,\C $},%
+descriptionplural={The Lie algebra of the torus $\gls {T}_{*}$ over $\dagger =\Z ,\Q ,\R ,\C $},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ftsecond}{}%
+{%
+\gls@defglossaryentry{ftsecond}%
+{%
+name={\ensuremath {\ft _{\second }}},%
+sort={\ensuremath {\ft _{\second }}},%
+type={main},%
+first={\protect \ensuremath {\protect \mathfrak {t}_{\tau }}},%
+firstplural={\protect \ensuremath {\protect \mathfrak {t}_{\tau }}s},%
+text={\protect \ensuremath {\protect \mathfrak {t}_{\tau }}},%
+plural={\protect \ensuremath {\protect \mathfrak {t}_{\tau }}s},%
+description={The coset $\gls {ft}_{\R }+\gls {second}$},%
+descriptionplural={The coset $\gls {ft}_{\R }+\gls {second}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ft1}{}%
+{%
+\gls@defglossaryentry{ft1}%
+{%
+name={\ensuremath {\ft _{1,\dagger }}},%
+sort={\ensuremath {\ft _{1,\dagger }}},%
+type={main},%
+first={\protect \ensuremath {\protect \mathfrak {t}}},%
+firstplural={\protect \ensuremath {\protect \mathfrak {t}}s},%
+text={\protect \ensuremath {\protect \mathfrak {t}}},%
+plural={\protect \ensuremath {\protect \mathfrak {t}}s},%
+description={The elements of the Lie algebra $\gls {ft}_{\gls {tNo}, \dagger }$ which map to $d\phi $ under the map $\gls {ft}_{\gls {tNo}, \dagger }\to \gls {ft}_{\gls {tF}, \dagger }$},%
+descriptionplural={The elements of the Lie algebra $\gls {ft}_{\gls {tNo}, \dagger }$ which map to $d\phi $ under the map $\gls {ft}_{\gls {tNo}, \dagger }\to \gls {ft}_{\gls {tF}, \dagger }$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{varphi}{}%
+{%
+\gls@defglossaryentry{varphi}%
+{%
+name={\ensuremath {\varphi _i}},%
+sort={\ensuremath {\varphi _i}},%
+type={main},%
+first={\protect \ensuremath {\varphi }},%
+firstplural={\protect \ensuremath {\varphi }s},%
+text={\protect \ensuremath {\varphi }},%
+plural={\protect \ensuremath {\varphi }s},%
+description={The weight of $\gls {Vi}_i\subset \gls {V}$ over \gls {G} or \gls {No}},%
+descriptionplural={The weight of $\gls {Vi}_i\subset \gls {V}$ over \gls {G} or \gls {No}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{varphi+}{}%
+{%
+\gls@defglossaryentry{varphi+}%
+{%
+name={\ensuremath {\varphi _i^+}},%
+sort={\ensuremath {\varphi _i^+}},%
+type={main},%
+first={\protect \ensuremath {\varphi }},%
+firstplural={\protect \ensuremath {\varphi }s},%
+text={\protect \ensuremath {\varphi }},%
+plural={\protect \ensuremath {\varphi }s},%
+description={The weight of $\gls {Vi}_i\subset T^*\gls {V}$ over \gls {tNo}},%
+descriptionplural={The weight of $\gls {Vi}_i\subset T^*\gls {V}$ over \gls {tNo}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{varphi-}{}%
+{%
+\gls@defglossaryentry{varphi-}%
+{%
+name={\ensuremath {\varphi _i^-}},%
+sort={\ensuremath {\varphi _i^-}},%
+type={main},%
+first={\protect \ensuremath {\varphi }},%
+firstplural={\protect \ensuremath {\varphi }s},%
+text={\protect \ensuremath {\varphi }},%
+plural={\protect \ensuremath {\varphi }s},%
+description={The weight of the dual line $\gls {Vi}_i^*\subset T^*\gls {V}$ over \gls {tNo}},%
+descriptionplural={The weight of the dual line $\gls {Vi}_i^*\subset T^*\gls {V}$ over \gls {tNo}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{varphimid}{}%
+{%
+\gls@defglossaryentry{varphimid}%
+{%
+name={\ensuremath {\varphi _i^{\operatorname {mid}}}},%
+sort={\ensuremath {\varphi _i^{\operatorname {mid}}}},%
+type={main},%
+first={\protect \ensuremath {\varphi }},%
+firstplural={\protect \ensuremath {\varphi }s},%
+text={\protect \ensuremath {\varphi }},%
+plural={\protect \ensuremath {\varphi }s},%
+description={The average of $\gls {varphi+}_i^+$ and $-\gls {varphi-}_i^-$},%
+descriptionplural={The average of $\gls {varphi+}_i^+$ and $-\gls {varphi-}_i^-$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Vi}{}%
+{%
+\gls@defglossaryentry{Vi}%
+{%
+name={\ensuremath {V_i}},%
+sort={\ensuremath {V_i}},%
+type={main},%
+first={\protect \ensuremath {V}},%
+firstplural={\protect \ensuremath {V}s},%
+text={\protect \ensuremath {V}},%
+plural={\protect \ensuremath {V}s},%
+description={A summand of the weight decomposition of $\gls {V}$ over \gls {No}},%
+descriptionplural={A summand of the weight decomposition of $\gls {V}$ over \gls {No}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Vsgns}{}%
+{%
+\gls@defglossaryentry{Vsgns}%
+{%
+name={\ensuremath {V_\sgns }},%
+sort={\ensuremath {V_\sgns }},%
+type={main},%
+first={\protect \ensuremath {V}},%
+firstplural={\protect \ensuremath {V}s},%
+text={\protect \ensuremath {V}},%
+plural={\protect \ensuremath {V}s},%
+description={The sum of the subspaces $\gls {Vi}_{i}$ with $\sigma _i=+$},%
+descriptionplural={The sum of the subspaces $\gls {Vi}_{i}$ with $\sigma _i=+$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Xsgns}{}%
+{%
+\gls@defglossaryentry{Xsgns}%
+{%
+name={\ensuremath {X_{\sgns ,w}}},%
+sort={\ensuremath {X_{\sgns ,w}}},%
+type={main},%
+first={\protect \ensuremath {X}},%
+firstplural={\protect \ensuremath {X}s},%
+text={\protect \ensuremath {X}},%
+plural={\protect \ensuremath {X}s},%
+description={The induced $G$-space $ X_{\sgns ,w}=G\times _{wBw^{-1}}\gls {Vsgns}_{\sgns }$},%
+descriptionplural={The induced $G$-space $ X_{\sgns ,w}=G\times _{wBw^{-1}}\gls {Vsgns}_{\sgns }$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{W}{}%
+{%
+\gls@defglossaryentry{W}%
+{%
+name={\ensuremath {W}},%
+sort={\ensuremath {W}},%
+type={main},%
+first={\protect \ensuremath {W}},%
+firstplural={\protect \ensuremath {W}s},%
+text={\protect \ensuremath {W}},%
+plural={\protect \ensuremath {W}s},%
+description={The Weyl group of $\gls {G}$},%
+descriptionplural={The Weyl group of $\gls {G}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{What}{}%
+{%
+\gls@defglossaryentry{What}%
+{%
+name={\ensuremath {\widehat {W}}},%
+sort={\ensuremath {\widehat {W}}},%
+type={main},%
+first={\protect \ensuremath {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle W$}\mathaccent "0362{W}}},%
+firstplural={\protect \ensuremath {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle W$}\mathaccent "0362{W}}s},%
+text={\protect \ensuremath {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle W$}\mathaccent "0362{W}}},%
+plural={\protect \ensuremath {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle W$}\mathaccent "0362{W}}s},%
+description={The affine Weyl group of $\gls {G}$. The semi-direct product of $\gls {W}$ and the coweight lattice of $\gls {T}$},%
+descriptionplural={The affine Weyl group of $\gls {G}$. The semi-direct product of $\gls {W}$ and the coweight lattice of $\gls {T}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{c}{}%
+{%
+\gls@defglossaryentry{c}%
+{%
+name={\ensuremath {c_\sgns }},%
+sort={\ensuremath {c_\sgns }},%
+type={main},%
+first={\protect \ensuremath {c}},%
+firstplural={\protect \ensuremath {c}s},%
+text={\protect \ensuremath {c}},%
+plural={\protect \ensuremath {c}s},%
+description={The chamber in $\gls {ft1}_{1,\Z }$ defined by a sign vector},%
+descriptionplural={The chamber in $\gls {ft1}_{1,\Z }$ defined by a sign vector},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{C}{}%
+{%
+\gls@defglossaryentry{C}%
+{%
+name={\ensuremath {C_\sgns }},%
+sort={\ensuremath {C_\sgns }},%
+type={main},%
+first={\protect \ensuremath {C}},%
+firstplural={\protect \ensuremath {C}s},%
+text={\protect \ensuremath {C}},%
+plural={\protect \ensuremath {C}s},%
+description={The chamber in $\gls {ft1}_{1,\R }$ defined by a sign vector},%
+descriptionplural={The chamber in $\gls {ft1}_{1,\R }$ defined by a sign vector},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Cw}{}%
+{%
+\gls@defglossaryentry{Cw}%
+{%
+name={\ensuremath {C_{\sgns ,w}}},%
+sort={\ensuremath {C_{\sgns ,w}}},%
+type={main},%
+first={\protect \ensuremath {C}},%
+firstplural={\protect \ensuremath {C}s},%
+text={\protect \ensuremath {C}},%
+plural={\protect \ensuremath {C}s},%
+description={The intersection of $\gls {C}_\sgns $ with the Weyl chamber $w\cdot \WC $},%
+descriptionplural={The intersection of $\gls {C}_\sgns $ with the Weyl chamber $w\cdot \WC $},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{cw}{}%
+{%
+\gls@defglossaryentry{cw}%
+{%
+name={\ensuremath {c_{\sgns ,w}}},%
+sort={\ensuremath {c_{\sgns ,w}}},%
+type={main},%
+first={\protect \ensuremath {c}},%
+firstplural={\protect \ensuremath {c}s},%
+text={\protect \ensuremath {c}},%
+plural={\protect \ensuremath {c}s},%
+description={The intersection of $\gls {c}_\sgns $ with the Weyl chamber $w\cdot \WC $},%
+descriptionplural={The intersection of $\gls {c}_\sgns $ with the Weyl chamber $w\cdot \WC $},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{nu}{}%
+{%
+\gls@defglossaryentry{nu}%
+{%
+name={\ensuremath {\nu }},%
+sort={\ensuremath {\nu }},%
+type={main},%
+first={\protect \ensuremath {\nu }},%
+firstplural={\protect \ensuremath {\nu }s},%
+text={\protect \ensuremath {\nu }},%
+plural={\protect \ensuremath {\nu }s},%
+description={The character $\nu \colon \gls {tNo}=\gls {No}\times \C ^* \to \C ^*$ given by $\nu (g,t)=t$},%
+descriptionplural={The character $\nu \colon \gls {tNo}=\gls {No}\times \C ^* \to \C ^*$ given by $\nu (g,t)=t$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Stein}{}%
+{%
+\gls@defglossaryentry{Stein}%
+{%
+name={\ensuremath {\Stein _*}},%
+sort={\ensuremath {\Stein _*}},%
+type={main},%
+first={\protect \ensuremath {\protect \mathscr {X}}},%
+firstplural={\protect \ensuremath {\protect \mathscr {X}}s},%
+text={\protect \ensuremath {\protect \mathscr {X}}},%
+plural={\protect \ensuremath {\protect \mathscr {X}}s},%
+description={The Steinberg category with object set $*$ defined by a map $*\to \compat $},%
+descriptionplural={The Steinberg category with object set $*$ defined by a map $*\to \compat $},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{compat}{}%
+{%
+\gls@defglossaryentry{compat}%
+{%
+name={\ensuremath {\compat }},%
+sort={\ensuremath {\compat }},%
+type={main},%
+first={\protect \ensuremath {\protect \EuScript {K}}},%
+firstplural={\protect \ensuremath {\protect \EuScript {K}}s},%
+text={\protect \ensuremath {\protect \EuScript {K}}},%
+plural={\protect \ensuremath {\protect \EuScript {K}}s},%
+description={The set of compatible pairs of sign vectors and Weyl chambers},%
+descriptionplural={The set of compatible pairs of sign vectors and Weyl chambers},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{I}{}%
+{%
+\gls@defglossaryentry{I}%
+{%
+name={\ensuremath {I}},%
+sort={\ensuremath {I}},%
+type={main},%
+first={\protect \ensuremath {I}},%
+firstplural={\protect \ensuremath {I}s},%
+text={\protect \ensuremath {I}},%
+plural={\protect \ensuremath {I}s},%
+description={The set of sign vectors $\sgns \in \{+,-\}^d$ such that there exists a choice of flavor $\phi $ such that $\gls {c}_{\sgns ,1}\neq 0$ for some $\gls {flav}$},%
+descriptionplural={The set of sign vectors $\sgns \in \{+,-\}^d$ such that there exists a choice of flavor $\phi $ such that $\gls {c}_{\sgns ,1}\neq 0$ for some $\gls {flav}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{I'}{}%
+{%
+\gls@defglossaryentry{I'}%
+{%
+name={\ensuremath {I'}},%
+sort={\ensuremath {I'}},%
+type={main},%
+first={\protect \ensuremath {I'}},%
+firstplural={\protect \ensuremath {I'}s},%
+text={\protect \ensuremath {I'}},%
+plural={\protect \ensuremath {I'}s},%
+description={The set of sign vectors $\sgns \in \{+,-\}^d$ such that there exists a choice of flavor $\phi $ such that $\gls {Cw}_{\sgns ,1}\neq 0$ for some $\gls {flav}$},%
+descriptionplural={The set of sign vectors $\sgns \in \{+,-\}^d$ such that there exists a choice of flavor $\phi $ such that $\gls {Cw}_{\sgns ,1}\neq 0$ for some $\gls {flav}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Iphi}{}%
+{%
+\gls@defglossaryentry{Iphi}%
+{%
+name={\ensuremath {I_{\flav }}},%
+sort={\ensuremath {I_{\flav }}},%
+type={main},%
+first={\protect \ensuremath {I}},%
+firstplural={\protect \ensuremath {I}s},%
+text={\protect \ensuremath {I}},%
+plural={\protect \ensuremath {I}s},%
+description={The set of sign vectors $\sgns \in \{+,-\}^d$ such that there exists a choice of flavor $\phi $ such that $\gls {c}_{\sgns ,1}\neq 0$ for a fixed $\gls {flav}$},%
+descriptionplural={The set of sign vectors $\sgns \in \{+,-\}^d$ such that there exists a choice of flavor $\phi $ such that $\gls {c}_{\sgns ,1}\neq 0$ for a fixed $\gls {flav}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Iphi'}{}%
+{%
+\gls@defglossaryentry{Iphi'}%
+{%
+name={\ensuremath {I_{\flav }'}},%
+sort={\ensuremath {I_{\flav }'}},%
+type={main},%
+first={\protect \ensuremath {I'}},%
+firstplural={\protect \ensuremath {I'}s},%
+text={\protect \ensuremath {I'}},%
+plural={\protect \ensuremath {I'}s},%
+description={The set of sign vectors $\sgns \in \{+,-\}^d$ such that there exists a choice of flavor $\phi $ such that $\gls {Cw}_{\sgns ,1}\neq 0$ for a fixed $\gls {flav}$},%
+descriptionplural={The set of sign vectors $\sgns \in \{+,-\}^d$ such that there exists a choice of flavor $\phi $ such that $\gls {Cw}_{\sgns ,1}\neq 0$ for a fixed $\gls {flav}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{vpss}{}%
+{%
+\gls@defglossaryentry{vpss}%
+{%
+name={\ensuremath {\varphi (\sgns ,\sgns ' )}},%
+sort={\ensuremath {\varphi (\sgns ,\sgns ' )}},%
+type={main},%
+first={\protect \ensuremath {\varphi }},%
+firstplural={\protect \ensuremath {\varphi }s},%
+text={\protect \ensuremath {\varphi }},%
+plural={\protect \ensuremath {\varphi }s},%
+description={The product of the weights $\varphi _i$ such that $\sgns _i=+$ and $\sgns _i'=-$},%
+descriptionplural={The product of the weights $\varphi _i$ such that $\sgns _i=+$ and $\sgns _i'=-$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{vpsss}{}%
+{%
+\gls@defglossaryentry{vpsss}%
+{%
+name={\ensuremath {\varphi (\sgns ,\sgns ',\sgns '')}},%
+sort={\ensuremath {\varphi (\sgns ,\sgns ',\sgns '')}},%
+type={main},%
+first={\protect \ensuremath {\varphi }},%
+firstplural={\protect \ensuremath {\varphi }s},%
+text={\protect \ensuremath {\varphi }},%
+plural={\protect \ensuremath {\varphi }s},%
+description={The product of the weights $\varphi _i$ such that $\sgns _i=\sgns _i''=-\sgns _i'$},%
+descriptionplural={The product of the weights $\varphi _i$ such that $\sgns _i=\sgns _i''=-\sgns _i'$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{wall}{}%
+{%
+\gls@defglossaryentry{wall}%
+{%
+name={\ensuremath {\wall }},%
+sort={\ensuremath {\wall }},%
+type={main},%
+first={\protect \ensuremath {\protect \mathbbm {w}}},%
+firstplural={\protect \ensuremath {\protect \mathbbm {w}}s},%
+text={\protect \ensuremath {\protect \mathbbm {w}}},%
+plural={\protect \ensuremath {\protect \mathbbm {w}}s},%
+description={A generator of the category $\gls {A}_{I'}$},%
+descriptionplural={A generator of the category $\gls {A}_{I'}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{psi}{}%
+{%
+\gls@defglossaryentry{psi}%
+{%
+name={\ensuremath {\psi }},%
+sort={\ensuremath {\psi }},%
+type={main},%
+first={\protect \ensuremath {\psi }},%
+firstplural={\protect \ensuremath {\psi }s},%
+text={\protect \ensuremath {\psi }},%
+plural={\protect \ensuremath {\psi }s},%
+description={A generator of the category $\gls {A}_{I'}$},%
+descriptionplural={A generator of the category $\gls {A}_{I'}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ACs}{}%
+{%
+\gls@defglossaryentry{ACs}%
+{%
+name={\ensuremath {\ACs }},%
+sort={\ensuremath {\ACs }},%
+type={main},%
+first={\protect \ensuremath {\protect \mathscr {C}}},%
+firstplural={\protect \ensuremath {\protect \mathscr {C}}s},%
+text={\protect \ensuremath {\protect \mathscr {C}}},%
+plural={\protect \ensuremath {\protect \mathscr {C}}s},%
+description={The set of vectors $\Ba $ such that $\AC _{\Ba }\neq 0$},%
+descriptionplural={The set of vectors $\Ba $ such that $\AC _{\Ba }\neq 0$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{plusA}{}%
+{%
+\gls@defglossaryentry{plusA}%
+{%
+name={\ensuremath { {}^+A}},%
+sort={\ensuremath { {}^+A}},%
+type={main},%
+first={\protect \ensuremath { {}^+A}},%
+firstplural={\protect \ensuremath { {}^+A}s},%
+text={\protect \ensuremath { {}^+A}},%
+plural={\protect \ensuremath { {}^+A}s},%
+description={The unique non-negatively graded basic algebra Morita equivalent to $\gls {A}_Q$.},%
+descriptionplural={The unique non-negatively graded basic algebra Morita equivalent to $\gls {A}_Q$.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{wallpi}{}%
+{%
+\gls@defglossaryentry{wallpi}%
+{%
+name={\ensuremath {\tilde {\wall }_\pi }},%
+sort={\ensuremath {\tilde {\wall }_\pi }},%
+type={main},%
+first={\protect \ensuremath {\protect \cc@accent {"707E}{\protect \mathbbm {w}}}},%
+firstplural={\protect \ensuremath {\protect \cc@accent {"707E}{\protect \mathbbm {w}}}s},%
+text={\protect \ensuremath {\protect \cc@accent {"707E}{\protect \mathbbm {w}}}},%
+plural={\protect \ensuremath {\protect \cc@accent {"707E}{\protect \mathbbm {w}}}s},%
+description={A composition of the elements \gls {wall} and \gls {psi} following a path $\pi $},%
+descriptionplural={A composition of the elements \gls {wall} and \gls {psi} following a path $\pi $},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{bbX}{}%
+{%
+\gls@defglossaryentry{bbX}%
+{%
+name={\ensuremath {\mathbb {X}_I}},%
+sort={\ensuremath {\mathbb {X}_I}},%
+type={main},%
+first={\protect \ensuremath {\protect \mathbb {X}}},%
+firstplural={\protect \ensuremath {\protect \mathbb {X}}s},%
+text={\protect \ensuremath {\protect \mathbb {X}}},%
+plural={\protect \ensuremath {\protect \mathbb {X}}s},%
+description={The union of fiber products $\bigsqcup _{\substack {(\sgns ,w)\in I\\ (\sgns ',w')\in I}} X_{\sgns ,w}\times _V X_{\sgns ',w'}$},%
+descriptionplural={The union of fiber products $\bigsqcup _{\substack {(\sgns ,w)\in I\\ (\sgns ',w')\in I}} X_{\sgns ,w}\times _V X_{\sgns ',w'}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{VB}{}%
+{%
+\gls@defglossaryentry{VB}%
+{%
+name={\ensuremath {\VB _U}},%
+sort={\ensuremath {\VB _U}},%
+type={main},%
+first={\protect \ensuremath {\protect \EuScript {X}}},%
+firstplural={\protect \ensuremath {\protect \EuScript {X}}s},%
+text={\protect \ensuremath {\protect \EuScript {X}}},%
+plural={\protect \ensuremath {\protect \EuScript {X}}s},%
+description={The associated bundle $\VB _U=G((t))\times _{\Iwahori } U$ for an $\Iwahori $-representation $U$},%
+descriptionplural={The associated bundle $\VB _U=G((t))\times _{\Iwahori } U$ for an $\Iwahori $-representation $U$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{VBacham}{}%
+{%
+\gls@defglossaryentry{VBacham}%
+{%
+name={\ensuremath {\VB _\acham }},%
+sort={\ensuremath {\VB _\acham }},%
+type={main},%
+first={\protect \ensuremath {\protect \EuScript {X}}},%
+firstplural={\protect \ensuremath {\protect \EuScript {X}}s},%
+text={\protect \ensuremath {\protect \EuScript {X}}},%
+plural={\protect \ensuremath {\protect \EuScript {X}}s},%
+description={Shorthand for $\gls {VB}_{\gls {Ueta}_\acham }$},%
+descriptionplural={Shorthand for $\gls {VB}_{\gls {Ueta}_\acham }$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Ueta}{}%
+{%
+\gls@defglossaryentry{Ueta}%
+{%
+name={\ensuremath {U_\acham }},%
+sort={\ensuremath {U_\acham }},%
+type={main},%
+first={\protect \ensuremath {U}},%
+firstplural={\protect \ensuremath {U}s},%
+text={\protect \ensuremath {U}},%
+plural={\protect \ensuremath {U}s},%
+description={The subspace $V((t))$ of elements of weight $\geq -1/2$ under $\acham $},%
+descriptionplural={The subspace $V((t))$ of elements of weight $\geq -1/2$ under $\acham $},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{dVB}{}%
+{%
+\gls@defglossaryentry{dVB}%
+{%
+name={\ensuremath {{}_{\acham }\VB _{\acham '}}},%
+sort={\ensuremath {{}_{\acham }\VB _{\acham '}}},%
+type={main},%
+first={\protect \ensuremath {\protect \EuScript {X}}},%
+firstplural={\protect \ensuremath {\protect \EuScript {X}}s},%
+text={\protect \ensuremath {\protect \EuScript {X}}},%
+plural={\protect \ensuremath {\protect \EuScript {X}}s},%
+description={The subspace $\left \{(g,v(t))\in G((t))\times U_{\acham }\mid g\cdot v(t)\in U_{\acham '}\right \}/\Iwahori _{\acham }\subset \gls {VBacham}_{\acham }$},%
+descriptionplural={The subspace $\left \{(g,v(t))\in G((t))\times U_{\acham }\mid g\cdot v(t)\in U_{\acham '}\right \}/\Iwahori _{\acham }\subset \gls {VBacham}_{\acham }$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Gammazphi}{}%
+{%
+\gls@defglossaryentry{Gammazphi}%
+{%
+name={\ensuremath {\Gamma _{\Bz ,\phi }}},%
+sort={\ensuremath {\Gamma _{\Bz ,\phi }}},%
+type={main},%
+first={\protect \ensuremath {\Gamma }},%
+firstplural={\protect \ensuremath {\Gamma }s},%
+text={\protect \ensuremath {\Gamma }},%
+plural={\protect \ensuremath {\Gamma }s},%
+description={The graph $\Gamma _{\Bz ,\phi }$ which corresponds to the relevant weights in the quiver gauge theory case},%
+descriptionplural={The graph $\Gamma _{\Bz ,\phi }$ which corresponds to the relevant weights in the quiver gauge theory case},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{efA}{}%
+{%
+\gls@defglossaryentry{efA}%
+{%
+name={\ensuremath {\EuScript {A}}},%
+sort={\ensuremath {\EuScript {A}}},%
+type={main},%
+first={\protect \ensuremath {\protect \EuScript {A}}},%
+firstplural={\protect \ensuremath {\protect \EuScript {A}}s},%
+text={\protect \ensuremath {\protect \EuScript {A}}},%
+plural={\protect \ensuremath {\protect \EuScript {A}}s},%
+description={The Iwahori Coulomb branch $\EuScript {A}=H_*^{BM, \wtG }(\VB _{V[[t]]}\times _{V((t))}\VB _{V[[t]]})$},%
+descriptionplural={The Iwahori Coulomb branch $\EuScript {A}=H_*^{BM, \wtG }(\VB _{V[[t]]}\times _{V((t))}\VB _{V[[t]]})$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Asph}{}%
+{%
+\gls@defglossaryentry{Asph}%
+{%
+name={\ensuremath {\EuScript {A}^{\operatorname {sph}}}},%
+sort={\ensuremath {\EuScript {A}^{\operatorname {sph}}}},%
+type={main},%
+first={\protect \ensuremath {\protect \EuScript {A}^{\protect \operatorname {sph}}}},%
+firstplural={\protect \ensuremath {\protect \EuScript {A}^{\protect \operatorname {sph}}}s},%
+text={\protect \ensuremath {\protect \EuScript {A}^{\protect \operatorname {sph}}}},%
+plural={\protect \ensuremath {\protect \EuScript {A}^{\protect \operatorname {sph}}}s},%
+description={The quantum Coulomb branch $\EuScript {A}^{\operatorname {sph}}=H_*^{BM, \wtG }(\EuScript {Y}_{V[[t]]}\times _{V((t))}\EuScript {Y}_{V[[t]]})$},%
+descriptionplural={The quantum Coulomb branch $\EuScript {A}^{\operatorname {sph}}=H_*^{BM, \wtG }(\EuScript {Y}_{V[[t]]}\times _{V((t))}\EuScript {Y}_{V[[t]]})$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{L}{}%
+{%
+\gls@defglossaryentry{L}%
+{%
+name={\ensuremath {L}},%
+sort={\ensuremath {L}},%
+type={main},%
+first={\protect \ensuremath {L}},%
+firstplural={\protect \ensuremath {L}s},%
+text={\protect \ensuremath {L}},%
+plural={\protect \ensuremath {L}s},%
+description={The pushforward sheaf $L=p_*\mathfrak {S}_X$},%
+descriptionplural={The pushforward sheaf $L=p_*\mathfrak {S}_X$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Og}{}%
+{%
+\gls@defglossaryentry{Og}%
+{%
+name={\ensuremath {\cOg }},%
+sort={\ensuremath {\cOg }},%
+type={main},%
+first={\protect \ensuremath {\protect \mathcal {O}_{\protect \tmspace -\thinmuskip {.1667em}\protect \operatorname {g}}}},%
+firstplural={\protect \ensuremath {\protect \mathcal {O}_{\protect \tmspace -\thinmuskip {.1667em}\protect \operatorname {g}}}s},%
+text={\protect \ensuremath {\protect \mathcal {O}_{\protect \tmspace -\thinmuskip {.1667em}\protect \operatorname {g}}}},%
+plural={\protect \ensuremath {\protect \mathcal {O}_{\protect \tmspace -\thinmuskip {.1667em}\protect \operatorname {g}}}s},%
+description={The geometric category $\cO $ as in Definition \ref {def:Og}},%
+descriptionplural={The geometric category $\cO $ as in Definition \ref {def:Og}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{preO}{}%
+{%
+\gls@defglossaryentry{preO}%
+{%
+name={\ensuremath {\preO }},%
+sort={\ensuremath {\preO }},%
+type={main},%
+first={\protect \ensuremath {p\protect \mathcal {O}_{\protect \tmspace -\thinmuskip {.1667em}\protect \operatorname {g}}}},%
+firstplural={\protect \ensuremath {p\protect \mathcal {O}_{\protect \tmspace -\thinmuskip {.1667em}\protect \operatorname {g}}}s},%
+text={\protect \ensuremath {p\protect \mathcal {O}_{\protect \tmspace -\thinmuskip {.1667em}\protect \operatorname {g}}}},%
+plural={\protect \ensuremath {p\protect \mathcal {O}_{\protect \tmspace -\thinmuskip {.1667em}\protect \operatorname {g}}}s},%
+description={A category of strongly $G$-equivariant D-modules on $V$ whose reductions lie in \gls {Og}; see \cite [2.8]{Webqui}},%
+descriptionplural={A category of strongly $G$-equivariant D-modules on $V$ whose reductions lie in \gls {Og}; see \cite [2.8]{Webqui}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{dOg}{}%
+{%
+\gls@defglossaryentry{dOg}%
+{%
+name={\ensuremath {D_{\cOg }}},%
+sort={\ensuremath {D_{\cOg }}},%
+type={main},%
+first={\protect \ensuremath {D_{\protect \mathcal {O}_{\protect \tmspace -\thinmuskip {.1667em}\protect \operatorname {g}}}}},%
+firstplural={\protect \ensuremath {D_{\protect \mathcal {O}_{\protect \tmspace -\thinmuskip {.1667em}\protect \operatorname {g}}}}s},%
+text={\protect \ensuremath {D_{\protect \mathcal {O}_{\protect \tmspace -\thinmuskip {.1667em}\protect \operatorname {g}}}}},%
+plural={\protect \ensuremath {D_{\protect \mathcal {O}_{\protect \tmspace -\thinmuskip {.1667em}\protect \operatorname {g}}}}s},%
+description={The dg-subcategory of $D^b(\mathcal {D}\mmod )$ with its usual dg-enhancement generated by $\gls {Og}$},%
+descriptionplural={The dg-subcategory of $D^b(\mathcal {D}\mmod )$ with its usual dg-enhancement generated by $\gls {Og}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{dpreO}{}%
+{%
+\gls@defglossaryentry{dpreO}%
+{%
+name={\ensuremath {D_{\preO }}},%
+sort={\ensuremath {D_{\preO }}},%
+type={main},%
+first={\protect \ensuremath {D_{p\protect \mathcal {O}_{\protect \tmspace -\thinmuskip {.1667em}\protect \operatorname {g}}}}},%
+firstplural={\protect \ensuremath {D_{p\protect \mathcal {O}_{\protect \tmspace -\thinmuskip {.1667em}\protect \operatorname {g}}}}s},%
+text={\protect \ensuremath {D_{p\protect \mathcal {O}_{\protect \tmspace -\thinmuskip {.1667em}\protect \operatorname {g}}}}},%
+plural={\protect \ensuremath {D_{p\protect \mathcal {O}_{\protect \tmspace -\thinmuskip {.1667em}\protect \operatorname {g}}}}s},%
+description={The dg-subcategory of strongly $G$-equivariant $D$-modules on $V$ with its usual dg-enhancement generated by $\gls {preO}$},%
+descriptionplural={The dg-subcategory of strongly $G$-equivariant $D$-modules on $V$ with its usual dg-enhancement generated by $\gls {preO}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{cO}{}%
+{%
+\gls@defglossaryentry{cO}%
+{%
+name={\ensuremath {\cO }},%
+sort={\ensuremath {\cO }},%
+type={main},%
+first={\protect \ensuremath {\protect \mathcal {O}}},%
+firstplural={\protect \ensuremath {\protect \mathcal {O}}s},%
+text={\protect \ensuremath {\protect \mathcal {O}}},%
+plural={\protect \ensuremath {\protect \mathcal {O}}s},%
+description={The subcategory of $\EuScript {A}\mmod _{\EuScript {I}}$ such that the eigenspaces for a fixed $\xi $ are finite dimensional and the spectrum is bounded above in real part},%
+descriptionplural={The subcategory of $\EuScript {A}\mmod _{\EuScript {I}}$ such that the eigenspaces for a fixed $\xi $ are finite dimensional and the spectrum is bounded above in real part},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{matter}{}%
+{%
+\gls@defglossaryentry{matter}%
+{%
+name={\ensuremath {H_i}},%
+sort={\ensuremath {H_i}},%
+type={main},%
+first={\protect \ensuremath {H}},%
+firstplural={\protect \ensuremath {H}s},%
+text={\protect \ensuremath {H}},%
+plural={\protect \ensuremath {H}s},%
+description={The matter hyperplane $\{\gamma \mid \gls {varphimid}_i^{\operatorname {mid}}(\gamma ) =0 \}$},%
+descriptionplural={The matter hyperplane $\{\gamma \mid \gls {varphimid}_i^{\operatorname {mid}}(\gamma ) =0 \}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ideal}{}%
+{%
+\gls@defglossaryentry{ideal}%
+{%
+name={\ensuremath {\ideal _\xi }},%
+sort={\ensuremath {\ideal _\xi }},%
+type={main},%
+first={\protect \ensuremath {\protect \mathscr {I}}},%
+firstplural={\protect \ensuremath {\protect \mathscr {I}}s},%
+text={\protect \ensuremath {\protect \mathscr {I}}},%
+plural={\protect \ensuremath {\protect \mathscr {I}}s},%
+description={The ideal in $\gls {A}_I$ for some $I$ generated the idempotents for unsteady sign vectors.},%
+descriptionplural={The ideal in $\gls {A}_I$ for some $I$ generated the idempotents for unsteady sign vectors.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{cox}{}%
+{%
+\gls@defglossaryentry{cox}%
+{%
+name={\ensuremath {\cox _\alpha }},%
+sort={\ensuremath {\cox _\alpha }},%
+type={main},%
+first={\protect \ensuremath {h}},%
+firstplural={\protect \ensuremath {h}s},%
+text={\protect \ensuremath {h}},%
+plural={\protect \ensuremath {h}s},%
+description={The Coxeter hyperplane $\{\gamma \mid \mid \al (\gamma ) =0 \}$ for $\vp _i$ a weight as before and $\al \in \gls {Delta}$.},%
+descriptionplural={The Coxeter hyperplane $\{\gamma \mid \mid \al (\gamma ) =0 \}$ for $\vp _i$ a weight as before and $\al \in \gls {Delta}$.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{yw}{}%
+{%
+\gls@defglossaryentry{yw}%
+{%
+name={\ensuremath {y_w}},%
+sort={\ensuremath {y_w}},%
+type={main},%
+first={\protect \ensuremath {y}},%
+firstplural={\protect \ensuremath {y}s},%
+text={\protect \ensuremath {y}},%
+plural={\protect \ensuremath {y}s},%
+description={The homology classes that give the action of $\widehat {W}$ in $\mathscr {B}$},%
+descriptionplural={The homology classes that give the action of $\widehat {W}$ in $\mathscr {B}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{r}{}%
+{%
+\gls@defglossaryentry{r}%
+{%
+name={\ensuremath {r(\eta ,\eta ')}},%
+sort={\ensuremath {r(\eta ,\eta ')}},%
+type={main},%
+first={\protect \ensuremath {r}},%
+firstplural={\protect \ensuremath {r}s},%
+text={\protect \ensuremath {r}},%
+plural={\protect \ensuremath {r}s},%
+description={The homology classes corresponding to fibers over torus fixed points},%
+descriptionplural={The homology classes corresponding to fibers over torus fixed points},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Bpsi}{}%
+{%
+\gls@defglossaryentry{Bpsi}%
+{%
+name={\ensuremath {\Bpsi }},%
+sort={\ensuremath {\Bpsi }},%
+type={main},%
+first={\protect \ensuremath {u_{\alpha }}},%
+firstplural={\protect \ensuremath {u_{\alpha }}s},%
+text={\protect \ensuremath {u_{\alpha }}},%
+plural={\protect \ensuremath {u_{\alpha }}s},%
+description={The homology classes corresponding crossing a root hyperplane},%
+descriptionplural={The homology classes corresponding crossing a root hyperplane},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{MHM}{}%
+{%
+\gls@defglossaryentry{MHM}%
+{%
+name={\ensuremath {\MHM (V/G)}},%
+sort={\ensuremath {\MHM (V/G)}},%
+type={main},%
+first={\protect \ensuremath {{\protect \operatorname {MHM}}}},%
+firstplural={\protect \ensuremath {{\protect \operatorname {MHM}}}s},%
+text={\protect \ensuremath {{\protect \operatorname {MHM}}}},%
+plural={\protect \ensuremath {{\protect \operatorname {MHM}}}s},%
+description={The category of strongly $G$-equivariant mixed Hodge modules on $V$.},%
+descriptionplural={The category of strongly $G$-equivariant mixed Hodge modules on $V$.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{MHML}{}%
+{%
+\gls@defglossaryentry{MHML}%
+{%
+name={\ensuremath {\MHM _L}},%
+sort={\ensuremath {\MHM _L}},%
+type={main},%
+first={\protect \ensuremath {{\protect \operatorname {MHM}}}},%
+firstplural={\protect \ensuremath {{\protect \operatorname {MHM}}}s},%
+text={\protect \ensuremath {{\protect \operatorname {MHM}}}},%
+plural={\protect \ensuremath {{\protect \operatorname {MHM}}}s},%
+description={The category of strongly $G$-equivariant mixed Hodge modules on $V$ which lie in the dg-subcategory generated by Tate twists of summands of $L$.},%
+descriptionplural={The category of strongly $G$-equivariant mixed Hodge modules on $V$ which lie in the dg-subcategory generated by Tate twists of summands of $L$.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Wei}{}%
+{%
+\gls@defglossaryentry{Wei}%
+{%
+name={\ensuremath {\Wei _{\upsilon ,\acham }}},%
+sort={\ensuremath {\Wei _{\upsilon ,\acham }}},%
+type={main},%
+first={\protect \ensuremath {\protect \EuScript {W}}},%
+firstplural={\protect \ensuremath {\protect \EuScript {W}}s},%
+text={\protect \ensuremath {\protect \EuScript {W}}},%
+plural={\protect \ensuremath {\protect \EuScript {W}}s},%
+description={The functor $\Wei _{\upsilon ,\acham }(M)=\{m\in M(\acham )\mid \mathfrak {m}_{\upsilon }^Nm=0 \text { for } N\gg 0\},$ for a $\gls {scrB}$-module $M$},%
+descriptionplural={The functor $\Wei _{\upsilon ,\acham }(M)=\{m\in M(\acham )\mid \mathfrak {m}_{\upsilon }^Nm=0 \text { for } N\gg 0\},$ for a $\gls {scrB}$-module $M$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{relweights}{}%
+{%
+\gls@defglossaryentry{relweights}%
+{%
+name={\ensuremath {\weights _{\upsilon }}},%
+sort={\ensuremath {\weights _{\upsilon }}},%
+type={main},%
+first={\protect \ensuremath {\iota }},%
+firstplural={\protect \ensuremath {\iota }s},%
+text={\protect \ensuremath {\iota }},%
+plural={\protect \ensuremath {\iota }s},%
+description={The set of relevant weights for $\upsilon $, that is, the indices such that $\varphi _i(\upsilon ')\in \Z /p\Z $},%
+descriptionplural={The set of relevant weights for $\upsilon $, that is, the indices such that $\varphi _i(\upsilon ')\in \Z /p\Z $},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{relroots}{}%
+{%
+\gls@defglossaryentry{relroots}%
+{%
+name={\ensuremath {\Delta _{\upsilon }}},%
+sort={\ensuremath {\Delta _{\upsilon }}},%
+type={main},%
+first={\protect \ensuremath {\Delta }},%
+firstplural={\protect \ensuremath {\Delta }s},%
+text={\protect \ensuremath {\Delta }},%
+plural={\protect \ensuremath {\Delta }s},%
+description={The set of relevant weights for $\upsilon $, that is, the indices such that $\varphi _i(\upsilon ')\in \Z /p\Z $},%
+descriptionplural={The set of relevant weights for $\upsilon $, that is, the indices such that $\varphi _i(\upsilon ')\in \Z /p\Z $},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{S}{}%
+{%
+\gls@defglossaryentry{S}%
+{%
+name={\ensuremath {S_*}},%
+sort={\ensuremath {S_*}},%
+type={main},%
+first={\protect \ensuremath {S}},%
+firstplural={\protect \ensuremath {S}s},%
+text={\protect \ensuremath {S}},%
+plural={\protect \ensuremath {S}s},%
+description={The symmetric algebra on $\tilde {\ft }^*$, that is, the ring of functions on the affine variety $\tilde {\ft }$, with the parameter $h$ specialized at $h=*$},%
+descriptionplural={The symmetric algebra on $\tilde {\ft }^*$, that is, the ring of functions on the affine variety $\tilde {\ft }$, with the parameter $h$ specialized at $h=*$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{gammaB}{}%
+{%
+\gls@defglossaryentry{gammaB}%
+{%
+name={\ensuremath {\gamma _{\mathsf {B}}}},%
+sort={\ensuremath {\gamma _{\mathsf {B}}}},%
+type={main},%
+first={\protect \ensuremath {\gamma _{\protect \mathsf {B}}}},%
+firstplural={\protect \ensuremath {\gamma _{\protect \mathsf {B}}}s},%
+text={\protect \ensuremath {\gamma _{\protect \mathsf {B}}}},%
+plural={\protect \ensuremath {\gamma _{\protect \mathsf {B}}}s},%
+description={The equivalence $\gamma _{\mathsf {B}}\colon \gls {sfB}\to \gls {scrBhatup}_{\upsilon '}$ of Proposition \ref {prop:B-equiv}},%
+descriptionplural={The equivalence $\gamma _{\mathsf {B}}\colon \gls {sfB}\to \gls {scrBhatup}_{\upsilon '}$ of Proposition \ref {prop:B-equiv}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{quiver}{}%
+{%
+\gls@defglossaryentry{quiver}%
+{%
+name={\ensuremath {\Gamma }},%
+sort={\ensuremath {\Gamma }},%
+type={main},%
+first={\protect \ensuremath {\Gamma }},%
+firstplural={\protect \ensuremath {\Gamma }s},%
+text={\protect \ensuremath {\Gamma }},%
+plural={\protect \ensuremath {\Gamma }s},%
+description={The quiver used to define the quiver gauge theory as in \eqref {eq:quiver-gauge}},%
+descriptionplural={The quiver used to define the quiver gauge theory as in \eqref {eq:quiver-gauge}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{vertex}{}%
+{%
+\gls@defglossaryentry{vertex}%
+{%
+name={\ensuremath {\vertex }},%
+sort={\ensuremath {\vertex }},%
+type={main},%
+first={\protect \ensuremath {\protect \EuScript {V}(\Gamma )}},%
+firstplural={\protect \ensuremath {\protect \EuScript {V}(\Gamma )}s},%
+text={\protect \ensuremath {\protect \EuScript {V}(\Gamma )}},%
+plural={\protect \ensuremath {\protect \EuScript {V}(\Gamma )}s},%
+description={The vertex set of $\gls {quiver}$},%
+descriptionplural={The vertex set of $\gls {quiver}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Bw}{}%
+{%
+\gls@defglossaryentry{Bw}%
+{%
+name={\ensuremath {\Bw }},%
+sort={\ensuremath {\Bw }},%
+type={main},%
+first={\protect \ensuremath {\protect \mathbf {w}}},%
+firstplural={\protect \ensuremath {\protect \mathbf {w}}s},%
+text={\protect \ensuremath {\protect \mathbf {w}}},%
+plural={\protect \ensuremath {\protect \mathbf {w}}s},%
+description={A dimension vector with components $w_i$ for $\gls {quiver}$ that gives the ranks of the factors of the flavor group $\gls {F}$},%
+descriptionplural={A dimension vector with components $w_i$ for $\gls {quiver}$ that gives the ranks of the factors of the flavor group $\gls {F}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Bv}{}%
+{%
+\gls@defglossaryentry{Bv}%
+{%
+name={\ensuremath {\Bv }},%
+sort={\ensuremath {\Bv }},%
+type={main},%
+first={\protect \ensuremath {\protect \mathbf {v}}},%
+firstplural={\protect \ensuremath {\protect \mathbf {v}}s},%
+text={\protect \ensuremath {\protect \mathbf {v}}},%
+plural={\protect \ensuremath {\protect \mathbf {v}}s},%
+description={A dimension vector with components $v_i$ for $\gls {quiver}$ that gives the ranks of the factors of the gauge group $\gls {G}$},%
+descriptionplural={A dimension vector with components $v_i$ for $\gls {quiver}$ that gives the ranks of the factors of the gauge group $\gls {G}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{rACp}{}%
+{%
+\gls@defglossaryentry{rACp}%
+{%
+name={\ensuremath {\rACp _{\Ba }}},%
+sort={\ensuremath {\rACp _{\Ba }}},%
+type={main},%
+first={\protect \ensuremath {\protect \mathsf {C}}},%
+firstplural={\protect \ensuremath {\protect \mathsf {C}}s},%
+text={\protect \ensuremath {\protect \mathsf {C}}},%
+plural={\protect \ensuremath {\protect \mathsf {C}}s},%
+description={The chamber $\rACp _{\Ba }=\{\xi \in \mathsf {t}_{1,\R }\mid a_i<\varphi _i^{\operatorname {mid}}(\xi )<a_i+1\text { for all $i\in \gls {relweights}_{\upsilon '}$}\}$},%
+descriptionplural={The chamber $\rACp _{\Ba }=\{\xi \in \mathsf {t}_{1,\R }\mid a_i<\varphi _i^{\operatorname {mid}}(\xi )<a_i+1\text { for all $i\in \gls {relweights}_{\upsilon '}$}\}$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Qh}{}%
+{%
+\gls@defglossaryentry{Qh}%
+{%
+name={\ensuremath {\EuScript {Q}_h}},%
+sort={\ensuremath {\EuScript {Q}_h}},%
+type={main},%
+first={\protect \ensuremath {\protect \EuScript {Q}_h}},%
+firstplural={\protect \ensuremath {\protect \EuScript {Q}_h}s},%
+text={\protect \ensuremath {\protect \EuScript {Q}_h}},%
+plural={\protect \ensuremath {\protect \EuScript {Q}_h}s},%
+description={The right module quotient $\EuScript {Q}_h=\EuScript {A}_{h,\To }^{\operatorname {sph}}/\gk \cdot (\EuScript {A}_{h,\To }^{\operatorname {sph}})$. That $h=0$, this is the algebra $\Fp [\mu ^{-1}(0)]$},%
+descriptionplural={The right module quotient $\EuScript {Q}_h=\EuScript {A}_{h,\To }^{\operatorname {sph}}/\gk \cdot (\EuScript {A}_{h,\To }^{\operatorname {sph}})$. That $h=0$, this is the algebra $\Fp [\mu ^{-1}(0)]$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{psalg}{}%
+{%
+\gls@defglossaryentry{psalg}%
+{%
+name={\ensuremath {\psalg _\phi }},%
+sort={\ensuremath {\psalg _\phi }},%
+type={main},%
+first={\protect \ensuremath {\protect \mathscr {W}}},%
+firstplural={\protect \ensuremath {\protect \mathscr {W}}s},%
+text={\protect \ensuremath {\protect \mathscr {W}}},%
+plural={\protect \ensuremath {\protect \mathscr {W}}s},%
+description={The coherent sheaf of generically Azumaya algebras on $\gls {tCoulomb}$ or its pushforward to $\gls {Coulomb}$, such that $\Gamma (\gls {tCoulomb}; \psalg _\phi )=\glslink {Asph}{\EuScript {A}_1 ^{\operatorname {sph}} }$ with the quantization parameter $\phi $},%
+descriptionplural={The coherent sheaf of generically Azumaya algebras on $\gls {tCoulomb}$ or its pushforward to $\gls {Coulomb}$, such that $\Gamma (\gls {tCoulomb}; \psalg _\phi )=\glslink {Asph}{\EuScript {A}_1 ^{\operatorname {sph}} }$ with the quantization parameter $\phi $},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{hatpsalg}{}%
+{%
+\gls@defglossaryentry{hatpsalg}%
+{%
+name={\ensuremath {\hat {\psalg }_\phi }},%
+sort={\ensuremath {\hat {\psalg }_\phi }},%
+type={main},%
+first={\protect \ensuremath {\protect \cc@accent {"705E}{\protect \mathscr {W}}}},%
+firstplural={\protect \ensuremath {\protect \cc@accent {"705E}{\protect \mathscr {W}}}s},%
+text={\protect \ensuremath {\protect \cc@accent {"705E}{\protect \mathscr {W}}}},%
+plural={\protect \ensuremath {\protect \cc@accent {"705E}{\protect \mathscr {W}}}s},%
+description={The restriction of $\glslink {psalg}{\psalg _\phi }$ to the formal neighborhood \gls {hatM}},%
+descriptionplural={The restriction of $\glslink {psalg}{\psalg _\phi }$ to the formal neighborhood \gls {hatM}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Isalg}{}%
+{%
+\gls@defglossaryentry{Isalg}%
+{%
+name={\ensuremath {\Isalg _\phi }},%
+sort={\ensuremath {\Isalg _\phi }},%
+type={main},%
+first={\protect \ensuremath {\protect \mathscr {H}}},%
+firstplural={\protect \ensuremath {\protect \mathscr {H}}s},%
+text={\protect \ensuremath {\protect \mathscr {H}}},%
+plural={\protect \ensuremath {\protect \mathscr {H}}s},%
+description={The coherent sheaf of generically Azumaya algebras on $\gls {tCoulomb}$ or its pushforward to $\gls {Coulomb}$, such that $\Gamma (\gls {tCoulomb}; \psalg _\phi )=\glslink {efA}{\EuScript {A}_1 }$ with the quantization parameter $\phi $},%
+descriptionplural={The coherent sheaf of generically Azumaya algebras on $\gls {tCoulomb}$ or its pushforward to $\gls {Coulomb}$, such that $\Gamma (\gls {tCoulomb}; \psalg _\phi )=\glslink {efA}{\EuScript {A}_1 }$ with the quantization parameter $\phi $},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{hatIsalg}{}%
+{%
+\gls@defglossaryentry{hatIsalg}%
+{%
+name={\ensuremath {\hat {\Isalg }_\phi }},%
+sort={\ensuremath {\hat {\Isalg }_\phi }},%
+type={main},%
+first={\protect \ensuremath {\protect \cc@accent {"705E}{\protect \mathscr {H}}}},%
+firstplural={\protect \ensuremath {\protect \cc@accent {"705E}{\protect \mathscr {H}}}s},%
+text={\protect \ensuremath {\protect \cc@accent {"705E}{\protect \mathscr {H}}}},%
+plural={\protect \ensuremath {\protect \cc@accent {"705E}{\protect \mathscr {H}}}s},%
+description={The restriction of $\glslink {Isalg}{\Isalg _\phi }$ to the formal neighborhood \gls {hatM}},%
+descriptionplural={The restriction of $\glslink {Isalg}{\Isalg _\phi }$ to the formal neighborhood \gls {hatM}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{hatM}{}%
+{%
+\gls@defglossaryentry{hatM}%
+{%
+name={\ensuremath {\hat {\fM }}},%
+sort={\ensuremath {\hat {\fM }}},%
+type={main},%
+first={\protect \ensuremath {\protect \cc@accent {"705E}{\protect \mathfrak {M}}}},%
+firstplural={\protect \ensuremath {\protect \cc@accent {"705E}{\protect \mathfrak {M}}}s},%
+text={\protect \ensuremath {\protect \cc@accent {"705E}{\protect \mathfrak {M}}}},%
+plural={\protect \ensuremath {\protect \cc@accent {"705E}{\protect \mathfrak {M}}}s},%
+description={The formal neighborhood in \gls {Coulomb} of the fiber over the origin in $\ft /W$},%
+descriptionplural={The formal neighborhood in \gls {Coulomb} of the fiber over the origin in $\ft /W$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{hcQ}{}%
+{%
+\gls@defglossaryentry{hcQ}%
+{%
+name={\ensuremath {\hat {\cQ }_\mu }},%
+sort={\ensuremath {\hat {\cQ }_\mu }},%
+type={main},%
+first={\protect \ensuremath {\protect \cc@accent {"705E}{\protect \mathcal {Q}}_\mu }},%
+firstplural={\protect \ensuremath {\protect \cc@accent {"705E}{\protect \mathcal {Q}}_\mu }s},%
+text={\protect \ensuremath {\protect \cc@accent {"705E}{\protect \mathcal {Q}}_\mu }},%
+plural={\protect \ensuremath {\protect \cc@accent {"705E}{\protect \mathcal {Q}}_\mu }s},%
+description={The vector bundle on \gls {hatM} defined by $\mathcal {\hat Q}_\mu :=e_\mu \hat {\Isalg }_\phi e_{0,\second }$. We have $\hat {\cQ }:= \oplus _{\mu } \hat {\cQ }_\mu $},%
+descriptionplural={The vector bundle on \gls {hatM} defined by $\mathcal {\hat Q}_\mu :=e_\mu \hat {\Isalg }_\phi e_{0,\second }$. We have $\hat {\cQ }:= \oplus _{\mu } \hat {\cQ }_\mu $},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{cQ}{}%
+{%
+\gls@defglossaryentry{cQ}%
+{%
+name={\ensuremath {{\cQ }_\mu ^{\K }}},%
+sort={\ensuremath {{\cQ }_\mu ^{\K }}},%
+type={main},%
+first={\protect \ensuremath {{\protect \mathcal {Q}}_\mu ^{\protect \mathbbm {k}}}},%
+firstplural={\protect \ensuremath {{\protect \mathcal {Q}}_\mu ^{\protect \mathbbm {k}}}s},%
+text={\protect \ensuremath {{\protect \mathcal {Q}}_\mu ^{\protect \mathbbm {k}}}},%
+plural={\protect \ensuremath {{\protect \mathcal {Q}}_\mu ^{\protect \mathbbm {k}}}s},%
+description={The vector bundle on \gls {tM} defined by Hamiltonian reduction of $ \mathsf { R}_\mu (\K )=\Hom _{{\mathscr {B}}^{\To }(\K )}( \tau ,-\tilde {\mu }_{1/p}+\zero )$},%
+descriptionplural={The vector bundle on \gls {tM} defined by Hamiltonian reduction of $ \mathsf { R}_\mu (\K )=\Hom _{{\mathscr {B}}^{\To }(\K )}( \tau ,-\tilde {\mu }_{1/p}+\zero )$},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{cQQ}{}%
+{%
+\gls@defglossaryentry{cQQ}%
+{%
+name={\ensuremath {{\cQ }^{\Q }_\phi }},%
+sort={\ensuremath {{\cQ }^{\Q }_\phi }},%
+type={main},%
+first={\protect \ensuremath {{\protect \mathcal {Q}}^{\protect \mathbb {Q}}_\phi }},%
+firstplural={\protect \ensuremath {{\protect \mathcal {Q}}^{\protect \mathbb {Q}}_\phi }s},%
+text={\protect \ensuremath {{\protect \mathcal {Q}}^{\protect \mathbb {Q}}_\phi }},%
+plural={\protect \ensuremath {{\protect \mathcal {Q}}^{\protect \mathbb {Q}}_\phi }s},%
+description={The tilting generator obtained by summing the vector bundles $\glslink {cQ}{\cQ ^\Q _\mu }$ over representatives of the set $\glslink {LambdaR}{\bar {\Lambda }^{\R }}$ for generic $\phi $.},%
+descriptionplural={The tilting generator obtained by summing the vector bundles $\glslink {cQ}{\cQ ^\Q _\mu }$ over representatives of the set $\glslink {LambdaR}{\bar {\Lambda }^{\R }}$ for generic $\phi $.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{BLam}{}%
+{%
+\gls@defglossaryentry{BLam}%
+{%
+name={\ensuremath {\mathsf {B}^{\bar \Lambda }(\K )}},%
+sort={\ensuremath {\mathsf {B}^{\bar \Lambda }(\K )}},%
+type={main},%
+first={\protect \ensuremath {\protect \mathsf {B}^{\protect \cc@accent {"7016}\Lambda }(\protect \mathbbm {k})}},%
+firstplural={\protect \ensuremath {\protect \mathsf {B}^{\protect \cc@accent {"7016}\Lambda }(\protect \mathbbm {k})}s},%
+text={\protect \ensuremath {\protect \mathsf {B}^{\protect \cc@accent {"7016}\Lambda }(\protect \mathbbm {k})}},%
+plural={\protect \ensuremath {\protect \mathsf {B}^{\protect \cc@accent {"7016}\Lambda }(\protect \mathbbm {k})}s},%
+description={The category over the base ring $\K $ with object set $\gls {barLambda}\subset \Z ^d$ and morphism spaces $\Hom _{\mathsf {B}}(\eta _\Ba ,\eta _\Bb )$ for $\eta _\Ba $ an arbitrary element of the chamber $\rACp _{\Ba }$.},%
+descriptionplural={The category over the base ring $\K $ with object set $\gls {barLambda}\subset \Z ^d$ and morphism spaces $\Hom _{\mathsf {B}}(\eta _\Ba ,\eta _\Bb )$ for $\eta _\Ba $ an arbitrary element of the chamber $\rACp _{\Ba }$.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{A}{}%
+{%
+\gls@defglossaryentry{A}%
+{%
+name={\ensuremath {A_*}},%
+sort={\ensuremath {A_*}},%
+type={main},%
+first={\protect \ensuremath {A}},%
+firstplural={\protect \ensuremath {A}s},%
+text={\protect \ensuremath {A}},%
+plural={\protect \ensuremath {A}s},%
+description={An algebraically defined category which is shown to be equivalent to $\gls {Stein}_*$ in Theorem \ref {th:Steinberg}},%
+descriptionplural={An algebraically defined category which is shown to be equivalent to $\gls {Stein}_*$ in Theorem \ref {th:Steinberg}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{K}{}%
+{%
+\gls@defglossaryentry{K}%
+{%
+name={\ensuremath {K}},%
+sort={\ensuremath {K}},%
+type={main},%
+first={\protect \ensuremath {K}},%
+firstplural={\protect \ensuremath {K}s},%
+text={\protect \ensuremath {K}},%
+plural={\protect \ensuremath {K}s},%
+description={The Langlands dual $T_F^\vee $, or equivalently, the Pontryagin dual $\Hom (\ft ^*_{\Z }, \C ^*)$.},%
+descriptionplural={The Langlands dual $T_F^\vee $, or equivalently, the Pontryagin dual $\Hom (\ft ^*_{\Z }, \C ^*)$.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

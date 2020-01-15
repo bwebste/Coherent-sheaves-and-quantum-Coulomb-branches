@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: coherent-coulombII.aux
+The style file: amsalpha.bst
+Database file #1: gen.bib
+Warning--missing year in Anno
+Warning--missing pages in Anno
+You've used 23 entries,
+            2624 wiz_defined-function locations,
+            709 strings with 7468 characters,
+and the built_in function-call counts, 8371 in all, are:
+= -- 776
+> -- 341
+< -- 12
++ -- 114
+- -- 109
+* -- 655
+:= -- 1261
+add.period$ -- 23
+call.type$ -- 23
+change.case$ -- 135
+chr.to.int$ -- 19
+cite$ -- 25
+duplicate$ -- 366
+empty$ -- 705
+format.name$ -- 142
+if$ -- 1737
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 35
+newline$ -- 81
+num.names$ -- 62
+pop$ -- 235
+preamble$ -- 2
+purify$ -- 158
+quote$ -- 0
+skip$ -- 251
+stack$ -- 0
+substring$ -- 483
+swap$ -- 58
+text.length$ -- 12
+text.prefix$ -- 11
+top$ -- 0
+type$ -- 184
+warning$ -- 2
+while$ -- 75
+width$ -- 26
+write$ -- 248
+(There were 2 warnings)

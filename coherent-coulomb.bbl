@@ -1,0 +1,194 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\def\cprime{$'$} \def\cprime{$'$} \def\cprime{$'$}
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{BLPW16}
+
+\bibitem[Bas68]{BassK}
+Hyman Bass, \emph{Algebraic {$K$}-theory}, W. A. Benjamin, Inc., New
+  York-Amsterdam, 1968. \MR{0249491}
+
+\bibitem[BBZB{\etalchar{+}}]{BBBDN}
+Christopher Beem, David Ben-Zvi, Mathew Bullimore, Tudor Dimofte, and Andrew
+  Neitzke, \emph{Secondary products in supersymmetric field theory}.
+
+\bibitem[BFN]{BFNline}
+Alexander Braverman, Michael Finkelberg, and Hiraku Nakajima, \emph{Line
+  bundles over coulomb branches}, \arxiv{1805.11826}.
+
+\bibitem[BFN18]{BFN}
+Alexander Braverman, Michael Finkelberg, and Hiraku Nakajima, \emph{Towards a
+  mathematical definition of {C}oulomb branches of 3-dimensional {$\Cal N=4$}
+  gauge theories, {II}}, Adv. Theor. Math. Phys. \textbf{22} (2018), no.~5,
+  1071--1147. \MR{3952347}
+
+\bibitem[BK04]{BK04a}
+Roman Bezrukavnikov and Dmitry Kaledin, \emph{Fedosov quantization in algebraic
+  context}, Mosc. Math. J. \textbf{4} (2004), no.~3, 559--592, 782.
+  \MR{MR2119140 (2006j:53130)}
+
+\bibitem[BK05]{BrionKumar}
+Michel Brion and Shrawan Kumar, \emph{Frobenius splitting methods in geometry
+  and representation theory}, Progress in Mathematics, vol. 231, Birkh\"{a}user
+  Boston, Inc., Boston, MA, 2005. \MR{2107324}
+
+\bibitem[BK08]{BKpos}
+R.~Bezrukavnikov and D.~Kaledin, \emph{Fedosov quantization in positive
+  characteristic}, J. Amer. Math. Soc. \textbf{21} (2008), no.~2, 409--438.
+  \MR{2373355}
+
+\bibitem[BLPW16]{BLPWgco}
+Tom Braden, Anthony Licata, Nicholas Proudfoot, and Ben Webster,
+  \emph{Quantizations of conical symplectic resolutions {II}: category
+  {$\mathcal O$} and symplectic duality}, Ast\'erisque (2016), no.~384,
+  75--179, with an appendix by I. Losev. \MR{3594665}
+
+\bibitem[BPW16]{BLPWquant}
+Tom Braden, Nicholas Proudfoot, and Ben Webster, \emph{Quantizations of conical
+  symplectic resolutions {I}: local and global structure}, Ast\'erisque (2016),
+  no.~384, 1--73. \MR{3594664}
+
+\bibitem[BR12]{BezRiche}
+Roman Bezrukavnikov and Simon Riche, \emph{Affine braid group actions on
+  derived categories of {S}pringer resolutions}, Ann. Sci. \'{E}c. Norm.
+  Sup\'{e}r. (4) \textbf{45} (2012), no.~4, 535--599 (2013). \MR{3059241}
+
+\bibitem[CCG19]{CCG}
+Kevin Costello, Thomas Creutzig, and Davide Gaiotto, \emph{{Higgs and Coulomb
+  branches from vertex operator algebras}}, Journal of High Energy Physics
+  \textbf{2019} (2019), no.~3, 66.
+
+\bibitem[DFO94]{FOD}
+Yu.~A. Drozd, V.~M. Futorny, and S.~A. Ovsienko, \emph{Harish-{C}handra
+  subalgebras and {G}el\cprime fand-{Z}etlin modules}, Finite-dimensional
+  algebras and related topics ({O}ttawa, {ON}, 1992), NATO Adv. Sci. Inst. Ser.
+  C Math. Phys. Sci., vol. 424, Kluwer Acad. Publ., Dordrecht, 1994,
+  pp.~79--93. \MR{1308982}
+
+\bibitem[DGGH]{DGGH}
+Tudor Dimofte, Niklas Garner, Michael Geracie, and Justin Hilburn, \emph{Mirror
+  symmetry and line operators}, \arxiv{1908.00013}.
+
+\bibitem[DH98]{DHGIT}
+Igor~V. Dolgachev and Yi~Hu, \emph{Variation of geometric invariant theory
+  quotients}, Inst. Hautes \'{E}tudes Sci. Publ. Math. (1998), no.~87, 5--56,
+  With an appendix by Nicolas Ressayre. \MR{1659282}
+
+\bibitem[Don]{donovan2017perverse}
+Will Donovan, \emph{Perverse schobers and wall crossing}, \arxiv{1703.00592}.
+
+\bibitem[GMW]{GMW}
+Benjamin Gammage, Michael McBreen, and Ben Webster, \emph{Homological mirror
+  symmetry for hypertoric varieties {II}}, \arxiv{1903.07928}.
+
+\bibitem[GS05]{GS}
+I.~Gordon and J.~T. Stafford, \emph{Rational {C}herednik algebras and {H}ilbert
+  schemes}, Adv. Math. \textbf{198} (2005), no.~1, 222--274.
+
+\bibitem[HLS]{HLSdeq}
+Daniel Halpern-Leistner and Steven~V. Sam, \emph{Combinatorial constructions of
+  derived equivalences}, \arxiv{1601.02030}.
+
+\bibitem[HLS16]{HLS}
+Daniel Halpern-Leistner and Ian Shipman, \emph{Autoequivalences of derived
+  categories via geometric invariant theory}, Adv. Math. \textbf{303} (2016),
+  1264--1299. \MR{3552550}
+
+\bibitem[Kal08]{KalDEQ}
+Dmitry Kaledin, \emph{Derived equivalences by quantization}, Geom. Funct. Anal.
+  \textbf{17} (2008), no.~6, 1968--2004.
+
+\bibitem[KR08]{KR07}
+Masaki Kashiwara and Rapha{\"e}l Rouquier, \emph{Microlocalization of rational
+  {C}herednik algebras}, Duke Math. J. \textbf{144} (2008), no.~3, 525--573.
+  \MR{MR2444305}
+
+\bibitem[KS]{KSschobers}
+Mikhail Kapranov and Vadim Schechtman, \emph{Perverse schobers},
+  \arxiv{1411.2772}.
+
+\bibitem[KS16]{KShyperplane}
+\bysame, \emph{Perverse sheaves over real hyperplane arrangements}, Ann. of
+  Math. (2) \textbf{183} (2016), no.~2, 619--679. \MR{3450484}
+
+\bibitem[Lon]{Lon}
+Gus Lonergan, \emph{{ Steenrod Operators, the Coulomb Branch and the Frobenius
+  Twist, I}}, \arxiv{1712.03711}.
+
+\bibitem[Los]{losev2017modular}
+Ivan Losev, \emph{On modular categories $\mathcal{O}$ for quantized symplectic
+  resolutions}, \arxiv{1712.07726}.
+
+\bibitem[MV98]{MVdB}
+Ian~M. Musson and Michel {Van den Bergh}, \emph{Invariants under tori of rings
+  of differential operators and related topics}, Mem. Amer. Math. Soc.
+  \textbf{136} (1998), no.~650, viii+85.
+
+\bibitem[MvdK92]{MR1156382}
+V.~B. Mehta and Wilberd van~der Kallen, \emph{On a {G}rauert-{R}iemenschneider
+  vanishing theorem for {F}robenius split varieties in characteristic {$p$}},
+  Invent. Math. \textbf{108} (1992), no.~1, 11--13. \MR{1156382}
+
+\bibitem[MW]{McBW}
+Michael McBreen and Ben Webster, \emph{Homological mirror symmetry for
+  hypertoric varieties {I}: conic equivariant sheaves}, \arxiv{1804.10646}.
+
+\bibitem[Nak16]{NaCoulomb}
+Hiraku Nakajima, \emph{Towards a mathematical definition of {C}oulomb branches
+  of 3-dimensional {$\mathcal N=4$} gauge theories, {I}}, Adv. Theor. Math.
+  Phys. \textbf{20} (2016), no.~3, 595--669. \MR{3565863}
+
+\bibitem[NT17]{NTbow}
+Hiraku Nakajima and Yuuya Takayama, \emph{Cherkis bow varieties and {C}oulomb
+  branches of quiver gauge theories of affine type {A}}, Selecta Math. (N.S.)
+  \textbf{23} (2017), no.~4, 2553--2633. \MR{3703461}
+
+\bibitem[Oko18]{OkGRT}
+Andrei Okounkov, \emph{Enumerative geometry and geometric representation
+  theory}, Algebraic geometry: {S}alt {L}ake {C}ity 2015, Proc. Sympos. Pure
+  Math., vol.~97, Amer. Math. Soc., Providence, RI, 2018, pp.~419--457.
+  \MR{3821158}
+
+\bibitem[{Sta}]{stacks-project}
+The {Stacks project authors}, \emph{The {Stacks project}},
+  \url{https://stacks.math.columbia.edu}.
+
+\bibitem[Sta13]{Stadnik}
+Theodore~J. Stadnik, Jr., \emph{\'{E}tale splittings of certain {A}zumaya
+  algebras on toric and hypertoric varieties in positive characteristic}, Adv.
+  Math. \textbf{233} (2013), 268--290. \MR{2995672}
+
+\bibitem[vdB04a]{vdB04}
+Michel van~den Bergh, \emph{Non-commutative crepant resolutions}, The Legacy of
+  Niels Henrik Abel: The Abel Bicentennial, Oslo, 2002 (Olav~Arnfinn Laudal and
+  Ragni Piene, eds.), Springer Berlin Heidelberg, Berlin, Heidelberg, 2004,
+  pp.~749--770.
+
+\bibitem[vdB04b]{van2004three}
+\bysame, \emph{Three-dimensional flops and noncommutative rings}, Duke
+  Mathematical Journal \textbf{122} (2004), no.~3, 423--455.
+
+\bibitem[VV10]{MR3013034}
+Michela Varagnolo and Eric Vasserot, \emph{Double affine {H}ecke algebras and
+  affine flag manifolds, {I}}, Affine flag manifolds and principal bundles,
+  Trends Math., Birkh\"auser/Springer Basel AG, Basel, 2010, pp.~233--289.
+  \MR{3013034}
+
+\bibitem[Weba]{WebcohII}
+Ben Webster, \emph{{Coherent sheaves and quantum Coulomb branches II: quiver
+  gauge and diagrams}}, in preparation.
+
+\bibitem[Webb]{WebGT}
+\bysame, \emph{{Gelfand-Tsetlin modules in the Coulomb context}},
+  \arxiv{1904.05415}.
+
+\bibitem[Webc]{WebSD}
+\bysame, \emph{{Koszul duality between Higgs and Coulomb categories
+  $\mathcal{O}$}}, \arxiv{1611.06541}.
+
+\end{thebibliography}

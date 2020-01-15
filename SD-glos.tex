@@ -1,0 +1,564 @@
+\newglossaryentry{V} {
+  name={\ensuremath{V}},
+  sort={V},
+   description={The matter representation}
+ }
+ \newglossaryentry{G} {
+   name={\ensuremath{G}},
+   sort={G},
+   description={The gauge group}
+ }
+  \newglossaryentry{pthroot}{
+ name={$p$th root},
+ description={The conventions for the extended category adopted in Definition \ref{def:pth-root}}
+ }
+   \newglossaryentry{sfB}{
+ name={\ensuremath{\mathsf{B}}},
+ description={The extended BFN category with \gls{pthroot} conventions}
+ }
+    \newglossaryentry{sfBhat}{
+ name={\ensuremath{\widehat{\mathsf{B}}}},
+ description={The completion with respect to grading of the extended BFN category \gls{sfB} with \gls{pthroot} conventions}
+ }
+    \newglossaryentry{sfA}{
+ name={\ensuremath{\mathsf{A}_p}},
+ description={The subcategory of \gls{sfB} defined in Definition \ref{def:sfA}}
+ }
+    \newglossaryentry{sfAhat}{
+ name={\ensuremath{\widehat{\mathsf{A}}_p}},
+ description={The completion with respect to grading of \gls{sfA}}
+ }
+ \newglossaryentry{scrBhat}{
+ name={\ensuremath{\mathscr{\widehat{B}}}},
+ description={The completion of the extended BFN category with respect to the different maximal ideals of $S_1$.}
+ }
+ \newglossaryentry{scrBhatup}{
+ name={\ensuremath{\mathscr{\widehat{B}}_{\upsilon}}},
+  text={\ensuremath{ \mathscr{\widehat{B}}}},
+ description={The subcategory of \gls{scrBhat} where we only allow objects  $(\eta,\upsilon)$ with $\eta\in \ft_{\second}, \upsilon\in \upsilon'+\ft_\Z$. }
+ }
+ \newglossaryentry{scrAhatup}{
+ name={\ensuremath{\mathscr{\widehat{A}}_{\upsilon}}},
+  text={\ensuremath{ \mathscr{\widehat{A}}}},
+ description={The subcategory of \gls{scrBhat} where we only allow objects of the form
+$(\zero,\upsilon)$ for $\upsilon \in \upsilon'+\ft_\Z$.  }
+ }
+ \newglossaryentry{No} {
+   name={\ensuremath{\No}},
+   sort={H},
+   description={The normalizer $N_{GL(V)}^{\circ}(G)$}
+}
+ \newglossaryentry{To} {
+   name={\ensuremath{\To}},
+   sort={H},
+   description={The preimage in the normalizer $\No$ of a fixed torus $T_F$ in the flavor group \gls{F}}
+}
+\newglossaryentry{tNo} {
+  name={\ensuremath{\tNo}},
+  sort={H},
+   description={The product 
+  $\No\times \C^*$, acting on $T^*V$ with the second factor acting by the cocharacter $\gls{second}$}
+}
+\newglossaryentry{tF} {
+  name={\ensuremath{\tF}},
+  sort={F},
+   description={The quotient 
+  $\gls{tNo}/\gls{G}$}
+}
+ \newglossaryentry{F} {
+   name={\ensuremath{F}},
+   sort={F},
+   description={The
+flavor group $\gls{No}/\gls{G}$}
+ }
+  \newglossaryentry{second} {
+   name={\ensuremath{\second}},
+   description={The cocharacter $\second\colon \C^*\to GL(T^*V)$ that acts trivially on $V$ and weight $-1$ on $V^*$}
+ }
+     \newglossaryentry{scrB}{
+ name={\ensuremath{\mathscr{B}}},
+ description={The extended BFN category, defined in Definition \ref{def:extended-BFN} }
+ }
+      \newglossaryentry{scrBTo}{
+ name={\ensuremath{\mathscr{B}^{\gls{To}}}},
+ description={The extended BFN category attached to the pair $(\gls{To},\gls{V})$, defined in Definition \ref{def:extended-BFN} }
+ }
+     \newglossaryentry{Bdefr}{
+ name={\ensuremath{\mathscr{B}^{\defr}}},
+ description={The deformed extended BFN category, defined in \cite[Def. 3.14]{WebSD}}
+ }
+   \newglossaryentry{scrT} {
+     name={\ensuremath{ {}_{\phi+\nu}\mathscr{T}{}_{\phi}}},
+     text={\ensuremath{ \mathscr{T}}},
+   description={The $\mathscr{B}_{\phi+\nu}\operatorname{-}\mathscr{B}_{\phi}$
+  bimodule formed by the appropriate quotient of
+  $\mathscr{T}(\nu)$, the morphisms of weight $\nu$ in $\gls{scrB}^{\gls{To}}$ }
+ }
+    \newglossaryentry{Twist} {
+     name={\ensuremath{ {}_{\phi+\nu}{T}{}_{\phi}}},
+     text={\ensuremath{{T}}},
+   description={The twisting bimodule $ {}_{\phi+\nu}\gls{scrT}{}_{\phi}(\zero,\zero)$
+ }}
+   \newglossaryentry{Wall} {
+     name={\ensuremath{\Phi_w^{\phi',\phi}}},
+   description={The functor of derived tensor product with the
+  twisting bimodule $\glslink{Twist}{{}_{w\phi'}T_{\phi}}$.
+ }}
+   \newglossaryentry{delta} {
+   name={\ensuremath{\delta}},
+   description={A parameter between the open interval $(0,1)\subset \R$ used in the definition of $\gls{scrB}$}
+ }
+  \newglossaryentry{Delta} {
+   name={\ensuremath{\Delta}},
+   description={The roots of $\gls{G}$}
+ }
+   \newglossaryentry{T} {
+     name={\ensuremath{T_*}},
+     text={\ensuremath{T}},
+   description={A maximal torus of the group $*$}
+ }
+   \newglossaryentry{Higgs} {
+     name={\ensuremath{\fM_{H,*}}},
+     text={\ensuremath{\fM}},
+   description={The Higgs branch---a symplectic quotient of $T^*\gls{V}$ by $\gls{G}$ with $*$ giving the stability parameter}
+ }
+    \newglossaryentry{Coulomb} {
+     name={\ensuremath{\fM}},
+     text={\ensuremath{\fM}},
+   description={The Coulomb branch---the quotient of the convolution algebra of a modified affine Grassmannian as defined in \cite{BFN}}
+ }
+  
+     \newglossaryentry{MQ} {
+     name={\ensuremath{\fM_{\To}}},
+   description={The Coulomb branch \gls{Coulomb} attached to the group
+  \gls{To} acting on \gls{V} with its usual action}
+ }
+\newglossaryentry{tM} {
+     name={\ensuremath{\tilde{\fM}}},
+   description={The resolution of the Coulomb branch \gls{Coulomb}
+  defined by taking symplectic redution with a GIT quotient of \gls{MQ}}
+ }
+ \newglossaryentry{flav} {
+     name={\ensuremath{\flav}},
+   description={The flavor: a fixed cocharacter $\flav\colon \C^*\to T_{F}$}
+ }
+    \newglossaryentry{bT} {
+     name={\ensuremath{\bT}},
+   description={A copy of $\C^*$ embedded in $\tF$ via the flavor $\gls{flav}$}
+ }
+     \newglossaryentry{Lambda} {
+     name={\ensuremath{\Lambda}},
+   description={The set of vectors such that $\rACp_{\Ba}$
+  contains $\xi_{1/p}$ for $\xi\in \ft_{1,\Z}$.}
+ }
+      \newglossaryentry{barLambda} {
+     name={\ensuremath{\bar{\Lambda}}},
+   description={The quotient set $\gls{Lambda}/\gls{What}$.}
+ }
+      \newglossaryentry{LambdaR} {
+     name={\ensuremath{\Lambda^{\R}}},
+   description={The set of vectors such that $\rACp_{\Ba}$
+ is non-empty.}
+ }
+   \newglossaryentry{ft} {
+     name={\ensuremath{\ft_{*,\dagger}}}, 
+     text={\ensuremath{\ft}},
+   description={The Lie algebra of the torus $\gls{T}_{*}$ over $\dagger=\Z,\Q,\R,\C$}
+ }
+    \newglossaryentry{ftsecond} {
+     name={\ensuremath{\ft_{\second}}}, 
+     text={\ensuremath{\ft_{\second}}},
+   description={The coset $\gls{ft}_{\R}+\gls{second}$}
+ }
+   \newglossaryentry{ft1} {
+     name={\ensuremath{\ft_{1,\R}}}, 
+     text={\ensuremath{\ft}},
+   description={Let $\ft_{1,\R}\subset\tilde{\ft}_{\R}=d\nu^{-1}(1)$ be the real
+lifts of the cocharacter $\flav$. }
+ }
+     \newglossaryentry{varphi} {
+       name={\ensuremath{\varphi_i}},
+     text={\ensuremath{\varphi}},
+   description={The weights of  $ \gls{V}$ over \gls{G} or \gls{No}}
+ }
+     \newglossaryentry{varphi+} {
+       name={\ensuremath{\varphi_i^+}},
+     text={\ensuremath{\varphi}},
+   description={The weights of  $\gls{Vi}_i\subset T^*\gls{V}$ over \gls{tNo}}
+ }
+      \newglossaryentry{varphi-} {
+       name={\ensuremath{\varphi_i^-}},
+     text={\ensuremath{\varphi}},
+   description={The weight of the dual line  $\gls{Vi}_i^*\subset T^*\gls{V}$ over \gls{tNo}}
+ }
+       \newglossaryentry{varphimid} {
+       name={\ensuremath{\varphi_i^{\operatorname{mid}}}},
+     text={\ensuremath{\varphi}},
+   description={The average of $\varphi_i^+$ and $-\varphi_i^-$}
+ }
+     \newglossaryentry{Vi} {
+       name={\ensuremath{V_i}},
+     text={\ensuremath{V}},
+   description={A summand of the  weight decomposition of $\gls{V}$ over \gls{No}}
+ }
+      \newglossaryentry{Vsgns} {
+       name={\ensuremath{V_\sgns}},
+     text={\ensuremath{V}},
+   description={The sum of the subspaces $\gls{Vi}_{i}$ with $\sigma_i=+$ }
+ }
+       \newglossaryentry{Xsgns} {
+       name={\ensuremath{X_{\sgns,w}}},
+     text={\ensuremath{X}},
+   description={The induced $G$-space $ X_{\sgns,w}=G\times_{wBw^{-1}}\gls{Vsgns}_{\sgns}$}
+ }
+     \newglossaryentry{W} {
+     name={\ensuremath{W}},
+   description={The Weyl group of $\gls{G}$}
+ }
+      \newglossaryentry{What} {
+     name={\ensuremath{\widehat{W}}},
+   description={The affine Weyl group of $\gls{G}$.  The semi-direct
+     product of $\gls{W}$ and the coweight lattice of $\gls{T}$}
+ }
+  \newglossaryentry{c} {
+       name={\ensuremath{c_\sgns}},
+     text={\ensuremath{c}},
+   description={The chamber in $\gls{ft1}_{1,\Z}$ defined by a sign vector}
+ }
+ \newglossaryentry{C} {
+       name={\ensuremath{C_\sgns}},
+     text={\ensuremath{C}},
+   description={The chamber in $\gls{ft1}_{1,\R}$ defined by a sign vector}
+ }
+ \newglossaryentry{Cw} {
+       name={\ensuremath{C_{\sgns,w}}},
+     text={\ensuremath{C}},
+   description={The intersection of $\gls{C}_\sgns$ with the Weyl chamber $w\cdot \WC$}
+ }
+\newglossaryentry{cw} {
+       name={\ensuremath{c_{\sgns,w}}},
+     text={\ensuremath{c}},
+   description={The intersection of $\gls{c}_\sgns$ with the Weyl chamber $w\cdot \WC$}
+ }
+ 
+ \newglossaryentry{nu} {
+       name={\ensuremath{\nu}},
+   description={The character $\nu\colon  \gls{tNo}=\gls{No}\times \C^* \to
+\C^*$ given by $\nu(g,t)=t$}
+}
+ \newglossaryentry{Stein} {
+   name={\ensuremath{\Stein_*}},
+   text={\ensuremath{\Stein}},
+   description={The Steinberg category with object set $*$ defined by
+     a map $*\to \compat$}
+ }
+ \newglossaryentry{compat} {
+   name={\ensuremath{\compat}},
+   description={The set of compatible pairs of sign vectors and Weyl chambers}
+ }
+  \newglossaryentry{I} {
+       name={\ensuremath{I}},
+   description={The set of sign vectors $\sgns\in \{+,-\}^d$ such that
+  there exists a choice of flavor $\phi$ such that
+  $\gls{c}_{\sgns,1}\neq 0$ for some $\gls{flav}$}
+ }
+ \newglossaryentry{I'} {
+       name={\ensuremath{I'}},
+   description={The set of sign vectors $\sgns\in \{+,-\}^d$ such that
+  there exists a choice of flavor $\phi$ such that
+  $\gls{Cw}_{\sgns,1}\neq 0$ for some $\gls{flav}$}
+ }
+ \newglossaryentry{Iphi} {
+       name={\ensuremath{I_{\flav}}},
+     text={\ensuremath{I}},
+   description={The set of sign vectors $\sgns\in \{+,-\}^d$ such that
+  there exists a choice of flavor $\phi$ such that
+  $\gls{c}_{\sgns,1}\neq 0$ for a fixed $\gls{flav}$}
+ }
+ \newglossaryentry{Iphi'} {
+      name={\ensuremath{I_{\flav}'}},
+     text={\ensuremath{I'}},
+ description={The set of sign vectors $\sgns\in \{+,-\}^d$ such that
+  there exists a choice of flavor $\phi$ such that
+  $\gls{Cw}_{\sgns,1}\neq 0$ for a fixed $\gls{flav}$}
+}
+ \newglossaryentry{vpss} {
+      name={\ensuremath {\varphi(\sgns,\sgns' )}},
+     text={\ensuremath{\varphi}},
+ description={ The product of the weights $\varphi_i$ such that $\sgns_i=+$ and
+  $\sgns_i'=-$}
+}
+ \newglossaryentry{vpsss} {
+      name={\ensuremath {\varphi(\sgns,\sgns',\sgns'')}},
+     text={\ensuremath{\varphi}},
+ description={ The product of the weights
+  $\varphi_i$ such that $\sgns_i=\sgns_i''=-\sgns_i'$}
+}
+   \newglossaryentry{wall} {
+       name={\ensuremath{\wall}},
+   description={A generator of the category $\gls{A}_{I'}$}
+ }
+ \newglossaryentry{psi} {
+       name={\ensuremath{\psi}},
+       description={A generator of the category $\gls{A}_{I'}$}
+ }
+  \newglossaryentry{ACs} {
+       name={\ensuremath{\ACs}},
+       description={The set of vectors $\Ba$ such that $\AC_{\Ba}\neq 0$}
+     }
+     
+ \newglossaryentry{plusA} {
+   name={\ensuremath{ {}^+A}},
+        text={\ensuremath{ {}^+A}},
+   description={The unique non-negatively graded basic algebra Morita equivalent to $\gls{A}_Q$.}
+ }
+ \newglossaryentry{wallpi} {
+   name={\ensuremath{\tilde{\wall}_\pi}},
+        text={\ensuremath{\tilde{\wall}}},
+   description={A composition of the elements \gls{wall} and \gls{psi}
+   following a path $\pi$}
+}
+\newglossaryentry{bbX} {
+   name={\ensuremath{\mathbb{X}_I}},
+        text={\ensuremath{\mathbb{X}}},
+   description={The union of fiber products $\bigsqcup_{\substack{(\sgns,w)\in I\\
+(\sgns',w')\in I}}  X_{\sgns,w}\times_V X_{\sgns',w'}$}
+}
+\newglossaryentry{VB} {
+   name={\ensuremath{\VB_U}},
+        text={\ensuremath{\VB}},
+   description={The associated bundle $\VB_U=G((t))\times_{\Iwahori}
+       U$ for an $\Iwahori$-representation $U$ }
+}
+\newglossaryentry{VBacham} {
+   name={\ensuremath{\VB_\acham}},
+        text={\ensuremath{\VB}},
+   description={Shorthand for $\gls{VB}_{\gls{Ueta}_\acham}$ }
+}
+\newglossaryentry{Ueta} {
+   name={\ensuremath{U_\acham}},
+        text={\ensuremath{U}},
+   description={The subspace $V((t))$ of elements of 
+weight $\geq -1/2$ under $\acham$}
+}
+
+\newglossaryentry{dVB} {
+   name={\ensuremath{{}_{\acham}\VB_{\acham'}}},
+        text={\ensuremath{\VB}},
+   description={The subspace $\left\{(g,v(t))\in G((t))\times
+        U_{\acham}\mid g\cdot v(t)\in
+        U_{\acham'}\right\}/\Iwahori_{\acham}\subset \VB_{\acham}$ }
+}
+\newglossaryentry{Gammazphi} {
+   name={\ensuremath{\Gamma_{\Bz,\phi}}},
+        text={\ensuremath{\Gamma}},
+   description={The graph $\Gamma_{\Bz,\phi}$ which corresponds to the
+       relevant weights in the quiver gauge theory case}
+}
+ \newglossaryentry{efA} {
+       name={\ensuremath{\EuScript{A}}},
+       description={The Iwahori Coulomb branch $\EuScript{A}=H_*^{BM, \wtG}(\VB_{V[[t]]}\times_{V((t))}\VB_{V[[t]]})$}
+ }
+  \newglossaryentry{Asph} {
+       name={\ensuremath{\EuScript{A}^{\operatorname{sph}}}},
+       description={The quantum Coulomb branch $\EuScript{A}^{\operatorname{sph}}=H_*^{BM, \wtG}(\EuScript{Y}_{V[[t]]}\times_{V((t))}\EuScript{Y}_{V[[t]]})$}
+ }
+  \newglossaryentry{L} {
+       name={\ensuremath{L}},
+       description={The pushforward sheaf $L=p_*\mathfrak{S}_X$}
+ }
+  \newglossaryentry{Og} {
+       name={\ensuremath{\cOg}},
+       description={The geometric category $\cO$ as in Definition \ref{def:Og}}
+ }
+  \newglossaryentry{preO} {
+       name={\ensuremath{\preO}},
+       description={A category of strongly $G$-equivariant D-modules on $V$ whose reductions lie in \gls{Og}; see \cite[2.8]{Webqui}}
+ }
+   \newglossaryentry{dOg} {
+       name={\ensuremath{D_{\cOg}}},
+       description={The dg-subcategory of $D^b(\mathcal{D}\mmod)$ with its usual dg-enhancement generated by $\gls{Og}$}
+ }
+  \newglossaryentry{dpreO} {
+       name={\ensuremath{D_{\preO}}},
+       description={The dg-subcategory of strongly $G$-equivariant $D$-modules on $V$ with its usual dg-enhancement generated by $\gls{preO}$}
+ }
+    \newglossaryentry{cO} {
+       name={\ensuremath{\cO}},
+       description={The subcategory of $\EuScript{A}\mmod_{\EuScript{I}}$ such that the eigenspaces for a fixed $\xi$ are
+finite dimensional and the spectrum is bounded above in real part }}
+
+\newglossaryentry{matter}{
+name={\ensuremath{H_i}},
+        text={\ensuremath{H}},
+   description={The matter hyperplane $\{\gamma\mid \gls{varphimid}_i^{\operatorname{mid}}(\gamma) =0
+  \}$}
+ }
+\newglossaryentry{ideal}{
+name={\ensuremath{\ideal_\xi}},
+        text={\ensuremath{\ideal}},
+   description={The ideal in $\gls{A}_I$ for some $I$ generated the
+   idempotents for
+   unsteady sign vectors.}
+ }
+\newglossaryentry{cox}{
+name={\ensuremath{\cox_\alpha}},
+        text={\ensuremath{\cox}},
+   description={The Coxeter hyperplane $\{\gamma\mid\mid \al(\gamma) =0 \}$  for $\vp_i$ a
+weight as before and $\al\in \gls{Delta}$.}
+ }
+\newglossaryentry{yw}{
+name={\ensuremath{y_w}},
+        text={\ensuremath{y}},
+   description={The homology classes that give the action of
+   $\widehat{W}$ in $\mathscr{B}$}
+ }
+\newglossaryentry{r}{
+name={\ensuremath{r(\eta,\eta')}},
+        text={\ensuremath{r}},
+   description={The homology classes corresponding to fibers over
+   torus fixed points}
+ }
+\newglossaryentry{Bpsi}{
+name={\ensuremath{\Bpsi}},
+        text={\ensuremath{\Bpsi_{\al}}},
+   description={The homology classes corresponding crossing a root hyperplane}
+ }
+ \newglossaryentry{MHM}{
+name={\ensuremath{\MHM(V/G)}},
+        text={\ensuremath{\MHM}},
+   description={The category of strongly
+$G$-equivariant mixed Hodge modules on $V$. }
+ }
+ \newglossaryentry{MHML}{
+name={\ensuremath{\MHM_L}},
+        text={\ensuremath{\MHM}},
+   description={The category of strongly
+$G$-equivariant mixed Hodge modules on $V$ which lie in the dg-subcategory generated by Tate twists of summands of $L$. }
+ } 
+ \newglossaryentry{Wei}{
+name={\ensuremath{\Wei_{\upsilon,\acham}}},
+        text={\ensuremath{\Wei}},
+   description={The functor $\Wei_{\upsilon,\acham}(M)=\{m\in
+   M(\acham)\mid \mathfrak{m}_{\upsilon}^Nm=0 \text{ for } N\gg 0\},$
+   for a $\gls{scrB}$-module $M$}
+ }
+ \newglossaryentry{relweights}{
+name={\ensuremath{\weights_{\upsilon}}},
+        text={\ensuremath{\weights}},
+   description={The set of relevant weights for $\upsilon$, that is, the indices such that 
+   $\varphi_i(\upsilon')\in \Z/p\Z$}
+ }
+  \newglossaryentry{relroots}{
+name={\ensuremath{\Delta_{\upsilon}}},
+        text={\ensuremath{\Delta}},
+   description={The set of relevant weights for $\upsilon$, that is, the indices such that $\varphi_i(\upsilon')\in \Z/p\Z$}
+ }
+  \newglossaryentry{S}{ name={\ensuremath{S_*}},
+        text={\ensuremath{S}},
+   description={The symmetric algebra on $\tilde{\ft}^*$, that is, the ring of functions on the affine variety $\tilde{\ft}$, with the parameter $h$ specialized at $h=*$}
+ }
+
+  \newglossaryentry{gammaB}{ name={\ensuremath{\gamma_{\mathsf{B}}}},
+   description={The equivalence $\gamma_{\mathsf{B}}\colon \gls{sfB}\to
+\gls{scrBhatup}_{\upsilon'}$ of Proposition \ref{prop:B-equiv}}
+ }
+  \newglossaryentry{quiver}{
+  name={\ensuremath{\Gamma}},
+   description={The quiver used to define the quiver gauge theory as
+   in  \eqref{eq:quiver-gauge}}
+ }
+   \newglossaryentry{vertex}{
+  name={\ensuremath{\vertex}},
+   description={The vertex set of $\gls{quiver}$}
+ }
+    \newglossaryentry{Bw}{
+  name={\ensuremath{\Bw}},
+   description={A dimension vector with components $w_i$ for $\gls{quiver}$ that gives the
+   ranks of the factors of the flavor group $\gls{F}$}
+ }
+     \newglossaryentry{Bv}{
+  name={\ensuremath{\Bv}},
+   description={A dimension vector with components $v_i$ for $\gls{quiver}$ that gives the
+   ranks of the factors of the gauge group $\gls{G}$}
+ }
+   \newglossaryentry{rACp}{
+   name={\ensuremath{\rACp_{\Ba}}},
+   text={\ensuremath{\rACp}},
+   description={The chamber $\rACp_{\Ba}=\{\xi \in \mathsf{t}_{1,\R}\mid a_i<\varphi_i^{\operatorname{mid}}(\xi)<a_i+1\text{
+  for  $i=1,\dots, d$}\}$}
+ }
+  \newglossaryentry{Qh}{
+  name={\ensuremath{\EuScript{Q}_h}},
+   description={The right module quotient
+   $\EuScript{Q}_h=\EuScript{A}_{h,\To}^{\operatorname{sph}}/\gk \cdot
+   (\EuScript{A}_{h,\To}^{\operatorname{sph}})$.  If $h=0$, this is
+   the algebra $\Fp[\mu^{-1}(0)]$}
+ }
+  \newglossaryentry{psalg}{
+  name={\ensuremath{\psalg_\phi}},
+ text={\ensuremath{\psalg}}, 
+   description={The coherent sheaf of generically Azumaya algebras on $\gls{tM}$ or
+   its pushforward to $\gls{Coulomb}$,  such that
+   $\Gamma(\gls{tM}; \psalg_\phi)=\glslink{Asph}{\EuScript{A}_1 ^{\operatorname{sph}}
+   }$ with the quantization parameter $\phi$}
+ }
+  \newglossaryentry{hatpsalg}{
+  name={\ensuremath{\hat{\psalg}_\phi}},
+ text={\ensuremath{\hat{\psalg}}}, 
+   description={The restriction of $\glslink{psalg}{\psalg_\phi}$ to
+   the formal neighborhood \gls{hatM}}
+ }
+  \newglossaryentry{Isalg}{
+  name={\ensuremath{\Isalg_\phi}},
+ text={\ensuremath{\Isalg}}, 
+   description={The coherent sheaf of generically Azumaya algebras on $\gls{tM}$ or
+   its pushforward to $\gls{Coulomb}$,  such that
+   $\Gamma(\gls{tM}; \psalg_\phi)=\glslink{efA}{\EuScript{A}_1 
+   }$ with the quantization parameter $\phi$}
+ }
+  \newglossaryentry{hatIsalg}{
+  name={\ensuremath{\hat{\Isalg}_\phi}},
+ text={\ensuremath{\hat{\Isalg}}}, 
+   description={The restriction of $\glslink{Isalg}{\Isalg_\phi}$ to
+   the formal neighborhood \gls{hatM}}
+ }
+ \newglossaryentry{hatM}{
+  name={\ensuremath{\hat{\fM}}},
+   description={The  formal neighborhood in \gls{Coulomb} of the fiber over the origin in $\ft/W$}
+ } 
+ \newglossaryentry{hcQ}{
+  name={\ensuremath{\hat{\cQ}_\mu}},
+   description={The vector bundle on \gls{hatM} defined by
+   $\mathcal{\hat Q}_\mu:=e_\mu\hat{\Isalg}_\phi e_{0,\second}$}
+ }
+ \newglossaryentry{cQ}{
+  name={\ensuremath{{\cQ}_\mu^{\K}}},
+   description={The vector bundle on \gls{tM} defined by Hamiltonian reduction of $ \mathsf{ R}_\mu(\K)=\Hom_{{\mathscr{B}}^{\To}(\K)}( \tau,-\tilde{\mu}_{1/p}+\zero)$}
+ }
+ \newglossaryentry{cQQ}{
+  name={\ensuremath{{\cQ}^{\Q}_\phi}},
+   description={The tilting generator obtained by summing the vector
+   bundles $\glslink{cQ}{\cQ^\Q_\mu}$ over representatives of the set
+   $\glslink{LambdaR}{\bar{\Lambda}^{\R}}$ for generic $\phi$.}  
+ } 
+ \newglossaryentry{BLam}{
+  name={\ensuremath{\mathsf{B}^{\bar \Lambda}(\K)}},
+   description={The category over the base ring $\K$ with object set
+     $\gls{barLambda}\subset \Z^d$ and
+     morphism spaces $\Hom_{\mathsf{B}}(\eta_\Ba,\eta_\Bb)$ for $\eta_\Ba$ an arbitrary element of the chamber $\rACp_{\Ba}$.}  
+ }
+  \newglossaryentry{A}{
+  name={\ensuremath{A}},
+   description={The noncommutative resolution of $\fM$ constructed by
+     quantization.  Also, the sum of morphisms in $\glslink{BLam}{\mathsf{B}^{\bar \Lambda}(\Q)}$.}  
+ }
+  \newglossaryentry{K}{
+  name={\ensuremath{K}},
+   description={The Langlands dual $T_F^\vee$, or equivalently, the
+     Pontryagin dual $\Hom(\ft^*_{\Z}, \C^*)$.}  
+ }
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "symplectic-duality"
+%%% End:
